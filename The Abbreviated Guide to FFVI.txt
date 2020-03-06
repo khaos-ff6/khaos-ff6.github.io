@@ -1,0 +1,4450 @@
+*******************************************************************************
+*                                                                             *
+*                  THE ABBREVIATED GUIDE TO FINAL FANTASY VI                  *
+*                                  by Khaos                                   *
+*                                                                             *
+*******************************************************************************
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ATTENTION: An enhanced HTML version of this guide is now available at
+             https://khaos-ff6.github.io
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Contents:
+---------
+1. Credits
+2. Introduction - The Purpose of the "Abbreviated" Guide
+3. Important Info to Know Upfront
+4. The Walkthrough
+5. Colosseum Guide
+6. Quick Reference
+7. Copyright and Contact Info
+
+
+
+****************
+*  1. Credits  *
+****************
+
+A large amount of credit is due to Djibriel and his fantastic Final Fantasy III
+Walkthrough and Battle Tactics Guide.  His guide helped me to discover many of
+the more interesting and elusive parts of the game.  I HIGHLY recommend his
+guide if you are looking for a more traditional style FAQ/Walkthrough or if
+there is some info you want that I didn't cover here.  Things in this guide for
+which I owe Djibriel include:
+  - The possibility of using a Star Pendant as an infinite Antidote by just
+    equipping it to a poisoned character.
+  - The short cutscene between Sabin and Duncan's wife after you first recruit
+    him.
+  - The lack of chocobo riding sprites for Banon.
+  - The secret bridge in South Figaro.
+  - Special weapon properties ignored/nullified by Capture.
+  - The secret treasures on the ground in the Cave of the Sealed Gate being
+    worse than what the game tells you it is giving you.
+  - The 50% discount at South Figaro stores in the WoR when Edgar is your party
+    leader.
+  - The fact that Gogo cannot uncurse the Cursed Shld.
+  - The strategy for defeating Outsider in the Colosseum.
+  - The desert south of Maranda for magic point grinding.
+  - The fact that Doom Gaze is found on a single area of the map, regardless of
+    altitude.
+  - The fact that the red sparkle in the chest in Kefka's Tower doesn't appear
+    on subsequent visits if you trigger it in the SNES version of the game.
+  - The various oddities of how the Offering works with other special weapon
+    mechanics.
+  - The level Relm must be at in order to always successfully Sketch EarthGuard
+    and therefore avoid the Sketch bug.
+  - The trick of using Ursus, Control, and the Cat Hood to easily gain GP.
+  - Many of the elemental and status vulnerabilities of bosses.
+
+Credit is also due to Skoobouy for the Rage information from the reference
+section, which came from his Condensed Rage Guide, and for the tactics in the
+Lore learning sections, some of which came from his Condensed Lore Guide.  Both
+are excellent guides.
+
+Credit also goes to Terii Senshii for the Veldt pack listing in the reference
+section which came from Terii's Algorithms FAQ.
+
+Last but not least, credit goes to my friend theindiegeek for confirming that
+the auto-load-on-death trick for retrying the same Veldt formation works on the
+SNES version of the game.
+
+All of the above mentioned guides can be found on GameFAQs.com, and I can't
+recommend them enough.
+
+
+
+**************************************************************
+*  2. Introduction - The Purpose of the "Abbreviated" Guide  *
+**************************************************************
+
+In keeping with the purpose of this guide, I'll get straight to the point and
+describe... the purpose of this guide: to provide you what you want to know,
+when you want to know it as you play through FFVI, as succinctly as possible.  
+
+If you are looking for a guide that tells you in complete, tedious detail the
+entire sequence of buttons to press on the gamepad to get you from the opening
+sequence to the final credits, then look elsewhere; I'm not going to hold your
+hand and play the game for you.  If there is a room in a dungeon with a simple
+treasure chest smack in the middle, no strings attached, I am not going to
+waste space telling you to open it; it should be a no-brainer.  I'm also not
+going to give you a complete item listing, bestiary, skill guide, etc.  There
+are already plenty of in-depth guides on these things out there that do a far
+better job than I could.
+
+This guide is intended for people who want to experience the best the game has
+to offer, but don't want to do so at the cost of hours upon hours of scanning
+through multiple FAQs trying to root out the useful information from the wordy
+blatherings.  (I know, this intro is kind of a wordy blathering itself; I
+promise it's the only part of this guide that will be.)  SO, here is what I
+WILL do.
+
+If there's a totally sweet item that's easy to miss, I'll tell you about it so
+that you don't miss it.  If there's an amusing cutscene that most people
+wouldn't normally catch, I'll make sure you have the opportunity to see it.  If
+there's an incredibly powerful, useful, or interesting strategy or game
+mechanic that isn't obvious, I'll explain it to you.  And best of all, this
+information is ordered in the guide according to the order of the game; you
+won't have to Ctrl + F to death to find all of the relevant information for
+the point you are at.  The only exception to this is the information that I
+feel is important to know upfront, which I have placed... upfront.  Finally,
+any information that I think you'll likely want to keep referring back to has
+been placed in a quick reference section that you can print off or keep up in
+its own dedicated browser tab or window.
+
+So without further ado, let's play Final Fantasy VI...
+
+
+
+***************************************
+*  3. Important Info to Know Upfront  *
+***************************************
+
+Contents:
+---------
+
+3.1. About the Walkthrough
+3.2. About Game Mechanics
+3.3. About Key Strategies
+3.4. Miscellaneous Info
+
+
+Ok, I lied, there's a little bit more ado.  Still, this is important
+information that I think is valuable to have before you begin the game.
+PLEASE READ ALL OF THIS INFORMATION.  I have tried to avoid repeating it within
+the guide unless absolutely necessary, so it's important that you look over it
+since it might not be mentioned again.
+
+
+
+------------------------------
+  3.1. About the Walkthrough
+------------------------------
+
+- This guide is primarily geared towards those who have played Final Fantasy VI
+  before.  I have tried to include a little direction for the first-time
+  player, but I won't be elaborating on basic Final Fantasy info (i.e.
+  characters with the Float status can't be hit by earth elemental attacks such
+  as Quake).
+
+- The best way to use the guide is to read each section just before you play
+  through it and then leave it open to refer back to as you play.  This way you
+  shouldn't miss anything important, but also shouldn't have to spend more than
+  a few minutes in the guide for each section.
+
+- READ THE GUIDE IN ORDER.  In each section, I will be assuming that you have
+  read the previous sections.  This is the best way I know to minmize
+  excessive redundancy and make the guide flow linearly, as is my intent.  I
+  will occasionaly refer back to previously mentioned information, but most of
+  the time I will assume that you remember the important things.
+
+- For the purposes of this guide, the term "cutscene" refers to any dialogue or
+  scene where you lose control of the game (other than pressing the button for
+  dialogue continuation) and simply witness the characters interacting.
+
+- If I don't fully explain something important or interesting right away, just
+  trust me; it will be explained when necessary.  If I still don't, then skip
+  to the bottom where the contact information is and let me know!
+
+- Throughout the walkthrough I will refer to two main sections/areas of the
+  game: the World of Balance (WoB), and the World of Ruin (WoR).  If you don't
+  already know what these are, then suffice it to say that you start the game
+  in the WoB, and you'll know when you get to the WoR without my having to tell
+  you.
+
+
+
+-----------------------------
+  3.2. About Game Mechanics
+-----------------------------
+
+Contents:
+---------
+3.2.1. Useful but Non-Obvious Basics
+3.2.2. Character Stats
+3.2.3. Spells, Elements, and Statuses
+3.2.4. The Steal Command
+3.2.5. Veldt Mechanics
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.2.1. Useful but Non-Obvious Basics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Experience points earned from battles are evenly divided among the party
+  members alive at the end, however the number of points earned that the game
+  displays for you is actually the number each living character receives after
+  the division of the total.
+
+- If you "double click" on a piece of equipment in the Items menu, you can view
+  detailed information about what bonuses and special properties it has.  This
+  becomes especially useful in the latter half of the game where items with
+  many special qualities become much more common.
+
+- If you want to get a quick overview of what all the characters in your party
+  have equipped (including relics), go to the menu, select Equip, and then hit
+  Left on the D-pad.  This should allow you to select everyone at once.
+
+- Characters can be in either the front or back row for purposes of battle.
+  Characters in the back row take half damage from basic physical attacks, but
+  also do half damage with normal Fight attacks (unless they are equiped with a
+  special weapon that does full damage from the back row).  To change what row
+  a character starts the battle in, go to the menu, press left, and "double
+  click" on the character's portrait to toggle between rows.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.2.2. Character Stats
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- The statistics every character in the game has are as follows:
+
+  Stats gained on level up:
+  -------------------------
+  Vigor   - Determines physical damage output in a smaller part
+  Speed   - Determines time between turns in battle
+  Stamina - Determines hit rate of instant death attacks against the character
+  Mag.Pwr - (Magic Power) Determines damage and curative output of spells
+  
+  Stats improved through equipment:
+  ---------------------------------
+  Bat.Pw  - (Battle Power) Determines physical damage output in a larger part
+  Defense - Determines physical damage taken
+  Evade   - Determines absolutely nothing (except in the GBA version; see below)
+  Mag.Def - (Magic Defense) Determines magic damage taken
+  MBlock  - Determines chance to avoid ANY attack that is not unblockable
+
+- In the SNES and PSX versions of the game, the Evade stat is bugged and does
+  nothing.  This causes the Blind status to do nothing, and it also renders the
+  Goggles (prevents Blind) and Beads (halves attacker's hit rate) relics
+  totally worthless.
+  
+  So how can you dodge physical attacks?  Well, as it turns out, the bug also
+  causes the MBlock stat to be used for dodging any attack in the game that
+  isn't unblockable, be it physical or magical.  So, pay attention to equipment
+  that adds to MBlock.  Having an MBlock of 128 or higher will guarantee that
+  if an attack is blockable, the character will block it every time.
+  
+- Also worth noting is the fact that if a character has 255 Defense, they will
+  receive 1 damage if in the front row and 0 damage if in the back row when hit
+  with a physical attack.  Thanks mostly to an outstanding piece of armor
+  called the Snow Muffler, Gau and Mog can reach 255 Defense at fairly low
+  levels (they are the only two that can wear it).
+
+- There are spells, special abilities, and weapons that "ignore defense".  This
+  means that they are inhibited neither by the target's Defense nor Magic
+  Defense.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.2.3. Spells, Elements, and Statuses
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- When I state that a spell or ability "divides damage", all I mean is that it
+  does more damage to a single target than it does to each of several targets.
+  I don't think it's as simple as a literal division of the single-target total
+  by the number of targets, but I could be wrong.  The important thing is that
+  it is more/less in single/multi-target situations.
+
+- Note that "Poison" can refer to either the status effect or the type of
+  elemental damage.  In the guide I will indicate which with [E] for elemental
+  damage type and [S] for status effect.
+
+- If you're not a veteran Final Fantasy player, it's worth noting how the
+  Reflect status works.  Characters with Reflect will have all spells cast on
+  them bounced back to their opponent(s) instead.  However, Reflect can only
+  bounce a spell once, so if your opponent has Reflect, just grant one of your
+  party members Reflect as well and then bounce any offensive spells off of
+  that party member.  Keep in mind that Reflect bounces curative magic as well,
+  though.  There are a few offensive and defensive spells and special abilities
+  that aren't affected by Reflect; the important ones will be noted when you
+  come across them.
+
+- One non-obvious status effect in the game is the Seizure status.  A character
+  or enemy with this status will lose HP over time, just like with the Poison
+  status, however there's no visual cue to tell you the character has this
+  status.  Seizure is the functional opposite of the Regen spell/status, so
+  casting Regen on a character will remove Seizure from him/her.  However, it
+  can also be cured via the Remedy spell or item, or the Antdot spell.
+
+- When a character or enemy "absorbs" an element, all damage of that element
+  will heal instead of harm him/her/it.  When an attack or spell consists of
+  multiple elements, characters or enemies that absorb just one of them will
+  absorb the entire attack.  Likewise, characters or enemies that are weak to
+  just one of them and are neutral to the others (take normal damage from them)
+  will be weak to the entire attack.  Absorbtion trumps weakness for multi-
+  element attacks.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.2.4. The Steal Command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Since the Steal command becomes available to you quite early on, I'll do a
+  bit of explaining about it here.
+  
+  Enemies in the game can have a rare Stealable item, common Stealable item,
+  both, or none.  "Rare" and "common" refer to the chance of receiving the item
+  upon a successful Steal attempt, not the general availability of the item in
+  the game.
+  
+  If an enemy only has either a rare or a common steal (not both), then you can
+  repeatedly attempt to steal until you successfully get it, provided both you
+  and the enemy survive long enough.
+  
+  If an enemy has a rare and a common steal both, which one receive on a
+  successful Steal attempt is chosen at random, and once you have stolen one of
+  them, the other becomes unavailable to subsequent Steal attempts on the same
+  target.  So for example if you know an enemy has a rare Steal and a common
+  Steal, and you successfully Steal the common item, you won't be able to then
+  Steal the rare one from the same enemy in the same encounter.  Keep this in
+  mind when reading the Steal info in the guide, especially for boss encounters.
+  If you know a boss has both a rare and a common Steal, and you know you want
+  the rare one badly, save your game before the fight and be prepared to load
+  and try again several times.
+  
+  Spells (Dischord) or relics (Sneak Ring) that increase the chance of success
+  for Steal do not affect the chance of getting the rare Steal versus the
+  common one.  So they help you succeed at Stealing more frequently, but do not
+  help you acquire the rare item more frequently than the common item.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.2.5. Veldt Mechanics
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- One of the characters you'll recruit in the game has the ability to assume
+  some of the attacks and properties of monsters you encounter throughout the
+  game using a skill called Rage, which he has in place of the Fight command
+  (more about this in the Key Stategies section below).  Rages must be
+  collected in an area of the world map called the Veldt, where you can
+  encounter any formation of enemies that you have encountered elsewhere in the
+  game (a "formation" being a set of specific enemies found in a single
+  encounter).  Only formations you have already encountered in other parts of
+  the game will appear on the Veldt.  It is not necessary to win a battle for
+  the formation encountered to become available on the Veldt, you only need to
+  leave it without having been totally defeated (or "Annihilated", as the game
+  so delicately puts it).
+  
+  Each time you encounter a formation on the Veldt, rather than picking it
+  randomly from all those available, the game instead cylces in order through a
+  set list of groups (commonly referred to by fans as "packs") consisting of up
+  to 8 formations, one of which is chosen at random.  If the next pack in the
+  sequence is empty or you haven't yet encountered any of the formations in it,
+  the game moves on to choose a formation from the subsequent pack.
+  (See 6.4. Veldt Packs in the Quick Reference section for the pack listing.)
+  
+  I mention this mechanic because depending on what version of the game you are
+  playing, there are a couple of ways to manipulate the next pack chosen to
+  your advantage when trying to get Rages from specific formations:
+  
+    - In the SNES version, the game jumps ahead 13 packs when you load a saved
+      game.  So if you would normally encounter a formation from pack 15 on
+      your next encounter, you can save and load your game so that instead you
+      will encounter a formation from pack 28.  This allows you to jump past
+      packs that don't contain any formations you are interested in and more
+      quickly cycle back around to those that do until you have collected the
+      Rages you want.
+
+    - In the PSX version, normally when you load a saved game your next pack is
+      randomized.  However, if you allow your party to be defeated, the game
+      automatically loads your last saved game with the same next pack number
+      you had at the time you created the save.  This works in the SNES version
+      as well.  The game also loads in the data used to (pseudo)randomly
+      determine the next formation, so the formation chosen from the pack will
+      also always be the same.  This has its uses, but isn't very desirable for
+      Rage hunting.
+      
+      However, you can force the game to choose a different formation from the
+      same pack by leaving the Veldt and fighting a battle elsewhere (making
+      this method of manipulation only feasible if you have an airship).  So to
+      keep retrying the same pack:
+      
+        - Fight until you know that the pack you want is up next.
+
+        - Save your game.
+
+        - Try to get the formation you want.
+
+        - If you don't get it, fight another battle and intentionally die.
+
+        - After the auto-load, go fight a battle elsewhere (I recommend
+          alternating between Figaro Cave and the Phantom Forest in the WoB,
+          and Figaro Cave and Narshe in the WoR); this should change the data
+          used to pseudo-randomly select the next formation (note that this
+          might not always mean a different formation is chosen).
+
+        - Save again so you don't have to start over from the original save
+          data if you fail to get what you want again.
+
+        - Try again to get the formation you want.
+
+        - If you still don't get it, repeat the process until you do, making
+          certain to never fight the not-on-the-Veldt battle in the same
+          location twice in a row; I'm not 100% certain, but it seemed that in
+          my tests fighting the off-Veldt battle would fail to change the
+          formation-determining data if I used the same location as the
+          previous off-Veldt battle.
+
+            - Occasionally, I have run into a situation where the off-Veldt
+              battle seems to fail to alter the formation-determining data even
+              when dutifully alternating locations.  When this happens,
+              fighting several battles in multiple locations before trying the
+              Veldt again seems to solve the issue (i.e. fighting 2 or 3
+              battles in one location, 2 or 3 in another, and 2 or 3 back in
+              the first one or in a third one).
+
+      It's not exactly a piece of cake, but it does give you some measure of
+      control versus just cycling through the packs over and over and over.
+
+
+
+-----------------------------
+  3.3. About Key Strategies
+-----------------------------
+
+Contents:
+---------
+3.3.1. Colosseum Strategy
+3.3.2. Gau and the Merit Award
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.3.1. Colosseum Strategy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- (WARNING: If you are a first-time FFVI player, parts of the following won't
+  make much sense to you, but I recommend you read it anyway.  It will make
+  sense later when you get to the area of the game I'm referring to.)
+
+  In the latter half of the game, there is a place called the Colosseum at
+  which you can bet items to win better (or sometimes just different) items in
+  exchange.  Each time you bet an item, you must choose a character from your
+  party to compete in a fight with a single enemy.  What item you bet
+  determines what enemy you will face and what item you will win if you
+  survive the fight (the same item bet always yields the same enemy and the
+  same item to win).  Win or lose the battle, you always lose the item you bet.
+
+  The most important aspect of Colosseum battles and the reason I mention them
+  upfront is the fact that the actions of your character are chosen for you at
+  random from among the attacks, skills, and spells available to him/her.
+  Usually all you can do is equip the character for the battle as best you can
+  and cross your fingers.  However, I have developed a Colosseum strategy that
+  works astoundingly well, but must be kept in mind from the very beginning of
+  the game.  I'm probably not the first to suggest this method, but I did
+  contrive it independent of outside input and have yet to see it anywhere else.
+
+  It's really a beautifully simple strategy.  Mog is the ultimate Colosseum
+  character, IF before you are done with the Colosseum:
+
+    - You don't use his team in battle when defending Terra at the beginning of
+      the game,
+    - You don't recruit him OR don't use him in battle in the WoB, and
+    - You don't teach him any magic.
+
+  This will ensure that when you get to the WoR and recruit him, he will only
+  have the Fight command available to use in the Colosseum.  Most battles in
+  the game will cause him to learn a Dance based on the setting of the battle,
+  hence the need to keep him out of battle entirely; even if he is dead or you
+  managed to get only him to run away, he will still learn the Dance if you
+  complete the battle.  Once he learns a Dance he pretty much goes from best to
+  worst Colosseum character, given that once a Dance is used, it continues for
+  all of Mog's turns for the rest of the battle.
+
+  It's possible to achieve this Fight-only state with at least one other
+  character I know of (Shadow), but what makes Mog so special is his ability to
+  equip spear/lance type weapons.  These weapons do 2x normal damage when used
+  with the Jump command, which is granted by the DragoonBoots relic. Jump
+  causes the character to leap into the air for a time, during which he is
+  invulnerable to attack, and then drop back down and attack (for 1.5x normal
+  damage with any non-spear/lance weapon).  Even better, you can additionally
+  equip the Dragon Horn relic, which causes the attack from each Jump to hit
+  two to four times instead of just once.  Plus as previously mentioned (see
+  3.2.2. Character Stats), Mog is one of two charaters that can use the awesome
+  Snow Muffler armor to achieve the maximum of 255 Defense early on.
+  
+  With only the Fight and Jump commands available for him to use, Mog doesn't
+  ever have a wasted move in the Colosseum (i.e. casting Cure on himself on the
+  first round when he is undamaged, etc.).  If you follow the walkthrough for
+  the WoR in the order I have written it, you will be able to easily win nearly
+  every worthwhile item from the Colosseum in a single visit pretty early,
+  using Mog almost exclusively.
+
+  (FFVI veterans may be saying to themselves, "Wait a minute, he said Mog will
+  have BOTH Fight and Jump available, but Jump clearly replaces the Fight
+  command", and they would be correct, if this weren't the Colosseum.
+  Unfortunately, characters retain the ability to perform a basic Fight attack
+  in the Colosseum when Jump is added to their reportoire via DragoonBoots.)
+  
+  I have found that this Colosseum strategy is so effective that I will be
+  assuming its use in the walkthrough.  This shouldn't inconvenience you too
+  much if you don't wish to follow it; simply ignore my periodic advice related
+  to it (i.e. not using Mog's party when defending Terra).
+  
+  I also recommend that you don't teach Shadow ANY spells until you are done
+  with Colosseum bets because, as mentioned earlier, he also can be used as a
+  Fight-command-only character in the Colosseum (due to the fact that Throw is
+  not available in Colosseum battles).  After the main Colosseum trip with Mog
+  as the star of the show, you will very likely want to use him in battle, so
+  Shadow is a great backup character to use for any future bets once you've
+  ruined Mog with Dances.  Keeping Shadow magic free allows you to take
+  advantage of a strategy that makes him as-good if not better than Mog for
+  Colosseum battles, but that does not become available until late in the game.
+  It will be mentioned when you get to it in the guide, or you can jump to
+  4.2.50. Collecting the Imp Gear if you are curious about it now.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  3.3.2. Gau and the Merit Award
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Gau is a unique party member in FFVI in that instead of the Fight command, he
+  has a skill called Rage that allows him to adopt the status immunities and
+  elemental strengths and weaknesses of most random encounter monsters in the
+  game, as well as the ability to use the special skills for those monsters.
+  When used in combat, you choose a single monster from a list of those whose
+  Rages Gau has acquired, and then for the rest of the battle Gau has a chance
+  of either using a physical attack or the special ability of that Rage each
+  time he takes a turn.
+
+  Normally Gau cannot equip weapons, and to make up for this, his base physical
+  attack power is much greater than the other characters in the game.  However,
+  there is a relic you can obtain from the Colosseum called the Merit Award
+  which allows the equipped character to use quite a few weapons and armors
+  he or she would not normally be able to equip.  In the SNES version of FFVI,
+  Gau can equip the Merit Award and consequently can equip weapons.  This is
+  totally awesome for a few reasons:
+  
+  1. Equipping a weapon adds onto Gau's already unusually high base physical
+     damage.  This ends up equalizing a lot of the end-game weapons in that
+     many of them cause Gau to hit the Battle Power cap of 255.  This kind of
+     sounds like a bad thing, but it means that you are more free to choose
+     weapons primarily based on their special properties instead of mainly
+     their Battle Power.
+
+  2. Rage special skills that are just basic attacks with a multiplier (the
+     best of which is Stray Cat's Catscratch attack at a x4 multiplier) also
+     apply the same multiplier to the spells from chance-to-cast-on-hit
+     weapons if they are triggered by the attack (note that the pre-multiplier
+     amount will be based on the character's Mag.Pwr rather than Vigor).  A
+     favorite for this is Cyan's Tempest weapon, since the Wind Slash spell it
+     sometimes casts hits all monsters instead of one, but it is effective for
+     any such weapons.  Equipping weapons with elemental properties is also
+     very effective with Catscratch when hitting monsters weak to the element.
+     Even better, if Gau is equipped with the Offering relic, its effect
+     applies to Catscratch attacks, meaning they occur four times instead of
+     one (I think still at half power as is normal for Offering, but who cares
+     when Catscratch itself is 4x more powerful than a basic attack?).
+
+  Unfortunately, Square apparently did not intend for Gau to be able to equip
+  weapons via the Merit Award, because in the PSX and GBA versions of the game,
+  they made Gau unable to equip it.
+  
+  More about Gau and his uses (Merit Award or no) can be found in the
+  walkthrough when you acquire him.  However, I should warn you that I have
+  kept my recommended Rages to the bare minimum in this guide, since collecting
+  any significant number of Rages can take a very, very long time, and most of
+  them grant abilities the same as or comparable to spells that Gau can learn
+  and use 100% of the time rather than by chance (although they cost MP, unlike
+  Rage abilities).  If you are interested in investing the time necessary to
+  collect a wider variety of potentially useful Rages (or if you are a
+  masochist and want to collect ALL the Rages), I suggest both Djibriel's and
+  Skoobouy's Rage guides found on GameFAQs.com.
+
+
+
+---------------------------
+  3.4. Miscellaneous Info
+---------------------------
+
+- You can soft reset the PSX version of the game by hitting L1, L2, R1, R2,
+  Select, and Start all at the same time.
+
+- In the PSX version of the game, you can save a "Memo file", which is just a
+  temporary save that doesn't stick around when you shut off the system.  The
+  up side is that it saves and loads much faster than a memory card save file.
+  While the memo file is lost when you shut down or reset the system itself, it
+  persists if you do a soft reset.
+
+- Every character besides Umaro and Gau has a "desperation attack".  Characters
+  have a small chance of performing their desperation attack every time they
+  use the Fight command when their HP is low enough that they are crouching.
+  This is more of a novelty than anything of real use.  The attacks are pretty
+  powerful, but certainly not worth keeping a character at very low HP on the
+  off chance that they'll use it.
+
+- When you use a Tent to rest, the color and style of the tent varies depending
+  on which character is your party leader (although some characters have the
+  same tent as each other).
+
+
+
+************************
+*  4. The Walkthrough  *
+************************
+
+
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~
+                             4.1. World of Balance                              
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Contents:
+---------
+
+4.1.01. Narshe
+4.1.02. Figaro Castle
+4.1.03. Figaro Cave
+4.1.04. Outside South Figaro
+4.1.05. South Figaro
+4.1.06. Mt. Kolts
+4.1.07. Returner's Hideout
+4.1.08. Lete River
+4.1.09. Terra, Edgar, and Banon's Scene: Outside Narshe
+4.1.10. Terra, Edgar, and Banon's Scene: Infiltrating Narshe
+4.1.11. Sabin's Scene: Outside The Imperial Camp and Doma
+4.1.12. Sabin's Scene: Cyan Defends Doma
+4.1.13. Sabin's Scene: Imperial Camp
+4.1.14. Sabin's Scene: Ghost Train
+4.1.15. Sabin's Scene: Baren Falls
+4.1.16. Sabin's Scene: The Veldt and Mobliz
+4.1.17. Sabin's Scene: Serpent's Trench
+4.1.18. Sabin's Scene: Nikeah
+4.1.19. Locke's Scene: South Figaro
+4.1.20. Locke's Scene: Figaro Cave
+4.1.21. Narshe: Defend the Esper
+4.1.22. Narshe: The Search for Terra
+4.1.23. The Veldt
+4.1.24. Figaro Castle
+4.1.25. Kohlingen
+4.1.26. Zozo
+4.1.27. About Magicite
+4.1.28. Opera House
+4.1.29. The Blackjack
+4.1.30. The Southern Continent
+4.1.31. Magitek Research Facility 
+4.1.32. Zozo
+4.1.33. Narshe
+4.1.34. Jidoor
+4.1.35. Tzen
+4.1.36. Continent West of the Veldt
+4.1.37. The Veldt
+4.1.38. Cave of the Sealed Gate
+4.1.39. Vector
+4.1.40. Things to Do Before Albrook
+4.1.41. Thamasa
+4.1.42. Esper Mountain
+4.1.43. Pre-Floating Continent Errands and Points of Interest
+4.1.44. The Floating Continent
+
+
+
+-----------------
+  4.1.01. Narshe
+-----------------
+
+- Magitech attacks work just as well from the back row.
+
+- Don't get any bright ideas about killing off Biggs and Wedge in order to give 
+  more XP to Terra from the boss before the esper (Whelk); it doesn't give XP.
+
+- When you first wake up as Terra and the soldiers come for you, check the
+  clock before leaving Arvis's house and you will find an Elixer.  Many clocks
+  throughout the game have Elixers, so check every one you come across.
+
+- Wait until the WoR to open the chests and you'll get better stuff.
+
+- As per my recommended Colosseum strategy, DO NOT use the party with Mog for
+  any battles in the multi-party defense sequence, otherwise he will learn the
+  Dusk Requiem dance.  If you haven't read the recommended strategy and other
+  up-front information, shame on you; go to 3. Important Info to Know Upfront
+  and start reading right now.
+
+- Take Mog's Mithril Shld and Mithril Pike to use on other characters later.
+
+
+
+------------------------
+  4.1.02. Figaro Castle
+------------------------
+
+- Edgar's Tools do the same damage from the back row as the front row.
+
+
+
+----------------------
+  4.1.03. Figaro Cave
+----------------------
+
+- Wait until the WoR to get the chests for better stuff.
+
+
+
+-------------------------------
+  4.1.04. Outside South Figaro
+-------------------------------
+
+Rages:
+------
+Rhodox - Special Move: Snare 
+           Instant death attack with a higher hit rate than most others,
+           prevents enemy counter attack, single-target
+       - Formations: Grassland, Forest x3
+
+
+- Since this is the first place you'll encounter an enemy with a recommended
+  Rage, it's time to start thinking about whether or not you feel Gau is worth
+  the time.  (The fact that it's best to make this decision early is why I
+  included the 3.2.5. Veldt Mechanics section in the upfront info section;
+  check it out if you haven't already.)  Even with the Veldt pack trick, you're
+  probably looking at a few hours of hunting just to get the very few Rages I
+  recommend.  Here's some things to keep in mind:
+  
+    - Gau can only use the Merit Award in the SNES version, so he's not nearly
+      as worthwhile in the other versions as an end-game character.  On the
+      other hand, when he can use the Merit Award you're most likely going to
+      be using the Stray Cat Rage 99.9% of the time, which isn't hard to get,
+      so SNES or no doesn't necessarily have to affect how much time you spend
+      collecting Rages.
+
+    - Gau has some Rages available quite early on with attacks that are much
+      more powerful than anything your other characters will be able to do at
+      the same point in the game.  Keep in mind that special abilities from
+      Rages don't take any MP to cast.  These great early Rages are:
+
+        - ChickenLip.  The ChickenLip Rage is available towards the end of the
+          WoB, and its special attack is Quake.  Quake is very powerful and
+          hits both friend and foe, so when all your party members are equipped
+          with the Gaia Gear armor (which grants absorbtion of Earth elemental
+          damage), you can do massive damage and massive healing at the same
+          time.
+
+        - Anguiform and Aspik.  Anguiform and Aspik become available at the
+          same time, not long after you acquire Gau.  However, to collect them
+          as soon as they are available requires an optional return trip to the
+          Veldt.  The Anguiform Rage grants the Aqua Rake attack, which hits
+          all enemies for slightly more damage than a second level spell and is
+          both Water and Air elemental (when I talk about spell "level", I'm
+          referring to the Fire, Fire 2, Fire 3 type spell power tiers; at this
+          point you've probably only seen Terra's first level "Fire").  The
+          Aspik Rage grants Giga Volt, which randomly targets a single enemy or
+          all enemies and is a Lightning elemental attack nearly as powerful as
+          Bolt 3.  Both of these attacks bypass the Reflect status.
+
+    - While there are many late-game Rages that provide Gau with most of the
+      more powerful spells in the game, most of these spells can be taught to
+      him and could be used by choice rather than by chance.
+
+    - There are some late-game Rages that grant Gau some very interesting
+      special abilities that can't be learned as spells which I have not
+      included in my recommended Rages (i.e. Gilomantis's Shrapnel attack).  If
+      you are more inclined to spend time hunting Rages than I am, it's worth
+      looking into these.
+
+
+
+-----------------------
+  4.1.05. South Figaro
+-----------------------
+
+- South Figaro has a lot of items to be found around town, some of which are
+  upgraded if you leave them alone until the WoR:
+
+  Tonic................Barrel to the left of the Chocobo stable
+
+  Green Cherry.........Barrel to the right of the Chocobo stable
+
+  Phoenix Down.........Barrel to the right of the rich guy's house
+
+  Warp Stone (WoB)
+  Phoenix Down (WoR)...Barrel above and behind the Chocobo stable
+
+  Eyedrop (WoB)
+  Elixir (WoR).........Box in the lower left section of town
+
+  Antidote (WoB)
+  Tent (WoR)...........Barrel in the lower left section of town
+
+  Soft (WoB)
+  Remedy (WoR).........Box in lower left section of town
+
+  Tonic (WoB)
+  X-Potion (WoR).......Barrel between Armor and Weapon shops
+
+
+- You can also find a few more items in pots, boxes, etc. inside some of the
+  buildings, none of which upgrade in the WoR.
+  
+- You should search boxes, barrels, crates, etc. for items around every town
+  you come to in the future as well; I only provided a complete list here
+  because this is the only town where such items are upgraded if you leave them
+  be until the WoR (unless you count the chests in the Narshe mines as being in
+  a "town").  Missing some of these is no big deal as they are usually just
+  Tonics, Antidotes, Phoenix Downs, and other items that you end up using a lot
+  less often than you'd think.
+
+- Equipping a Star Pendant (prevents Poison[S]) actually cures a currently
+  Poisoned character, so you can use it as an infinite Antidote.
+
+- In the rich guy's house, when you go to his secret basement via the stairs
+  behind the bookshelf in his room and you get to what appears to be the bottom
+  floor with three bookshelves on the left, keep going straight down in the
+  vertical part of the passage as far as you can go and then go to the right.
+  This takes you down a secret staircase to another basement level with a Hyper
+  Wrist and Running Shoes in chests.
+
+
+
+--------------------
+  4.1.06. Mt. Kolts
+--------------------
+
+- In the second cave, there's a hidden passage between the cliff and the wall
+  just to the right of the bridge that's very easy to miss.  It leads to an
+  Atlas Armlet, which boosts your physical damage by 25% (the actual damage,
+  not just Vigor, the stat that's used to help determine physical damage).
+  This includes non-standard physical attacks such as the AutoCrossbow Tool,
+  but does not include certain fixed-damage attacks (such as the Dice weapon).
+
+- Sabin's Blitz moves that have diagonals in them have alternate versions
+  without diagonals that are much easier to successfully perform.
+  (See 6.1. Blitzes in the Quick Reference section).
+
+- Note that damage is based on Magic Power for all Blitz moves other than
+  Pummel and Suplex, and Blitz moves do the same damage from the back row.
+
+- If you return to South Figaro and talk to Duncan's wife after obtaining
+  Sabin, you'll see a short cutscene.  It's nothing too special, but this is
+  unfortunately your only chance to see it.
+
+  
+
+-----------------------------
+  4.1.07. Returner's Hideout
+-----------------------------
+
+- When exploring the hideout as Terra, search the top right corner of the big
+  table for a piece of paper.
+  
+    - If you leave it alone, Banon will flip out and throw it away at the
+      beginning of the meeting, and Terra will laugh.
+
+    - If you throw it away, nothing happens.
+
+- There is a White Cape in a secret passage on the right side of the storage
+  room.  White Capes are great filler accessories because of the boost to
+  Mblock.
+
+- When Banon first asks you to help, tell him "no".  Then the man in the
+  storage room will give you a Genji Glove instead of the Gauntlet you get if
+  you agree to help the first time.
+
+- If you deny Banon three times, you'll skip the cutscene of the meeting, and
+  if you didn't already get the Genji Glove from the returner in the treasure
+  room, he'll come up and give it to you before you leave for the Lete River.
+
+- Before you leave on the raft, go back into the room Terra woke up in and
+  stand under the chest for a short cutscene.
+
+
+
+---------------------
+  4.1.08. Lete River
+---------------------
+
+- Take two Lefts for the shortest path (there's no treasure to collect).
+
+
+
+----------------------------------------------------------
+  4.1.09. Terra, Edgar, and Banon's Scene: Outside Narshe
+----------------------------------------------------------
+
+- Banon was never given chocobo riding sprites, so you can put him in the lead
+  and rent a chocobo from the hidden stable in the woods west of the Figaro
+  desert to see garbled images riding a chocobo.
+
+  
+
+----------------------------------------------------------------
+  4.1.10. Terra, Edgar, and Banon's Scene: Infiltrating Narshe
+----------------------------------------------------------------
+
+- Don't forget to leave all of the chests unopened.  The newly-accessible one
+  in the Moogle room will contain a Ribbon in the WoR (has a Rune Edge now).
+  The Ribbon is a relic that prevents all status ailments.
+
+- Just before you enter Arvis's house via the back door, you can unequip your
+  stuff for the characters in the next scene can to use.
+
+
+
+-------------------------------------------------------------
+  4.1.11. Sabin's Scene: Outside The Imperial Camp and Doma
+-------------------------------------------------------------
+
+Rages:
+------
+Stray Cat - Special Move: Catscratch
+              Physical attack at x4 damage
+          - Formations: Forest x3 (one is rare), Grassland x2 (only past the
+              Imperial Camp; one of these is the same as the rare Forest one)
+
+
+- Don't miss the green soldier merchant that quickly rides up to the crazy
+  guy's house and away again on a chocobo.
+
+- If you talk to Interceptor (Shadow's dog) from different angles, Sabin hides
+  from him behind different objects in the area.
+
+
+  
+--------------------------------------------
+  4.1.12. Sabin's Scene: Cyan Defends Doma
+--------------------------------------------
+
+- When you kill the Leader, he usually drops a Black Belt relic, but has a
+  small chance of dropping a Phoenix Down instead.  Make sure you get the
+  relic.
+
+
+
+----------------------------------------
+  4.1.13. Sabin's Scene: Imperial Camp
+----------------------------------------
+
+- "Hitting" the chest alerts a soldier which you fool by meowing; "Kicking" it
+  brings about an encounter with Doberman (the only time you encounter them in
+  the game).
+
+- After the first time you chase Kefka, instead of talking to him explore for
+  more treasures.  Behind the tent with two chests, there's a ledge you can
+  jump down to get to a chest with a Barrier Ring.
+
+- Note that the Green Beret you get from Telstar (Monster-in-a-box) boosts your
+  max HP, a detail that is easy to miss since the Equip screen doesn't mention
+  it (the Items screen does).
+
+- Once you exit the camp, there is a chance that Shadow will leave you after
+  you win a random encounter; If you want to keep him around, save frequently
+  until you get to the Ghost Train so you can load if you lose him.
+
+  
+
+--------------------------------------
+  4.1.14. Sabin's Scene: Ghost Train
+--------------------------------------
+
+- Check the top left corner of the room with the save point in the rear car for
+  a Tent.
+
+- In the dining car, sit at the center table and the ghost will serve you.
+  After sitting down the first time sit down again with different members at
+  the head of your party to see different sequences.
+
+- You should pick up your first set of Earrings in the chest behind the
+  waiters.  These work pretty much like the Atlas Armlet only for magic damage.
+  They are great for boosting most of Sabin's Blitz moves, and also work for
+  Gau's magic from Rages and Shadow's elemental throwing weapons (found later),
+  basically any magic damage attack that isn't based on a fixed formula (i.e.
+  Step Mine).
+
+- Don't worry about searching everywhere for Ziegfried; you can't ever find him
+  and get the treasure he steals.
+
+- In the empty compartment to the left of Ziegfried's, check the floor in the
+  top left corner for a Tent.
+
+
+
+--------------------------------------
+  4.1.15. Sabin's Scene: Baren Falls
+--------------------------------------
+
+- Just before entering the cave at Baren Falls, unequip Shadow's relics and
+  gear for use with your other characters since he is about to leave you.
+
+
+
+-----------------------------------------------
+  4.1.16. Sabin's Scene: The Veldt and Mobliz
+-----------------------------------------------
+
+Collect Rages:
+--------------
+(I recommend waiting on these; see below)
+Rhodox    - Snare      - packs 3 and 4
+Stray Cat - Catscratch - packs 7 and 8
+
+
+- If you're a first time FFVI player and don't know how Rage/Leap work, don't
+  worry, the game explains it to you when you recruit Gau.
+
+- Don't worry if the monster whose Rage you want dies before Gau "Leaps"; he
+  will still have learned the Rage when he returns.
+
+- Note that Gau not only gains the Rages of the monster(s) he "Leaps" into, but
+  also the monsters from the encounter he reappears in also (unless you
+  accidentally damage him and he runs off instead of rejoining).  However, this
+  does not include the monsters from the encounter in which you recruit him for
+  the very first time.
+
+- I actually recommend waiting to collect any Rages until a little while later
+  when you can make a special trip to the Veldt and the Anguiform and Aspik
+  Rages can be collected.  You won't need to use Gau that much until then, and
+  Anguiform and Aspik are well worth the extra trip.
+
+- If you haven't already, read 3.2.5. Veldt Mechanics for more information on
+  getting the Rages you want.
+
+- You can rest for free in the back of the relic shop.
+
+- For what it's worth, Dried Meat will heal instead of hurt undead, unlike
+  normal curative items, so it could potentially be used to restore hitpoints
+  of characters with the Zombie status or Gau Raging an undead monster if
+  necessary.
+
+- To help the injured soldier and get a Tintinabar: talk to him, go to the
+  pidgeon post office and send a message for him, go "talk" to the relic
+  shopkeeper, rinse, repeat ("talking" to the shopkeeper triggers the soldier
+  asking you to send the next thing).
+
+    - If you wait and do this quest when you have the airship, you can go to
+      Maranda and talk to Lola after each letter/item sent, and she will have
+      different dialogue depending on what you sent last.
+
+    - This is well worth the postage because Tintinabar can be traded for an
+      Exp. Egg at the Colosseum much later in the game.  Exp. Egg doubles all
+      XP gained by the equipped character (two DON'T stack).
+
+    - This side quest is unavailable in the WoR.
+
+- You can keep killing Telstars on the Veldt for as many Green Berets as you
+  want.
+
+- DON'T explore the cave at the bottom of the Veldt until you are ready to move
+  on because when you walk up to the area that the water breathing helmet is
+  hidden in, your party will automatically unearth it and dive into the
+  Serpent's Trench without giving you a choice.
+
+
+
+-------------------------------------------
+  4.1.17. Sabin's Scene: Serpent's Trench
+-------------------------------------------
+
+Rages:
+------
+Anguiform - Special Move: Aqua Rake
+              Non-reflectable, Air and Water element, multi-target, divides
+              damage
+          - Formations: 3
+
+Aspik     - Special Move: Giga Volt
+              Non-reflectable, Lightning element, single/multi-target, divides
+              damage
+          - Formations: 2
+
+
+- Worrying about getting all of the Anguiform and Aspik formations for Rage
+  collection is mostly futile since you can't backtrack.  You can return to the
+  trench later, but there's no guarantee you'd get the formations you missed
+  the first time through, and getting back repeatedly takes quite a while.  Not
+  worth it unless you totally missed one monster or the other.
+
+- Take two rights to get all the treasure.
+  
+
+
+---------------------------------
+  4.1.18. Sabin's Scene: Nikeah
+---------------------------------
+
+- Pick up some Smoke Bombs at the item shop.  They come in handy in a pinch.
+  If you pick up 20 or 30 now, you probably won't need to buy any again for a
+  long time, if ever.
+
+- Before taking the ferry, unequip any relics or gear you may want for Locke's
+  Scenario.
+
+
+
+---------------------------------------
+  4.1.19. Locke's Scene: South Figaro
+---------------------------------------
+
+- There's a secret bridge over the river in the middle of town hidden
+  underneath the Inn/Cafe (Pub in the PSX version) overhang; using it allows
+  you to cirumvent some of the otherwise necessary costume switches.
+
+- If you're wearing the soldier's uniform when you rescue Celes, then she says
+  something close to what Princess Leia said in Star Wars when Luke rescued her
+  on the Death Star.
+
+- In the secret passage there is a spot that you can push on the left wall to
+  reach a stairway leading to a room with a Ribbon in a chest hidden from view.
+
+- If you want to take advantage of the Stealing trick in the Battle at Narshe,
+  then make sure you have an ample supply of curative items before leaving town.
+  (See 4.1.21. Narshe: Defend the Esper below.)
+
+
+
+--------------------------------------
+  4.1.20. Locke's Scene: Figaro Cave
+--------------------------------------
+
+Steal:
+------
+TunnelArmr (boss) - Air Lancet (common)
+
+
+- Don't forget to leave the chests alone so you can get better stuff from them
+  in the WoR.
+
+
+
+------------------------------------
+  4.1.21. Narshe: Defend the Esper
+------------------------------------
+
+Steal:
+------
+Rider - Elixer (rare), MithrilVest (common)
+      - Rider is the soldier that runs quickly back and forth in front of Kefka.
+Kefka - Elixer (rare), Ether (common)
+
+
+- Note that the soldier enemies (as well as many other human opponents
+  throughout the game) are weak to Poison[E] attacks, so Edgar's Bio Blaster
+  Tool is effective against them.
+
+- Both Rider and Kefka just wait for you to attack them, so kill all the other
+  groups first for the XP.
+
+- If your party is killed, they'll restart with only 1 HP.  If you allow your
+  party with Locke to be defeated by Rider after Stealing from him, you can
+  keep encountering and Stealing from him to get multiple MithrilVests, which
+  are better than anything else you have at this point (unless you kept
+  Shadow's Ninja Gear before he left).  You really only need enough for a
+  single party (3 or 4) since there will be bigger and better armors in the
+  future.
+
+- Rider is weak against Fire and Poison[E].
+
+- You can use the same trick to obtain numerous Ethers from Kefka.  If you do
+  this, stick Celes with Locke so she can block Kefka's magic with Runic until
+  Locke Steals successfully.  Personally I think that thanks to the Osmose
+  spell allowing you to easily and freely replenish your MP, this isn't worth
+  the effort.
+
+
+
+----------------------------------------
+  4.1.22. Narshe: The Search for Terra
+----------------------------------------
+
+- If you want to view Shadow's first four dream cutscenes, pick only 3 party
+  members now so you can recruit him in Kohlingen.  He's likely to abandon you
+  anyway, so return to Narshe and dump him after seeing the dreams.  Until you
+  have seen all four, there's a chance that a dream cutscene will occur each
+  time you sleep.
+
+    - You cannot trigger the dreams in any of the readily available places you
+      can sleep for free (Figaro Castle, Sabin's cottage); just use the
+      Kohlingen Inn.
+
+    - Also note that if you return to Narshe, Shadow will automatically leave
+      you at the gate before you enter.
+
+- If you want to see Locke's scenes (at Kohlingen), make sure he's in your
+  party.  You might want him for Stealing later on anyway.
+
+- There's a house with a lot of good, free treasure directly below Arvis's
+  house; follow the cliff instead of going down the stairs.  One of these
+  treasures is the Sneak Ring, a useful relic that doubles the success rate of
+  the Steal command (having more than one equipped does NOT stack the effect).
+
+- If you go north to the entrance to the mines (but don't enter) you can see
+  a sasquatch periodically peek in and out of the little black hole up and to
+  the right.
+
+- You can go around the counter in the weapon shop, enter the shopkeeper's
+  bedroom, and sleep in his bed for free.
+
+
+
+---------------------
+  4.1.23. The Veldt
+---------------------
+
+Collect Rages:
+--------------
+Anguiform - Aqua Rake - pack 11
+Aspik     - Giga Volt - packs 9 and 11
+
+If you didn't take the time to collect them earlier:
+Rhodox    - Snare      - packs 3 and 4
+Stray Cat - Catscratch - packs 7 and 8
+
+
+- You can make a special trip to the Veldt at this point to collect Rages by
+  going the same route you did before with Sabin (starting from the Lete River
+  accessed via the Returner's hideout).  I highly recommend this as Giga Volt
+  is incredibly powerful for this early in the game, and Aqua Rake, while a bit
+  less powerful by comparison, is always multi-target and gives you access to
+  two attack elements that are hard to come by at this point.  You also won't
+  have another chance to collect these for a good little while, and they are
+  quite useful for some of the upcoming areas.
+
+- Also if you want to see every cutscene in the game, note that this time when
+  you take the ferry from Nikeah to South Figaro, you have to be smuggled out
+  of South Figaro by one of the ferrymen inside a chest.
+
+
+  
+-------------------------
+  4.1.24. Figaro Castle
+-------------------------
+
+- If Edgar is in your party, then you'll get special dialogue with different
+  people in the castle (i.e. the merchants try to refuse to take your money but
+  Edgar insists).
+
+- If Edgar is your party leader, the shops here will offer their goods for half
+  price.  Note that even though the merchants verbally acknowledge him no
+  matter what position in the party he holds, he MUST be the leader in order to
+  get the discount.
+
+- Pick up the two new Tools from the shop.  Drill is especially useful as it
+  ignores the target's Defense.
+
+- If you have both Edgar and Sabin in your party you'll see a cutscene about
+  their past if you go to the room with the beds and rest.  If you don't view
+  it now, you will be able to in the WoR, where it arguably makes more sense
+  story-wise.
+
+
+
+---------------------
+  4.1.25. Kohlingen
+---------------------
+
+- If you go behind the house on the top right and push down, you'll find a back
+  entrance which leads to a Green Beret.
+
+- When you leave town, don't forget to stop by the war-crazy old man's house
+  way up north and pick up the Hero Ring from one of his pots.  Hero Ring is
+  Earrings and Atlas Armlet combined, so it's a great choice for Edgar or Gau,
+  or even Sabin if you use Pummel or Suplex with him as much as AuraBolt or
+  Fire Dance.
+
+    - It should be noted that the physical damage bonuses from Hero Rings/Atlas
+      Armlets don't stack with each other, but the magic damage bonuses from
+      Hero Rings/Earrings DO stack with each other.  So, putting both your Hero
+      Ring and your Earrings on either Sabin or Gau is pretty effective.
+
+- If you don't need the XP from encounters, you can find a chocobo stable in
+  the woods next to the war-crazy old man's house and ride a chocobo all the
+  way down to Jidoor.
+
+
+
+----------------
+  4.1.26. Zozo
+----------------
+
+Espers:
+-------
+Ramuh - Equipped character receives +1 Stamina on level up
+      - Casts a Lightning magic attack on all enemies
+
+Kirin - Casts Regen on all party members
+
+Siren - Equipped character receives +10% HP on level up
+      - Casts Mute on all enemies
+
+Stray - Equipped character receives +1 Magic Power on level up
+      - Casts Muddle on all enemies
+
+
+- Save the tower with the relic shop sign for last; it's the tower Terra is in.
+
+- To get the Chain Saw, set the clock to 6:10:50.  Chain Saw ignores the
+  target's Defense like Drill, but has much higer damage and a 1/4 chance of
+  attempting an instant death attack instead of a normal damaging attack (which
+  is actually kind of a down side as these tend to miss, and many bosses are
+  immune to instant death).
+
+- When you get to the first place you can jump between buildings, don't forget
+  to first climb all the way up the building you are on and get the Thief Glove.
+
+- The Capture command (Fight + Steal, usable with Thief Glove equipped)
+  unfortunately nullifies some special properties of weapons:
+
+  Striker,
+  Assassin,
+  Wing Edge,
+  Scimitar,
+  Trump / Doom Darts (SNES/PSX) - No instant death
+
+  Man Eater - No double damage to "Humans"
+
+  Drainer,
+  Soul Sabre - Normal damage instead of HP/MP drain
+
+  Rune Edge,
+  Ragnarok,
+  Illumina,
+  Punisher - No MP-using critical hits
+
+  Ogre Nix - No MP-using critical hits, but can't break
+
+  Sniper,
+  Hawk Eye - No random extra damage
+
+  ValiantKnife - Loses defense-ignoring properties and doesn't add the
+                 (max HP - current HP) damage
+
+  Tempest - Won't cast Wind Slash
+
+  Atma Weapon - Becomes a normal 255 Battle Power sword
+
+
+- Dadaluma is weak against Poison[E] and susceptible to Imp, Mute, Sleep, and
+  Stop.
+
+- After the cutscene, you'll obtain your first four Espers: Ramuh, Kirin, Siren,
+  and Stray.
+
+- When your other party members arrive, then as soon as you talk to them you'll
+  be forced to proceed with Locke, Celes, and two others of your choice.  Make
+  sure you first unequip any relics or other gear you want from any characters
+  you were using and will now leave behind.  If you bring Edgar and Sabin
+  you'll see an amusing/story-significant interaction when you first recruit
+  Setzer, but if you collected the Anguiform and Aspik Rages for Gau, I
+  recommend you bring him instead of both brothers.
+
+
+
+--------------------------
+  4.1.27. About Magicite
+--------------------------
+
+- I will normally use the term "Espers" to refer to your equipable Magicite,
+  and I will refer to the special "magic points" you earn from battle for
+  learning spells as "MXP", in order to easily distinguish between these magic
+  points and the magic points (MP) used to cast spells.
+
+- Pay attention to the stat bonuses on the Espers.  These are permanently added
+  each time the equipped character levels up in addition to whatever stat gains
+  they would normally get from leveling.  Vigor and MagPwr are the two most
+  worthwhile bonuses, and which is best depends on the character and how you
+  play him/her.  If you use mostly magic damage attacks with a character (i.e.
+  Blitzes or magic skills from Rages) then go with MagPwr, but if you use
+  mostly physical damage attacks (i.e. Chain Saw or physical skills from Rages,
+  most notably Catscratch) then go with Vigor.  See 6.2. Esper Stat Bonuses in
+  the Quick Reference section for a complete listing of possible bonuses.
+
+    - At this point in the game, I recommend equipping Espers based on what
+      stat bonuses they grant rather than what spells they teach (except for
+      possibly the curative spells).  You can always run random battles to
+      learn spells, and there's a couple of ways to do this without having to
+      constantly watch your characters' XP in order to switch them back to the
+      Esper with the stat bonus you want when they are about to level up.  I'll
+      mention these methods later when they become available.
+
+    - Note that in the SNES version, the Vigor bonus espers are incorrectly
+      labeled as "Strength" bonuses, even though there is no "Strength" stat.
+
+- Also pay attention to what the Espers do when summoned.  Some of them have
+  very nice effects, especially those acquired later (i.e. Golem).  To get to
+  the summon, select the Magic command in battle and press up while at the top
+  of the list of spells the character knows.  Espers can only be summoned once
+  per battle.
+
+
+
+-----------------------
+  4.1.28. Opera House
+-----------------------
+
+- Make sure you stop by Owzer's mansion at the north end of Jidoor before
+  heading here.
+
+- Make sure you equip Sprint Shoes on a party member since part of the Opera
+  House sequence is timed.  Note that in the PSX version, you can actually
+  already sprint any time you want to by holding down O (circle), however this
+  turns into an insanely fast super-sprint when you have Sprint Shoes equipped,
+  so they're still worth it.
+
+- You may want to save beforehand and sing the song incorrectly on purpose,
+  because some of the incorrect lines are pretty amusing; same goes for hitting
+  the wrong switches when trying to stop Ultros (the correct switch is the one
+  on the far right).
+
+- Ultros absorbs Water and is weak against Fire and Lightning.
+
+
+
+-------------------------
+  4.1.29. The Blackjack
+-------------------------
+
+- If you have both Edgar and Sabin in your party, Edgar gives the coin that
+  Celes flips to her, and Sabin gets upset with him (remember how the NPCs in
+  Figaro told you the succession was decided?).
+
+  
+
+----------------------------------
+  4.1.30. The Southern Continent
+----------------------------------
+
+Rages:
+------
+ChickenLip - Special Move: Quake
+               Unblockable, non-reflectable, Earth element, multi-target,
+               divides damage, ignores defense
+           - Formations: Forest x2
+
+
+Steal:
+------
+Commando - Mithril Vest (rare), Tent (common)
+
+
+- Make sure to re-equip Celes's gear, relics, and Esper once you arrive.
+
+- You can return to the Blackjack for various services supplied by the crew
+  members: healing, item shop, and unequipping your characters that are back in
+  Narshe.
+
+- You might want to visit the four other settlements before heading to Vector.
+  These are Albrook (you land next to it), Tzen (north), Maranda (west), and
+  the Imperial Mountian Base (east).
+
+- Tzen, Albrook, and Maranda have some new gear for sale, most notably Bard's
+  Hats and, in Albrook only, Wall Rings.
+
+    - Having 4 Wall Rings will be advantageous in many future situations, so
+      it's not a bad idea to pick up as many as you need here.  I recommend
+      getting 2 since you should find a couple more from chests before you ever
+      really need to use them.
+
+    - I recommend the Bard's Hat for its significant boost to MBlock; paired
+      with a White Cape, you will notice a significant increase in the number
+      of times the character dodges attacks.  The only possible advantage the
+      Green Beret has over the Bard's Hat is the max HP bonus it provides
+      (Bard's Hat gives a max MP bonus).
+
+- The Imperial Base has soldiers walking around that you can fight and Steal
+  Tents from (Commando common Steal), and they also have a chance of dropping
+  Tents as well.  This is a great way to stock up.
+
+
+
+-------------------------------------
+  4.1.31. Magitek Research Facility 
+-------------------------------------
+
+Espers:
+-------
+Ifrit - Equipped character receives +1 Vigor on level up
+      - Casts a Fire magic attack on all enemies
+
+Shiva - Casts an Ice magic attack on all enemies
+
+Unicorn - Casts Remedy on all party members
+
+Maduin - Equipped character receives +1 Magic Power on level up
+       - Casts a non-elemental magic attack on all enemies
+
+Shoat - Equipped character receives +10% HP on level up
+      - Casts a Petrify spell on all enemies (misses those immune to instant
+        death attacks).
+
+Phantom - Equipped character receives +10% MP on level up
+        - Casts Vanish on all party members
+
+Carbunkl - Casts Reflect on all party members
+
+Bismark - Equipped character receives +2 Vigor on level up
+
+
+Steal:
+------
+Number 128 (boss)  - Tempest (rare)
+
+
+- In the upper-right corner of the second area (the area that loads after you
+  fall down on a conveyor belt), there is a pipe in the wall you can enter near
+  the large group of crates that leads to some treasure.
+
+- In the lower left corner of the second area on the lower of the two levels
+  there is a door leading underneath the upper level to a treasure chest.
+  There's a similar door at the right end of the lower level as well leading to
+  another treasure chest hidden behind the bottom wall.
+
+- If you are going for Strago's Lores later, make sure to encounter a Chaser in
+  the area after you fight Shiva and Ifrit so that you can find it on the Veldt
+  later and learn Dischord from it.
+
+- Osmose (which can be learned from the Shiva Esper) is an incredibly useful
+  spell for any spell casting character.  It drains a large amount of MP from
+  the target and gives it to the caster.  Osmose can often totally replenish a
+  character's MP in a single cast, provided the target has enough MP to begin
+  with.
+
+- Trappers use the first L.# attacks you will face (L.3 Muddle, L.4 Flare, and
+  L.5 Doom), where they target the whole party but only hit a character if
+  his/her level is divisible by #.
+
+- In the room with five empty glass tubes, check down and to the left of the
+  bottom left tube for a Break Blade.
+
+- Number 024 is susceptible to both Sleep and Imp.
+
+- Number 128 absorbs Ice and is susceptible to Slow.  The Tempest rare Steal it
+  has is one of only two in the game.
+
+- Left Crane absorbs Lightning and is weak against Water.  Right Crane absorbs
+  Fire and is weak against Lightning and Water.  Both are susceptible to Slow.
+
+
+
+----------------
+  4.1.32. Zozo
+----------------
+
+- After Terra rejoins your party, she will have permanently gained the ability
+  to "Morph" in battle into the freaky-haired white Esper-thing.  While in this
+  form, Terra has improved offensive and defensive statistics, so she'll deal
+  more and take less damage.  How long she remains in this form depends on how
+  much MXP she has earned from battles since the last time she used Morph.
+
+- Now that you have the option of using Setzer as a party member on a regular
+  basis, it's worth noting that all of his unique weapons (meaning only he can
+  equip them) do the same damage from the back row.
+
+
+
+------------------
+  4.1.33. Narshe
+------------------
+
+- There is new stuff in the weapon and armor shops, but make sure you save at
+  least 33000 GP for buying some Espers in a bit.
+  
+- If you like using Locke, I highly recommend Genji Glove + two Hawk Eyes for
+  him as not only do they do the same damage from the back row, but they also
+  frequently do extra damage at random.
+
+- Go to the house with the locked treasure chest (the one you looted all the
+  other chests in earlier).  You'll see Lone Wolf on his way out and the chest
+  is empty.  Follow him north to the Esper.  He's holding Mog hostage.  Just
+  hold still for a bit and Mog will escape. Either talk to Mog and he joins
+  your party, or talk to Lone Wolf to get a Gold Hairpin (Mog can be recruited
+  later in the WoR whether or not you get him here).
+  
+    - Go for the Gold Hairpin.  You can't use Mog yet if you are following my
+      Colosseum strategy anyway.  Gold Hairpin halves the MP cost of all spells
+      for the equipped character.
+
+
+
+------------------
+  4.1.34. Jidoor
+------------------
+
+Espers:
+-------
+Golem - Equipped character receives +2 Stamina on level up
+      - Absorbs physical damage up to a total amount equal to the summoner's
+        HP at the time of summoning
+
+Zoneseek - Equipped character receives +2 Magic Power on level up
+         - Casts Shell on all party members
+
+
+- At the auction house, you can obtain the Golem Esper for 20,000 GP and the
+  Zoneseek Esper for 10,000 GP.
+
+
+
+----------------
+  4.1.35. Tzen
+----------------
+
+Espers:
+-------
+Sraphim - Casts a less-than-impressive cure spell on all party members
+
+
+- You can purchase the Sraphim Esper for 3,000GP from a random guy behind the
+  trees in the upper-right part of town.
+
+
+
+---------------------------------------
+  4.1.36. Continent West of the Veldt
+---------------------------------------
+
+Rages:
+------
+Chimera - Special Move: Aqua Rake
+        - Formations: Forest x2
+        - Upgrade from Anguiform; Chimera is immune to every negative status.
+
+
+Steal:
+------
+Baskervor - Gaia Gear (rare) - Found in Grasslands; Susceptible to Sleep and
+                               Slow (should help with the Steal attempts).
+
+
+- Gaia Gear grants absorption of Earth elemental attacks, so having 4 of them
+  helps greatly in several areas, and makes Gau's ChickenLip Rage a great
+  option.
+
+
+
+---------------------
+  4.1.37. The Veldt
+---------------------
+
+Collect Rages:
+--------------
+ChickenLip - Quake     - pack 19
+Chimera    - Aqua Rake - packs 21 and 24
+
+If you didn't make the extra trip earlier:
+Aspik - Giga Volt - packs 9 and 11
+
+
+- If you waited to do the injured soldier letter sending sidequest so you could
+  go hear Lola's responses in person, you can do that now.
+
+- While Veldt battles don't give you any XP, they do give you MXP.
+
+- Chimera's special attack is identical to Anguiforms, however it grants many
+  status immunities Anguiform lacks.
+
+
+
+-----------------------------------
+  4.1.38. Cave of the Sealed Gate
+-----------------------------------
+
+- It's a good idea to equip your party with Gaia Gear for the Cave of the
+  Sealed Gate; the Lifeshaver attack used by Ing is Earth elemental.
+
+- If you are planning to use Gau in your main end-game party and are playing
+  the SNES version, make sure you hang on to the Tempest you get from the chest
+  in the area before the changing bridge maze (or if you stole one from Number
+  128 in the Magitech Research Facility, make sure you keep at least one of the
+  two).
+
+- To get a Genji Glove in the area after the changing bridge maze, go up the
+  the staircase and trip the switch in the middle of the bridge, then when it
+  drops you, go left and up through the small cave mouth.
+
+- The plaza beneath the grand stairway the ninja (encountered when you flip the
+  right of the two side-by-side switches) refers to is just the area at the
+  bottom of the big staircase that appears when you trip the switch in the
+  middle of the bridge over the lava.  There are several items you can find
+  there just by searching the apparently empty ground, none of them really
+  worthwhile, especially since two of them aren't as advertised: the "2000GP"
+  is actually just 293 GP, and the "Remedy" is actually a Soft.
+
+- When you reach the area with the two button-looking switches close to each
+  other in the floor, ignore them and go down the stairs and then to the left.
+  There will be a third floor switch on a platform; trip it and a cave will
+  open up leading to some chests, one of which contains the Atma Weapon sword.
+
+- The Atma Weapon does the most damage when its user is at full HP, and also
+  does more damage the higher the user's level.
+
+
+
+------------------
+  4.1.39. Vector
+------------------
+
+- When you exit the airship, you can find a chocobo stable in the nearby forest
+  in the narrowest part on the right side.  Bring Sabin and Cyan for some extra
+  tidbits of dialogue later.
+
+- Before and during the banquet, there is a point system by which you can earn
+  rewards.  This is how you can get the best possible outcome:
+
+  Talk to as many guards as possible before the banquet begins.  You have 4
+  minutes.  To save as much time as possible:
+  
+    - Equip some Sprint Shoes.
+
+    - Don't take the time to open the chests; you can do this after the
+      banquet.
+
+    - Don't talk to the two fancily dressed guards in the throne room where you
+      start out or try to enter the doors at the back of it.  These guards don't
+      count towards the total, and they'll move up and bar your way if you try
+      to enter the doors; all of this wastes valuable time.
+
+    - Don't walk up to the cell Kefka is being held in; this will trigger a
+      small cutscene in which he'll just babble in annoying, Kefka fashion,
+      again wasting valuable time.  If you want to hear what he says, you can
+      come see him after the banquet is over.
+  
+  Each guard talked to : 1 pt   (24 pts total)
+  Each guard fought    : 4 pts  (20 pts total)
+
+  During the banquet, respond to the questions like so:
+  
+  Who to toast? - "To our hometowns"     : 5 pts
+  About Kefka?  - "Leave him in jail"    : 5 pts
+  About Doma?   - "That was inexcusable" : 5 pts
+  About Celes?  - "Celes is one of us"   : 5 pts
+
+  Any questions? : 2 pts each; -10 pts if you ask a question twice
+                   (When Gestahl asks to talk about Espers after you ask the
+                   first question, refuse so you can ask the other two.)
+
+  About the Espers? - "They've gone too far" : 5 pts
+
+  Which question asked first? - Choose the correct one     : 5 pts
+  "Take a break" and beat the Emperor's Guard (Sp Forces)  : 5 pts
+
+  Anything you'd like me to say? - "The war is over"      : 5 pts
+  Do me a favor?                 - Say yes the first time : 3 pts
+
+  Rewards (these are cumulative; if you get 90+ pts you get them all): 
+   0-49 pts: Empire withdraws from South Figaro 
+  50-66 pts: Empire withdraws from Doma 
+  67-76 pts: Unlocks the locked door in the house in the Imperial camp outside
+             the Cave of the Sealed Gate
+  77-89 pts: Receive a Tintinabar
+  90-93 pts: Receive a Charm Bangle
+
+
+- Now that you've earned your rewards, don't forget to explore the palace and
+  collect the treasure.  If you examine a toilet, you'll jump on it, squat, and
+  flush.  You can also go hear Kefka's windy monologue now if you'd like.
+
+  
+
+---------------------------------------
+  4.1.40. Things to Do Before Albrook
+---------------------------------------
+
+- Go back and visit the airship where it crashed near Maranda for an
+  interesting cutscene in the engine room.
+
+- In the now-unlocked basement room in the Imperial camp, there is a hidden
+  chest in the bottom right hand corner of the room, and the stove has a Flame
+  Sabre as well.
+
+- The troops will be gone from Tzen and Maranda, and the citizens will have
+  different dialogue.
+
+
+
+-------------------
+  4.1.41. Thamasa
+-------------------
+
+Steal:
+------
+FlameEater (boss) - Flame Sabre (common)
+
+
+- This should be the first point in the game at which you have the opportunity
+  to teach Shadow some Magic, however I recommend that you don't until much
+  later so that he can be used as a much more effective Colosseum character.
+  (See the last paragraph of 3.3.1. Colosseum Strategy.)
+
+- The weapon shop here sells some of the elemental rods.  In addition to being
+  regular equipable weapons, the elemental rods can be used as expendable items
+  to cast a defense-ignoring version of a spell of the corresponding element.
+
+- The armor shop here sells Mystery Veils, an awesome helm with some MBlock
+  that only the ladies can wear.  You might as well pick up 3.
+
+- After talking to Strago, go behind his house and the one nearby to see some
+  suspicious activities.  Then, go rest at the Inn, BUT FIRST completely
+  unequip Shadow (gear, relics, Esper) so he doesn't take your stuff when he
+  leaves.
+
+- FlameEater absorbs Fire, is immune to Lightning, Poison[E], Pearl, and Earth,
+  and is weak againts Ice.  It is susceptible to Slow.
+
+- There's a Memento Ring hidden on the left wall of the second floor of
+  Strago's house (a.k.a. the "Safty Ring" in the PSX release...).
+
+
+
+--------------------------
+  4.1.42. Esper Mountain
+--------------------------
+
+Lores:
+------
+Abolisher - Pearl Wind - Abolisher can only be encountered outside on the
+                         mountain slopes rather than in the cave areas.  It
+                         will cast Pearl Wind after 3 turns if it's not alone.
+                       - Pearl Wind is a unique and potentially useful healing
+                         spell in that it heals each party member for the same
+                         amount as the caster's current HP, it penetrates the
+                         Reflect status, and it is not absorbed by Runic.
+
+
+Steal:
+------
+Ultros (boss) - White Cape (common)
+
+
+- As this is the first chance you'll have to start learning some Lores, it's
+  worth noting that the Blind status actually does do something: it prevents
+  Strago from learning Lores.  You'll probably never run into any trouble with
+  this, though.
+
+- When Relm joins your party, you'll notice that her special battle command is
+  Sketch.  In the original SNES American release of the game (version 1.0),
+  Sketch is subject to a serious bug triggered under certain conditions when it
+  misses.  A later SNES version of the game was released without the bug, and
+  the bug does not exist in the PSX or GBA versions either.
+  
+  The bug can cause all manner of things to happen, ranging from freeze ups and
+  graphics glitches to total loss of all save game data on the cartridge.  If
+  you are playing the SNES version of the game and aren't sure which version it
+  is, I recommend that you don't use Sketch at all unless you know it will hit.
+  This guide will only direct you to use Sketch one time, and will list the
+  conditions for 100% chance to hit there.
+
+- Ultros absorbs Water and is weak against Fire and Lightning.  He is
+  susceptible to Stop.
+
+- Fall through the bottom-left weak floor spot last since it will lead you
+  onward while the other two lead to treasures.
+
+
+
+-----------------------------------------------------------------
+  4.1.43. Pre-Floating Continent Errands and Points of Interest
+-----------------------------------------------------------------
+
+Lores:
+------
+Telstar, Chaser - Dischord  - Encounter either monster on the Veldt; It may
+                              take several turns for them to use Dischord.
+                            - Dischord halves the level of the target, which is
+                              useful for Stealing from and Controlling enemies
+                              since the success rate of these commands depends
+                              on the character's level relative to the target's
+                              (you won't get the Control command for quite a
+                              while yet).
+
+
+- If you re-enter Thamasa with Strago in your party you'll find his friend
+  Gungho near the Elder's house, and there will be a short cutscene about
+  Hidon.  If you talk to Gungho without Strago in your party, you're party
+  leader will describe Strago insultingly (and amusingly).
+
+- If you won freedom for South Figaro via the point system on your last visit
+  to Vector, there's still an empty suit of Magitech armor left behind near the
+  weapon and armor shops.
+
+- If you won freedom for Doma Castle, go collect the treasure there.  Somewhat
+  surprisingly, there is no cutscene for having Cyan in your party.
+
+- I highly recommend at least teaching your two main casters (Celes and Terra)
+  all of the magic you have available at this point.  At the very least teach
+  all of the truly useful spells to Celes, since there will soon come a time
+  where she is your only character for a little while.
+  
+  You should consider going the route of earning good MXP while at the same
+  time earning little or no XP.  Then later, when you are fighting battles that
+  give you normal amounts of XP, you can just equip Espers according to their
+  stat bonuses without worrying about what spells they teach.  I know of three
+  good ways to do this:
+  
+    - Fight random battles in the first two areas of the Phantom Forest (when
+      you enter from the north).  You will encounter either a single Ghost
+      worth 3 MXP or a Ghost and two Popliums together for 1 MXP (no, I'm not
+      sure how this makes sense).  The Ghost is the more common encounter.
+      These battles are worth very little XP, and all of your characters should
+      be able to one-shot the enemies here, even from the back row.
+
+    - Hunt for Intangirs on Triangle Island.  You will encounter a single
+      Intangir roughly half of the time here.  Intangirs are worth a whopping
+      10 MXP and no XP, but The downside is that the other monsters you'll
+      encounter here aren't worth *any* MXP (they are also worth very little
+      XP).
+
+      Intangir is normally a very tough monster.  However, it is susceptible to
+      instant death attacks; the Rhodox Rage is the best way to kill it since
+      it will counter the Doom spell with Meteo on the caster, but won't
+      counter Snare.  Meteo hurts.  Use Gau + Rhodox Rage.
+
+    - Fight on the Veldt.  An encounter on the Veldt gives you just as much MXP
+      as it does in its original area, even though it doesn't give you any XP.
+      Since some encounters aren't worth any MXP normally, this of course means
+      that the same encounters aren't worth any MXP on the Veldt either.  This
+      really isn't the best method unless you are killing two or three birds
+      with one stone by hunting Rages and/or Lores at the same time.
+
+  I prefer the Phantom Forest method as I feel it gives you the best MP over
+  time.  Intangir is great, until you get unlucky and have a streak of ten non-
+  Intangir, 0 MXP encounters in a row.  You also pretty much have to use Gau at
+  all times when hunting Intangirs, since trying to survive or revive after
+  every Meteo counter attack to Doom is just not worth the trouble. This slows
+  you down if you are teaching magic to all of the characters since you can
+  only be teaching three of them + Gau at a time.
+
+- Now is a good time to pick up the highly useful Dischord Lore.  Enemies
+  immune to instant death attacks are also immune to Dischord.  However, there
+  is a bug in the game you can exploit to hit them with it anyway.  The way the
+  Vanish status is coded, any enemy that has it can be hit by any spell,
+  regardless of whether or not it is one to which they would normally be immune.
+  Casting Vanish on a monster immune to instant death then allows you to hit it
+  with Dischord.  Because said monster could alse be hit with instant death
+  attacks if under the effects of Vanish, this bug can be seriously exploited
+  throughout the game.  I strongly recommend against this; it will suck the fun
+  right out of the game.  However, exploiting it with Dischord in order to
+  Steal items more easily shouldn't ruin your fun at all, unless you LIKE
+  spending unnecessarily larger amounts of time trying to Steal stuff...
+
+- If you don't already have some, buy some Bolt Edges and Fire Skeans in
+  Kohlingen for Shadow to throw on the Floating Continent.  Don't forget that
+  Earrings boost their damage, and that Earrings stack (or Earrings + Hero
+  Ring).
+
+
+
+----------------------------------
+  4.1.44. The Floating Continent
+----------------------------------
+
+Steal:
+------
+Air Force (boss)        - Elixer (common)
+Laser Gun (boss)        - X-Ether (common)
+                        - Laser Gun is the one on the right.
+Dragon (rare encounter) - Genji Glove (rare), Potion (common)
+AtmaWeapon (boss)       - Ribbon (rare), Elixer (common)
+
+
+- Chupon absorbs Fire, is weak against Ice and Water, and is susceptible to
+  Mute, Sleep, and Stop.  Ultros absorbs Water, is weak against Fire and
+  Poison[E], and is susceptible to Slow.
+
+- In the battle with Air Force, all of the opponents are weak against Lightning
+  and Water, and all of them *besides* Air Force are susceptible to Stop.
+
+- Don't forget to NOT teach Shadow any magic so that you can use him
+  effectively in the Colosseum.
+
+- Behemoths are vulnerable to instant death attacks, so use Doom or Break
+  against them.
+
+- Dragons are weak to Lightning attacks, and can be affected by Stop and Sleep
+  (they are pretty tough, so you might want to try for both statuses).
+
+- To get to Gigantos, a monster-in-a-box encounter, go all the way to the right
+  just past the staircase to the first warp hole (the platforms with the dots
+  in the center), and the path will open to a blue orb.  He is susceptible to
+  both Stop and instant death attacks, but he does open up the battle with
+  three hard-hitting physical attacks, so you might consider applying Vanish to
+  all your characters before the battle.
+
+- AtmaWeapon is susceptible to Slow, and can be killed by using Rasp to drain
+  all of its MP, which can be safer than more orthodox methods since he is
+  scripted to use more powerful attacks the lower his HP gets.  You might
+  consider Wall Rings to protect against some of his brutal magic attacks,
+  especially if you have Strago with the Pearl Wind Lore or are using Gau with
+  the Gaia Gear + Quake (ChickenLip Rage) tactic for healing.
+
+- Don't forget about Sprint Shoes for the timed escape sequence.
+
+- Naughty is susceptible to Imp, and Wall Rings help against it too.  It uses
+  Cold Dust, an attack which can cause the Frozen status effect.  This is one
+  of only two status effects in the game that can't be cured with an item or
+  curative magic.  Frozen characters can only be unfrozen by taking fire damage,
+  so a basic Fire spell is probably your best bet.
+
+- Nerapa is susceptible to Muddle, Stop, and Doom, but starts with the Reflect
+  status, so you have to bounce spells off of your own characters' Reflect
+  barriers to hit it.
+
+- When you are about to jump to the airship, instead choose the wait option,
+  then when the clock reaches 0:04 Shadow will arrive and jump with you.  If
+  you fail to do this, you'll never see him again, and instead of Shadow later
+  getting a fifth dream sequence, Relm will get a dream sequence of her own.
+
+
+
+                             ~~~~~~~~~~~~~~~~~~~~~~
+                               4.2. World of Ruin
+                             ~~~~~~~~~~~~~~~~~~~~~~
+
+Contents:
+---------
+
+4.2.01. Solitary Island
+4.2.02. Southern Continent
+4.2.03. Albrook
+4.2.04. Tzen
+4.2.05. Serpent Un-Trench
+4.2.06. Mobliz
+4.2.07. Nikeah
+4.2.08. South Figaro
+4.2.09. Figaro Cave
+4.2.10. Figaro Castle
+4.2.11. Kholingen
+4.2.12. Colosseum
+4.2.13. Daryl's Tomb
+4.2.14. Notes Before Continuing
+4.2.15. Maranda
+4.2.16. Jidooor
+4.2.17. Solitary Island
+4.2.18. Master Duncan's Cottage
+4.2.19. Mobliz
+4.2.20. Narshe Ruins - Picking Up Mog
+4.2.21. Mog Mug: Fanatic's Tower
+4.2.22. Mog Mug: ZoneEater Cave
+4.2.23. Mog Mug: Kefka's Tower
+4.2.24. Colosseum
+4.2.25. Mog Mug (sorta): Phoenix Cave
+4.2.26. Mog Mug: Narshe Ruins
+4.2.27. Forest North of Jidoor
+4.2.28. The Veldt Cave
+4.2.29. Colosseum
+4.2.30. MXP Grinding
+4.2.31. The Veldt
+4.2.32. Doom Gaze
+4.2.33. Mog Assassination: Fanatic's Tower
+4.2.34. Mog Assassination: Kefka's Tower
+4.2.35. Opera House
+4.2.36. Ancient Castle
+4.2.37. Maranda
+4.2.38. Zozo
+4.2.39. Mount Zozo
+4.2.40. Narshe Ruins
+4.2.41. Doma Castle and Cyan's Dream
+4.2.42. Maranda
+4.2.43. Owzer's Mansion
+4.2.44. The Veldt
+4.2.45. Owzer's Mansion
+4.2.46. Fanatic's Tower
+4.2.47. Collecting Lores
+4.2.48. Thamasa and Ebot's Rock
+4.2.49. Get Rich Quick Scheme
+4.2.50. Collecting the Imp Gear
+4.2.51. Learning the Last of the Spells
+4.2.52. Fanatic's Tower
+4.2.53. The Economizer, Leveling Up, and Final Errands
+4.2.54. Kefka's Tower
+4.2.55. The Final Battle
+
+
+
+---------------------------
+  4.2.01. Solitary Island
+---------------------------
+
+- A lot has happened since you last had the opportunity to save, so note that
+  you can exit to the world map and save there by going anywhere but down from
+  the outside of the cottage.
+
+- The best way to save Cid from dying is to collect both the fast and medium
+  speed fish whenever both are available (you can catch more than one at a time
+  and the effects are cumulative).  Sometimes the medium speed fish are
+  actually bad for him, but they are always worth the risk if caught with a
+  fast moving fish.  When not being fed fish, Cid's "health" is constantly
+  being drained.  Talking to him seems to be what triggers a new set of fish on
+  the beach.  You can check in the rare items section of the Items menu to see
+  what kind of fish you caught, but at that point it's irrelevant because
+  there's no way to avoid feeding it to Cid the next time you talk to him.
+
+- While I suppose saving Cid is the nicest way to go, letting him die is more
+  interesting story-wise, even in spite of that "leap of faith" nonsense added
+  to the US version.  Furthermore, when you come back to the island later in
+  your brand spankin' new (ok, refurbished) airship, all he does is wander
+  aimlessly around his dilapidated shack and say "I feel much better! Thanks
+  Celes!" (regardless of whether or not Celes is actually in your party) rather
+  than, I don't know, COMING WITH YOU.  Saving him is also tedious; it's much
+  easier to kill him with slow fish.  In any case, whether he lives or dies is
+  merely a matter of story progression; you don't miss out on any treasure or
+  anything either way.
+
+
+
+------------------------------
+  4.2.02. Southern Continent
+------------------------------
+
+- As long as Celes is your only party member, it's a good idea to keep a Ribbon
+  on her to protect her from deadly status effects like Petrify and Zombie.
+
+
+
+-------------------
+  4.2.03. Albrook
+-------------------
+
+- If you examine the campfire by the weapon shop, you'll hear a burning noise
+  and your character will jump back.
+
+- The weapon shop sells the three elemental swords, which can be purchased
+  later for Shadow to Throw for great single-target elemental damage.
+
+
+
+----------------
+  4.2.04. Tzen
+----------------
+
+- You'll be playing another timed sequence here, so equip some Sprint Shoes.
+
+- In the collapsing house, don't get the treasure chest right next to the
+  stairs down to the basement or the chest in the upper left corner of the
+  basement.  Both are monster-in-a-box encounters that just waste time and
+  don't net you any items.
+
+- If you have them, you can use Smoke Bombs to quickly escape the random
+  battles in the house and save quite a bit of time.
+
+- Before you leave town, stop by the relic shop and pick up enough Peace Rings
+  so that between them and your Ribbons you can protect 3 party members from
+  Confusion, snag a second Sneak Ring if you only have one, and make sure you
+  own a couple of DragoonBoots.
+
+
+
+-----------------------------
+  4.2.05. Serpent Un-Trench
+-----------------------------
+
+- If you want as many Espers as early as possible, head towards the "tail"
+  (look at your mini map) of the Serpent Trench first where Mobliz is.  If you
+  instead want to regain an airship ASAP, head towards the "head" and Nikeah
+  instead.
+
+
+  
+------------------
+  4.2.06. Mobliz
+------------------
+
+Espers:
+-------
+Fenrir - Equipped character receives +30% MP on level up
+       - Sets the Image status on all party members.  Image causes any physical
+         attack to be evaded, provided it is not unblockable.  Each time an
+         attack is evaded due to the Image status, there is a chance that it
+         will be removed.  Image only lasts until the end of a battle.
+
+
+- Don't waste a use of Morph when fighting with Terra; it's a scripted battle
+  where she is forced to lose.
+
+- Phunbaba absorbs Lightning and is weak against Poison[E].
+
+- After defeating Phunbaba, you will receive the Fenrir Esper.
+
+
+
+------------------
+  4.2.07. Nikeah
+------------------
+
+- The weapon shop has Enhancers, which increase MBlock by 20% besides being a
+  pretty good weapon.  You can equip two with a Genji Glove for a very high
+  dodge rate, especially when coupled with a Bard's Hat and a White Cape.
+  
+    - You will have a chance to buy Enhancers at half price a short while later
+      in South Figaro after you acquire Edgar, so as good as they are, it might
+      be worth the wait.
+
+- Don't waste your money on a Diamond Vest for Celes as you can buy her a
+  Diamond Armor very soon in South Figaro.
+
+
+
+------------------------
+  4.2.08. South Figaro
+------------------------
+
+- If you didn't gather the treasures around town in the WoB, you can collect
+  the better WoR items now.
+  (See 4.1.05. South Figaro for the list, including locations.)
+
+- If Edgar is your party leader, you'll get a 50% discount in the stores here,
+  so you may want to wait until you get him before buying gear here (you won't
+  have to wait long).
+
+- Make sure you have enough Amulets/Ribbons to protect 4 party members against
+  the Zombie status before moving on.
+
+- Check the trees on the east edge of town for some amusing NPC dialogue.
+
+- Behind Duncan's wife's house, you can re-enter the passages where you first
+  escaped with Celes in the WoB and fight the same random encounters that were
+  there before (probably a mistake since imperial commanders wouldn't have any
+  reason to attack you now given that the empire no longer even exists, let
+  alone occupies South Figaro).
+
+
+
+-----------------------
+  4.2.09. Figaro Cave
+-----------------------
+
+- It's a good idea to have Peace Rings/Ribbons equipped to protect againts the
+  dangerous Confuse status set by many of the enemy attacks here.
+
+- If you waited to open the chests from the WoB, make sure to grab them now.
+  Don't worry, Siegfried won't get to them (just like on the ghost train, he
+  doesn't actually prevent you from getting any treasure you might otherwise
+  have been able to obtain.)
+
+- Before talking to Gerad in the engine room, equip RunningShoes on Celes and
+  Sabin for the ensuing boss battle.  This will prevent the Tentacles from
+  Slowing and grabbing either of them (you'll see what I mean as they are sure
+  to do this to Gerad).
+
+- In keeping with their tendancy towards being annoying, each of the four 
+  Tentacles has different weaknesses and susceptabilities, so to make it easier
+  here they are listed in the same spatial layout as the Tentacles themselves:
+  
+  Tentacle A                             Tentacle B
+  ----------                             ----------
+  - Absorbs Earth and Water              - Absorbs Lightning and Water
+  - Susceptable to Stop                  - Susceptable to Poison[S], Mute,
+                                           Sleep, and Slow
+  
+  Tentacle C                             Tentacle D
+  ----------                             ----------
+  - Absorbs Ice and Water                - Absorbs Fire
+  - Weak against Fire                    - Weak against Ice and Water
+  - Susceptable to instant death         - Susceptable to Poison[S], Mute, and
+    attacks, Poison[S], and Slow           Slow
+
+
+- Check the suit of armor in the treasure room for a Soul Sabre.
+
+
+
+-------------------------
+  4.2.10. Figaro Castle
+-------------------------
+
+- If you didn't view the cutscene with the two brothers earlier in the WoB, you
+  should do so now.
+
+- Like South Figaro, if Edgar is your party leader the shops give you 50% off.
+  You can also have the old man in the basement take the castle back to South
+  Figaro so you can take advantage of the discount there if you wish.
+
+
+
+---------------------
+  4.2.11. Kholingen
+---------------------
+
+- Fun fact: In the SNES version, Trump (available in the weapon shop) are
+  actually darts when used in battle, and the Doom Darts (acquired later)
+  actually appear as cards.  The PSX version swaps the names of these two items
+  so that they make sense.
+
+- Trump/Doom Darts have a chance of inflicting instant death; not particularly
+  useful in the next dungeon, but many people favor them in the Colosseum (not
+  necessary if you took my advice regarding Mog).
+
+- Pick up at least one Dice for Setzer.  I prefer to equip two since this
+  reduces the chance of his turn doing crap total damage.
+
+    - Dice damage = 2d6 * 2 * Setzer's level, but they're weighted in favor of
+      1-4 rolls vs 5 and 6 rolls.
+
+
+---------------------
+  4.2.12. Colosseum
+---------------------
+
+- The Colosseum is in roughly the same place the war-crazy old man's house was
+  in the WoB (the northwest corner of the map).
+
+- You can visit the Colosseum now if you wish.  About the only thing worth
+  your time at this point is the Gold Hairpin -> Dragon Horn trade (see the
+  bottom of 5. Colosseum Guide), but many players can't bear to part with their
+  precious Gold Hairpin at this point.  If you follow my recommended WoR order
+  and Colosseum strategy, you will be able to win the vast majority of the
+  useful items available from the Colosseum in a single visit not long from
+  now, and will score TWO Dragon Horns without giving up your Gold Hairpin.
+  However, the DragoonBoots + Dragon Horn combo is pretty sweet on spear/lance
+  wielding characters (just Edgar at this point), so it's worth considering.
+
+
+
+------------------------
+  4.2.13. Daryl's Tomb
+------------------------
+
+- Monsters here frequently attempt to Zombify you, so equip Amulets/Ribbons all
+  around.
+
+- Don't use Trump/Doom Darts with Setzer as most of the monsters here are
+  undead and the instant death effect will actually revive them.
+
+- In the room with the Czarina Gown, there is a hidden passage in the right
+  wall to a chest with an Exp. Egg.  Note that even though the character
+  equipped with the Exp. Egg will in fact receive twice the normal XP from
+  battle, the combat message still states the normal amount.
+
+- In the room towards the end of the tomb with the save point and two chests,
+  the left chest contains the Monster-in-a-box Presenter.  Presenter absorbs
+  Ice, Lightning, and Water, is immune to Poison[E], and is weak against Fire.
+  It is susceptible to instant death attacks, Mute, Sleep, and Stop.
+
+- Dullahan absorbs Ice and is weak against Fire.  He casts quite a few spells,
+  so Runic is a good choice.  Wall Rings can also be useful, but he targets
+  characters with the Reflect status with a special status ailment attack, so
+  pairing them with Ribbons may be a good idea.  Also of note, he casts L?
+  Pearl, which hits all characters whose level is divisible by the last digit
+  of your current GP.
+
+
+
+-----------------------------------
+  4.2.14. Notes Before Continuing
+-----------------------------------
+
+- From here on out, the order of the areas is just my recommendation / personal
+  preference.  Feel free to ignore me when I tell you things like "don't talk
+  to so-and-so yet" or "don't go in there yet".  The game drops hints at its
+  own recommended order (i.e. the bird to follow), but for the most part, you
+  can really just choose wherever you want to go next.
+
+- It's a good idea to make sure you save just before each time you use your
+  airship, just in case you encounter Doom Gaze while you're in the air.  At
+  this point it can kill you relatively easily.
+  (See 4.2.32. Doom Gaze for more info.)
+
+- Throughout the WoR there are 8 special dragons to defeat.  In addition to
+  being listed below, each is also listed in the section for the area in which
+  it resides.  When all 8 are defeated, you will receive the Crusader Esper.
+
+  The 8 Dragons:
+  --------------
+  Red Dragon   - Phoenix Cave
+  White Dragon - Fanatic's Tower
+  Gold Dragon  - Kefka's Tower
+  Skull Dragon - Kefka's Tower
+  Dirt Dragon  - Opera House
+  Blue Dragon  - Ancient Castle
+  Storm Dragon - Mount Zozo
+  Ice Dragon   - Narshe Ruins
+
+
+
+-------------------
+  4.2.15. Maranda
+-------------------
+
+- This is the town to which the pidgeon led you.
+
+- The Falchion, which can be bought in the weapon shop, can be bet for a Flame
+  Shld at the Colosseum, which can then be bet for an Ice Shld.  Buy four.
+  
+    - Flame Shld absorbs Fire and nullifies Ice, but adds weakness to Water.
+      Ice Shld absorbs Ice and nullifies Fire, but adds weakness to Air.
+      Also, Flame Shld teaches Fire 2 at a x5 rate, and Ice Shld teaches Ice 2
+      at the same rate.
+
+- Don't talk to Lola just yet (the woman with all the flowers in the top right
+  house); you'll come back for that later.
+
+
+
+-------------------
+  4.2.16. Jidooor
+-------------------
+
+- Jidoor is located on the southeastern end of the large circular part of the
+  continent furthest to the west (the large circular part is on top with a thin
+  strip of land curving down an to the east connecting it to a smaller oval
+  part).
+
+- Stop by the auction house until a Hero Ring comes up, and buy it for 50,000
+  GP.  If you don't have the GP, go get it, because Hero Ring is awesome.
+
+- Grab a Sniper at the weapon shop to trade into a Red Jacket at the Colosseum
+  later, as well as a Partisan for use in the Colosseum prior to winning the
+  Pearl Lance.
+
+
+
+---------------------------
+  4.2.17. Solitary Island
+---------------------------
+
+Espers:
+-------
+Palidor - Causes all party members to perform a Jump attack simultaneously
+
+
+Steal:
+------
+Peeper     - Elixer (rare)
+Earthguard - Megalixer (rare)
+
+
+- Note the Steals available here for later.  I won't be listing them again
+  because I don't personally think they are worth the time and effort.  Peepers
+  and Earthguards die after a short time because they have extremely little HP
+  and the Seizure status, so it's harder to obtain a rare Steal from them than
+  you might think.  Also, because their Seizure status is inherent, it cannot
+  be cured to extend their life.
+
+- The Palidor Esper can be found on the beach where you caught fish for Cid.
+
+
+
+-----------------------------------
+  4.2.18. Master Duncan's Cottage
+-----------------------------------
+
+- If you spoke to Duncan's wife in South Figaro, you'll recall she mentioned
+  that he's still alive.  His cottage can be found in the center of a + shaped
+  group of trees northeast of Narshe.  Narshe is in about the same place it was
+  in the WoB (center of the map at the extreme north).
+
+- If you visit him without Sabin, he'll be jumping around and hacking up a lung
+  inside his cottage.  Also, every time you go to the menu and back he'll
+  restart his jump sequence, so you can make him jump off the left side of the
+  screen this way.
+
+- If you visit him with Sabin, you'll see a cutscene and Sabin will learn his
+  final Blitz, Bum Rush, which he normally doesn't learn until level 70.  At
+  this point, this will easily be your strongest attack.  While it looks hard
+  when you check out the button combo the game gives you, keep in mind there's
+  an alternative with no diagonals in the Quick Reference section.
+  (See 6.1. Blitzes)
+
+
+
+------------------
+  4.2.19. Mobliz
+------------------
+
+- Mobliz is on the end of the "tail" of the Serpent Un-Trench.
+
+- Return to pick up Terra.  If this is your first time here, you'll first fight
+  Phunbaba and pick up the Esper Fenrir, and you'll have to leave and re-enter
+  Mobliz in order to fight Phunbaba again and get Terra.
+
+- Phunbaba absorbs Lightning and is weak against Poison[E].
+
+- Keep in mind you can return here whenever you want for an easily accessible
+  and free rest in the back of the empty relic shop.
+
+
+
+------------------------------------------
+  4.2.20. Narshe Ruins - Picking Up Mog
+------------------------------------------
+
+- When you first enter Narshe, go into the secret entrance cave to the left and
+  follow it to the moogle cave, where you'll find Mog.  After you recruit him,
+  check the spot on the wall he was looking at for the Moogle Charm, a relic
+  exclusively for Mog that prevents random encounters entirely.
+
+- Make sure you don't use Mog in battle and therefore end up teaching him a
+  Dance.
+
+- If you left the chest on the far left end of the moogle cave alone in the WoB,
+  go grab the Ribbon from it, and continue on and grab the Elixer and Pod
+  Bracelet from the other chests, assuming you left them alone in the WoB too.
+  When you're done, Warp out of Narshe.
+
+- Once back on the airship, put Mog in your party and equip him with Sprint
+  Shoes and the Moogle Charm for...
+
+
+
+------------------------------------
+  4.2.21. Mog Mug: Fanatic's Tower
+------------------------------------
+
+Items to Get:
+-------------
+Safety Bit
+Air Anchor    - Tool for Edgar; causes any enemy not immune to instant death to
+                die immediately after taking its next turn (always hits).
+Genji Shld
+Stunner       - Dagger for Shadow with a chance to cast Stop on hit.
+Force Armor
+
+
+- Fanatic's Tower is located south of the "head" of the Serpent Un-Trench,
+  surrounded by mountains.
+
+- In the first room with the chest containing a Safety Bit, check the wall to
+  the right of the chest for a secret switch.  Tripping the switch reveals
+  another door nearby on the stairway leading to the Air Anchor Tool.
+
+- You'll notice a dragon roaming around the room in which the Stunner is found;
+  DO NOT engage the dragon or Mog will learn a Dance.
+
+- DON'T get the treasure at the top of the tower.  If you do, you'll be forced
+  into a battle with MagiMaster and get the crap beat out of you.
+
+
+
+-----------------------------------
+  4.2.22. Mog Mug: ZoneEater Cave
+-----------------------------------
+
+Items to Get:
+-------------
+Ether
+Red Jacket
+Genji Armor
+Magical Brsh
+FakeMustache - Changes the Sketch command into Control, which when successful,
+               allows the character using it to Control the actions of the
+               target enemy.  This is great for disabling enemeies that hold
+               only rare Steals so that you can make repeated Steal attempts
+               undisturbed.  Like Steal, the success rate of Control is based
+               on the target's level vs. the Controller's level.  The Coronet
+               helm (found in the next section) also raises the success rate of
+               Control.
+Zephyr Cape
+Hero Ring
+Tack Star
+Thunder Shld - Thunder Shld absorbs Lightning, nullifies Air, halves Fire and
+               Ice damage, teaches Bolt 2 at a x5 rate, and unlike Flame and
+               Ice Shlds, does not include an elemental weakness.
+
+
+- To get to the cave, go to Triangle Island (northeast corner of the map),
+  unequip the Moogle Charm, and encounter ZoneEater.  Then, just wait for it to
+  eat you, re-equip the Moogle Charm, and you're good to go.
+
+- Make sure you let the weird looking dudes knock you down the pit at least
+  once so that you can get the treasure that's down there.
+
+- Make sure you save at the save point when you come to it; the next area can
+  kill you instantly if you get smashed by the repeatedly falling ceiling.
+
+- You can "equip" Gogo with the special abilities of the other characters in
+  the game in via the Status screen.  The best armor that Gogo can equip
+  without using a Merit Award is the Tao Robe, which can be purchased at
+  Maranda.
+
+
+
+----------------------------------
+  4.2.23. Mog Mug: Kefka's Tower
+----------------------------------
+
+WARNING: You may or may not miss out on some character interaction if you go to
+Kefka's Tower at this point in the game because the cutscene of them all
+talking before descending only plays the first time you visit the tower.  It
+might be a different scene later when you have all the characters, but I
+haven't confirmed this.
+
+Items to Get:
+-------------
+FIRST PARTY:
+Coronet
+Fixed Dice
+
+SECOND PARTY:
+Minerva
+Tack Star
+Force Shld
+Force Armor
+Ribbon
+
+THIRD PARTY:
+Red Cap
+Nutkin Suit
+Gauntlet
+Hero Ring
+Aegis Shld
+
+
+- To enter Kefka's Tower, attempt to land the airship on it.
+
+- You'll definitely want a Warp Stone or the Warp spell available for when you
+  are ready to restart with Mog in a different party slot.  You only need one
+  party member in one of the three parties to know Warp because if one party
+  uses it, everyone gets out.
+
+- To get the Aegis Shld, you'll have to find and follow a hidden path maze at
+  the bottom of the room with the Hero Ring.  The entrance is on the left side
+  of the rotating thingy.  After taking the initial long downward path as far
+  as it goes, go up one square and to the left.  This should allow you to
+  circle around and enter the hidden room from the bottom without too much
+  difficulty.
+
+- When doing the third party area, don't go past the room with the Hero Ring
+  and Aegis Shld or you will soon be attacked by a boss.
+
+
+
+---------------------
+  4.2.24. Colosseum
+---------------------
+
+(See 5. Colosseum Guide)
+
+- This is just a short visit before the main one later; bring the 4 Falchions
+  you bought in Maranda and, bet them for 4 Flame Shlds, then depart.
+
+- If you are having too much trouble beating Outsider to get Flame Shlds, but
+  you did get the ChickenLip Rage for Gau in the WoB, you might be able to do
+  without the Flame Shlds in the next area and use the Quake + Gaia Gear
+  strategy to keep alive instead.  This would require that you go pick up Gau
+  on the Veldt real quick (just fight there with only 3 party members until he
+  shows up).
+
+
+
+-----------------------------------------
+  4.2.25. Mog Mug (sorta): Phoenix Cave
+-----------------------------------------
+
+Items to Get:
+-------------
+
+IN CHESTS:
+Wing Edge - Has chance of instant death (like Trump/Doom Darts).
+Ribbon
+Dragon Horn
+
+AFTER THE CUTSCENE AT THE END:
+X-Potion
+Phoenix Down
+X-Ether
+Elixer
+Flame Shld
+ValiantKnife - Ignores defense and does an additional (max HP - current HP)
+               damage per hit.
+
+
+Espers:
+-------
+Phoenix - Resurrects all fallen party members and restores 25% of their max HP
+
+
+The 8 Dragons:
+--------------
+Red Dragon
+
+
+- Phoenix Cave is a two-party dungeon found in the center of the star shaped
+  mountain range north of Tzen.
+
+- This time you'll have to use both parties, so put Mog by himself with the
+  Moogle Charm and Sprint Shoes equipped, and make the other party like you
+  normally would.  Don't worry about which party you put Mog in; both parties
+  start in the same place this time.
+  
+- There's a wide variety of status effect attacks used here, so a Ribbon for
+  everyone might not be a bad idea.  Give everyone a Flame Shld.  (Note that
+  Ice Shld is probably safest on the off chance Parasoul uses a Water elemental
+  attack, but Flame Shld will result in you being healed by the more common
+  Fire attacks you'll face; just kill Parasouls fast when you encounter them,
+  or else use a Smoke Bomb to flee).
+
+- Most monsters here are weak to Ice; Necromancrs are undead and so can easily
+  be vanquished with Life.
+
+- If you happen to encounter Aquila here and survive the battle, make sure you
+  remember you did; this will be very important later.
+
+- Don't worry about crossing the spikes with Mog; they can't kill you and he
+  won't be doing any fighting.
+
+- Have Mog take the left path at the entrance and your main party the other.
+  The first chest you see here on the left contains a Wing Edge, and all
+  subsequent chests you see are empty or aren't worth it (Warp Stone) until the
+  chest in the very center of the second lava area (the one where you solidify
+  it by draining the water onto it), which contains a Ribbon.
+
+- Fight and kill the Red Dragon with your main party.  He is weak to Ice and
+  Water, and susceptible to Poison[S], Muddle, and Slow.  Flame Shlds are a
+  valuable asset in this battle.  If you have Terra with you, feel free to use
+  Morph as there's no final boss to this dungeon.  The chest he was guarding
+  contains a Dragon Horn!
+
+- At the end of the cutscene, you will receive the Phoenix Esper.
+
+
+
+----------------------------------
+  4.2.26. Mog Mug: Narshe Ruins
+----------------------------------
+
+Espers:
+-------
+Ragnarok - Morphs a single enemy into an item
+
+
+- Once you have Locke back, he can pick the locks on the houses.  Bring him and
+  Moogle Charmed Mog to pick up a couple items of interest.
+
+- Get the Ragnarok (sword or Esper) from the weapon shop.  The Esper teaches
+  Ultima.  I recommend the sword since the Paladin Shld can be used to teach
+  Ultima instead, and the sword can be bet at the Colosseum for the Illumina,
+  the best weapon in the game.
+
+    - Ultima is the best attack spell in the game.  When used by Terra, it is
+      almost certain to do the maximum damage of 9999 to all targets if you
+      have been improving her Magic Power via Esper stat bonuses.
+
+- Get the Cursed Shld from an old man in the locked house above the relic shop.
+  Uncurse the Cursed Shld by equipping it and a Ribbon to a character and then
+  fighting 256 battles.  (The Ribbon is necessary because the Cursed Shld
+  inflicts a variety of negative status effects on the wearer, including Zombie,
+  and the character must be living at the end of a battle for it to count
+  towards the total).
+  
+    - When uncursed, the Cursed Shld becomes the Paladin Shld, by far the best
+      shield in the game.  It grants absorbtion of Fire, Ice, Lightning, and
+      Pearl, and nullifies Water, Earth, Air, and Poison[E], adds a whopping 40
+      to MBlock, and teaches Ultima at a x1 rate.
+
+    - I recommend that you have a character equipped with a Ribbon and the
+      Cursed Shld for as many random battles as you can manage from now on.
+      It's not as much of a burden as it seems, just make certain you replace
+      it with a functional shield for boss battles.  If you do this, you should
+      be able to get a good chunk of those 256 battles out of the way just in
+      the course of regular gameplay.
+
+    - TAKE NOTE: Gogo is unable to uncurse the Cursed Shld, so don't equip it
+      to him when working towards those 256 battles.
+
+
+
+----------------------------------
+  4.2.27. Forest North of Jidoor
+----------------------------------
+
+Steal:
+------
+Mantodea - Imp Halberd (rare)
+
+
+- Pick up two Imp Halberds to bet at the Colosseum for a Merit Award and a Cat
+  Hood.  Vanished characters will be immune to all of Mantodea's attacks, and
+  Mantodea doesn't have a common Steal, so you can just keep trying until you
+  succeed.  Bring Gogo along so you can have two party members make steal
+  attempts.  Also, don't forget to equip the Sneak Ring.
+
+    - If you want a set or two of the Imp Gear, go ahead and pick up one or two
+      more Imp Halberds to keep as well (See 4.2.50. Collecting the Imp Gear).
+
+- The other monster you can encounter here is Reach Frog.  Beware of Reach
+  Frog's Rippler ability; it swaps all of its status effects with the target
+  character's status effects, but it is bugged and swaps some properties of
+  characters that aren't actually status effects.  The most notable of these is
+  Shadow's ability to have Interceptor randomly block attacks, something that
+  is PERMANENTLY lost if Reach Frog steals it via Rippler and doesn't then give
+  it back with a subsequent Rippler.
+
+    - It's actually possible to give other characters the ability to have
+      Interceptor block attacks for them by getting Reach Frog to first use
+      Rippler on Shadow and then again on a different character.  However, this
+      isn't as cool as it sounds since Interceptor doesn't appear to perform
+      his counterattacks when blocking for characters other than Shadow.
+      Rippler is actually a learnable Lore, but you can't target your own party
+      members with it, so it is worthless for experimenting with its bugs.
+
+
+
+--------------------------
+  4.2.28. The Veldt Cave
+--------------------------
+
+Steal:
+------
+Blue SrBehemoth (boss) - Murasame (rare)
+
+
+- The Veldt is on the largest northeastern continent, and the cave is at the
+  southern end (similar to the WoB).
+
+- Make sure to pick up the Striker in the chest below the switch that moves the
+  rock out of your path.
+
+- Blue SrBehemoth absorbs Ice, is weak against Fire and Poison[E], and is
+  susceptible to Imp and Stop.  Yellow SrBehemoth absorbs Poison[E], is weak
+  against Fire and Pearl, and is undead and therefore susceptible to instant
+  death via the Life spell.
+
+- If you want 2 Snow Mufflers (one each for Gau and Mog), then when you've
+  finished with the cave, return to the Veldt and hunt until you encounter
+  Yellow SrBehemoth again.  Don't worry, this encounter is gauranteed;
+  SrBehemoth is in a Veldt pack by itself (pack 57).  Defeat it for another
+  BehemothSuit.
+
+
+
+---------------------
+  4.2.29. Colosseum
+---------------------
+
+- Now you're finally ready to clean up with your second / main visit to the
+  Colosseum (see 5. Colosseum Guide).
+
+- Be sure to bet the Striker you just got to get Shadow back.
+
+- If you took my advice and didn't recruit Mog in the WoB, didn't teach him any
+  Dances, and didn't teach him any magic, he makes an excellent Colosseum
+  character.  Put him in the back row, equip him with a good spear/lance type
+  weapon, DragoonBoots, and Dragon Horn, and go to town!  As soon as possible,
+  bet a Strato to get him a Pearl Lance and a BehemothSuit to get him a Snow
+  Muffler.  Snow Muffler + Genji Helmet should get him to 255 Defense.
+
+- After you get all the items you can at this point, you don't need to worry so
+  much about keeping Mog from learning Dances if you keep Shadow from learning
+  any magic.  You really don't want any magic on Shadow at all so that you can
+  use him with the imp gear in the Colosseum.
+  (See 4.2.50. Collecting the Imp Gear)
+
+- You should now be very well equipped.  I personally recommend using Edgar and
+  Mog in your main party, both with the DragoonBoots + Dragon Horn combo.  This
+  is devastating with the Pearl Lance occasionally casting Pearl as well; any
+  enemy weak to Pearl doesn't stand a chance.
+
+- Now that you have Shadow back, don't forget that the elemental swords can be
+  purchased in Albrook to use as awesome Throwing weapons.  You can also
+  purchase Shurikens and the more powerful Ninja Stars at Thamasa.  Also, if
+  you want to follow my recommendations about using him in the Colosseum and
+  avoid teaching him magic for now, make sure you don't accidentally teach him
+  one of the second-level elemental spells via a shield (Flame Shld, Ice Shld,
+  or Thunder Shld).
+
+
+
+------------------------
+  4.2.30. MXP Grinding
+------------------------
+
+- At this point it's worth mentioning that the best place to grind for MXP in
+  the WoR is the desert south of Maranda.  You'll encounter Hoovers and
+  Cactrots here (worth 5 and 10 MXP respectively).  Cactrots aren't worth any
+  XP, but Hoovers are worth 1881 XP per party member when all four are alive at
+  the end of the battle, so keep an eye on your characters' experience if you
+  are trying to use Esper stat bonuses to the best effect.
+
+- Hoover is pretty rough, but is vulnerable to instant death attacks.  Equip
+  everyone to be invulnerable to Air element attacks (Thunder Shld or Minerva)
+  so that its Sandstorm counter-attacks won't clean your clock, and then go for
+  the highest hit-rate instant death attacks you have at your disposal: Rhodox
+  Rage for Gau, Air Anchor for Edgar, and probably just the Doom spell for
+  everyone else.
+
+- Cactrot has 255 Defense but only 3 HP, so any defense-ignoring weapon or
+  attack will finish him off: the Dispatch SwdTech, the Pummel Blitz, Throw,
+  the Drill Tool, Fixed Dice, ValiantKnife, etc.
+
+
+
+---------------------
+  4.2.31. The Veldt
+---------------------
+
+- Fight on the Veldt with only 3 party members to get Gau back.
+
+- If you take Sabin and Gau to the shack on the big island north of the Veldt,
+  you'll see a cutscene.  Having Locke and Edgar also in your party yields the
+  most amusing cutscene by far.
+
+
+
+---------------------
+  4.2.32. Doom Gaze
+---------------------
+
+Espers:
+-------
+Bahamut - Equipped character receives +50% HP on level up
+        - Casts a powerful non-elemental, defense-ignoring magic attack on all
+          enemies
+
+
+- While flying around the world, there is a single spot, chosen randomly
+  (altitude doesn't matter), on which you will encounter Doom Gaze, who drops
+  Bahamut when defeated.  About the best srategy for finding him is to just fly
+  east or west with as small a tilt as possible towards the north or south so
+  that you quickly wrap around the world map side to side while slowly
+  ascending or descending.
+
+- Doom Gaze absorbs Ice and Poison[E] and is weak against Fire and Pearl.  He
+  casts L.5 Doom, so pay attention to your characters' levels before you go
+  looking for him.
+
+- It may take more than one encounter to defeat Doom Gaze, but don't worry; he
+  doesn't heal between fights.
+
+
+
+----------------------------------------------
+  4.2.33. Mog Assassination: Fanatic's Tower
+----------------------------------------------
+
+Rages:
+------
+Magic Urn - Special Move: Cure 3
+          - Formations: Secret Room x1
+          - Magic Urns are the only enemy encountered in the secret room that
+            held the Air Anchor (See 4.2.21. Mog Mug: Fanatic's Tower).
+          - Magic Urn grants immunity to every negative status and absorption
+            of all types of elemental damage.
+
+
+The 8 Dragons:
+--------------
+White Dragon
+
+
+- Now that Mog can be used in battle, it's time to put that Moogle Charm to
+  good use again, this time to kill some of the otherwise hard to get to
+  dragons so in order to get the Crusader Esper while you still have some time
+  to enjoy it.  Assemble a strong party that includes Mog.  Keep in mind that
+  only the Magic command is allowed on Fanatic's Tower, so the only way to use
+  physical attacks is to cast Bserk on yourself.
+
+- You can find the White Dragon in one of the treasure rooms in the tower.  It
+  is susceptible to Mute and Stop.
+
+- If you're planning on picking up the Magic Urn Rage, you can also go ahead
+  and encounter them now.
+
+
+
+--------------------------------------------
+  4.2.34. Mog Assassination: Kefka's Tower
+--------------------------------------------
+
+The 8 Dragons:
+--------------
+Gold Dragon
+Skull Dragon
+
+
+- First assemble your main party with Mog in the second party slot.  Proceed
+  until you come across Gold Dragon.  He is weak against Water and susceptible
+  to Poison[S] and Bserk.  Bserk Gold Dragon and cast Vanish on yourself for an
+  easy win, then Warp out.
+
+- Now assemble your party in the third slot.  Continue on your way until you
+  encounter Inferno.  Inferno absorbs Fire, is weak to Lightning, and is
+  sucseptible to Slow.  Its arms are both susceptible to Slow and Stop, so
+  impede them and then focus on Inferno.
+
+- In the next outdoor area you come to, you'll find three chests, two of which
+  contain a Megalixer and a Rainbow Brsh, and the third a red sparkle.  Don't
+  mess with the red sparkle yet, otherwise you'll have to remember which chest
+  had it when you finally come back to kill Kefka (if you're playing the SNES
+  version), and there's no reason to touch it now anyway.
+
+- Eventually you'll come across Skull Dragon.  He absobs Poison[E] and is weak
+  against Fire and Pearl.  Kill him and Warp out.
+
+
+
+-----------------------
+  4.2.35. Opera House
+-----------------------
+
+The 8 Dragons:
+--------------
+Dirt Dragon
+
+
+- The Opera House is located on the thin strip of land connecting the two main
+  land masses of the continent furthest to the west.
+
+- Dirt Dragon is weak to Air and Water and susceptible to Sleep, Slow, and
+  Poison[S].  He frequently uses a move that removes the Float status from all
+  of your party members, so irremovable Float (via Cherub Down or a Rage that
+  grants Float), Gaia Gear, or just keeping Dirt Dragon asleep at all times are
+  your best bets for not getting creamed by Quake.
+
+
+
+--------------------------
+  4.2.36. Ancient Castle
+--------------------------
+
+Espers:
+-------
+Odin - Equipped character receives +1 Speed on level up
+     - Hits all enemies with an instant death attack
+
+Raiden - Equipped character receives +2 Vigor on level up
+       - Hits all enemies with an instant death attack (a bit more likely to
+         hit than Odin's attack)
+
+
+The 8 Dragons:
+--------------
+Blue Dragon
+
+
+- To get to the caves leading to the Ancient Castle, take Figaro Castle
+  underground and investigate when it collides with something (exit the castle
+  via the hole in the back of one of the prison cells).
+
+- The enemies here have a pretty high resistance to magic, and many have
+  inherent Reflect, so bringing characters with non-magic or defense-ignoring
+  attacks is a good idea.
+
+- The chest in the top right of the second cave area is a Monster-in-a-box:
+  Master Pug (by the way, you can walk through the wall to the left of the
+  chest).  Master Pug is susceptible to Poison[S], Sleep, and Slow.  What he's
+  weak against depends on what spell he cast last:
+  
+  Weak vs Ice:        Fire 3
+  Weak vs Fire:       Ice 3
+  Weak vs Air:        Bolt 3
+  Weak vs Pearl:      Bio
+  Weak vs Lightning:  W Wind
+  Weak vs Poison[E]:  Pearl
+  Weak vs Water:      Quake
+  Weak vs Earth:      CleanSweep
+  
+  As you can see, he's got some pretty mean elemental spells up his sleave, so
+  dress accordingly and Float everyone beforehand.  Bum Rush doesn't wake him,
+  so if you Slow and Sleep him right off the bat you can most likely kill him
+  with it before he does too much damage.
+
+- There is a non-obvious exit to the second cave room on the left.
+
+- When you arrive at the castle, enter the semi-hard to spot doors on the right
+  and left before going in the main door.  The left door leads to a Monster-in-
+  a-box encounter with KatanaSoul.  KatanaSoul is weak to Poison[E] and
+  susceptible to Poison[S] and Muddle.  Make sure not to run from KatanaSoul,
+  otherwise you'll miss the Offering he drops permanently.
+
+- Offering is a relic that gives you 4 unblockable attacks per Fight command,
+  but halves the power of ALL your physical attacks (including Blitzes,
+  SwdTechs, Tools, etc.), and prevents critical hits and triggered spells (with
+  the exception of Wind Slash from Tempest).  Another bonus is that these
+  attacks won't target enemies that have sustained lethal damage from one of
+  the previous attacks in the set of 4.
+  
+  Offering is best paired with odd weapons with special effects: Fixed Dice for
+  Setzer (does not reduce their damage), instant death weapons (i.e. Wing Edge,
+  Scimitar), and ValiantKnife for Locke (does not reduce damage and still does
+  max hp - current hp extra damage per attack).  Thiefknife + Offering is not
+  recommended since you will only actually get the last item successfully
+  stolen.
+
+- When you come across the statue of Odin, examine it to get the Odin Esper.
+
+- Don't miss the secret room in the first archway to the right of the thrones.
+
+- After you read the queen's apparently sparkly diary, go back to the thrones,
+  stand on the one on the right, take five steps down, and examine the ground;
+  you'll hear a rumbling sound and a new path will be opened back down in the
+  room where you found the diary.
+
+- The chamber that just opened up contains the Blue Dragon and a statue of the
+  queen.  Examining the queen turns your Odin Esper into Raiden, which I
+  recommend you go ahead and do (you can learn Meteor much faster from Crusader,
+  which you'll be obtaining soon).  The only reason you might not want to do
+  this is that Odin is the only Esper that grants a bonus to Speed on level up.
+
+- Blue Dragon absorbs Water, is weak against Lightning, and is susceptible to
+  Poison[S] and Slow.
+
+
+
+-------------------
+  4.2.37. Maranda
+-------------------
+
+- Remember back in the day when you followed the pidgeon to Maranda and I told
+  you not to go into the house at the northeast end of town?  Do so now and
+  talk to Lola there.  Maranda is on the eastern end of the smaller of the two
+  thinly-connected land masses of the continet furthest to the west.
+
+- Also, while you're here, if you haven't picked up a Tao Robe for Gogo, you
+  might as well do so now.
+
+
+
+----------------
+  4.2.38. Zozo
+----------------
+
+- Zozo is located at the northeastern corner of the large round land mass on
+  the continent furthest to the west.
+
+- When you arrive at Zozo, "talk" to the pidgeon and it will fly up near the
+  building with the rusted-shut door that you may remember from the WoB.  Go
+  talk to the purple-hooded merchant towards the north end of town and he'll
+  sell you some Rust Rid to open it.
+
+- Zozo still has the same random encounters it had in the WoB, so they aren't
+  worth wasting your time on if you have Mog in your party and can thus utilize
+  the Moogle Charm to your advantage.
+
+
+
+----------------------
+  4.2.39. Mount Zozo
+----------------------
+
+Steal:
+------
+Borras - Muscle Belt (rare), Potion (common)
+       - Borras can be encountered in all of the Mount Zozo areas.
+
+
+The 8 Dragons:
+--------------
+Storm Dragon
+
+
+- When you come to a save point with a switch above it, get prepared for the
+  fight with Storm Dragon because the switch releases it from a chest.  It'll
+  fly around really fast in a set pattern, so stand in his way to trigger the
+  encounter.  Storm Dragon absorbs Air and is weak againts Lightning.
+
+- You'll come across a room full of flowers with a locked chest, and outside to
+  the right you'll find Cyan.  After the cutscene, go back outside to the right
+  and you'll find the key to the chest; open it with Cyan in your party for
+  maximum amusement.
+
+
+
+-------------------------
+  4.2.40. Narshe Ruins
+-------------------------
+
+Espers:
+-------
+Tritoch - Equipped character receives +2 Magic Power on level up
+        - Casts a Fire, Lightning, and Ice spell on all enemies (one spell with
+          all three elements)
+
+Terrato - Equipped character receives +30% HP on level up
+        - Casts an Earth magic attack on all enemies
+
+Crusader - Equipped character receives +50% MP on level up
+         - Casts a non-elemental magic attack on all enemies and party members
+
+
+Steal:
+------
+Wizard - Ice Rod (rare), Thunder Rod (common)
+       - Wizards also can drop Fire Rods.
+       - Wizards can be encountered on the snowy slopes where you defendend the
+         Esper from Kefka in the WoB.
+
+
+The 8 Dragons:
+--------------
+Ice Dragon
+
+
+- Make sure you bring Mog along as you'll need him to recruit Umaro.
+
+- Make your way to the top of the mountain where Tritoch was in the WoB.  On
+  your way up you'll encounter Ice Dragon.  He absorbs Ice, is weak against
+  Fire, and is susceptible to Poison[S], Mute, Bserk, Muddle, and Slow.  After
+  you defeat Ice Dragon, if you followed the order of the guide, you'll receive
+  the Crusader Esper.
+
+    - Crusader's main feature is the Merton spell, which is an extremely
+      powerful Fire and Air elemental attack that ignores defense and hits both
+      you and the enemy.  This sounds like a bad thing, but equip everyone with
+      Flame Shlds (or Minerva for the girls) and you've got a spell that
+      simultaneously deals tons of damage and probably fully heals everyone in
+      your party.
+  
+- When you reach Tritoch, you'll have to fight him.  He absorbs Ice, is weak
+  against Fire, and is invulnerable to all other elemental damage.
+
+- After you defeat Tritoch, examine the gap where the chunk of the cliff fell
+  away and you can jump down into Umaro's cave.
+
+- If you run into a Pug, use Imp on him to avoid his nastier attacks (Cleaver
+  and Step Mine).
+
+- Watch out for the darker colored floor tiles; these are pitfalls.
+
+- The room to the left of where you land contains a chest with a Monster-in-a-
+  box encounter with Pugs (not to be confused with Pug).  Pugs absorb Water,
+  are weak against Fire, and are susceptible to Imp, Mute, and Slow.  They have
+  a chance to drop a Minerva, and also hold it as a rare steal (which is quite
+  hard to get since they are high level enemies).  Pugs only use physical
+  attacks, so having Vanish on your characters is pretty helpful.
+
+- When you get to the switches, ignore the first one; it just sends you down
+  the same old pitfall.  Hitting the second switch causes you to fall down into
+  Umaro's lair.  Examine the skull to get the Terrato Esper, and Umaro will
+  attack you.
+
+- Umaro absorbs Ice, is weak againts Poison[E] and Fire, and is susceptible to
+  Poison[S], Bserk, Sleep, and Slow.  After you beat him, talk to him and Mog
+  will convince him to join your party.  If you ever end up using him, don't
+  forget to equip him with the Rage Ring and Blizzard Orb, two relics unique to
+  him that cause him to be a lot more effective.
+
+
+
+----------------------------------------
+  4.2.41. Doma Castle and Cyan's Dream
+----------------------------------------
+
+Espers:
+-------
+Alexandr - Casts a Pearl magic attack on all enemies
+
+
+- Doma Castle can be found on an island just east of the "head" of the Serpent
+  Un-Trench and just south of the crazy old man's house on the northwest end of
+  the Veldt continent.
+
+- Obviously, you have to bring Cyan along to complete this sidequest.  Even
+  though the final boss absorbs the Pearl Lance's elemental damage, I highly
+  recommend bringing Mog along for the Moogle Charm as the random encounters
+  here get pretty tiresome.
+  
+    - Shadow is essential for this area.  Make sure you pick up a respectable
+      supply of Blizzard swords in Albrook for him to Throw at the boss (around
+      10 or so is probably plenty).  I also recommend Edgar for Drill/Chain Saw.
+      See the info on the boss at the bottom of the section for more
+      information about why.
+
+- Rest in the room that gives you the option, and when you awaken you'll see
+  a cutscene and then enter into Cyan's mind / dream world / whatever.
+
+- Make sure your most powerful not-Cyan party member is in the fourth slot as
+  you'll be starting the dream world with only that character.
+
+- It's a good idea to have Ribbons equipped to deal with the variety of status
+  effects that get thrown at you here.
+
+- In the fight with the Dream Stooges, Larry = left, Moe = right, Curley = top.
+  Take out Curley first as he revives the others with Life 2.
+
+    - Curley absorbs Fire, is weak against Ice and Water, and is susceptable to
+      Sleep.
+
+    - Larry absorbs Ice and Air, is weak against Fire, and is susceptible to
+      instant death attacks, Mute, Muddle, and Slow.
+
+    - Moe absorbs Lightning and is susceptible to Bserk and Stop.
+
+- In the phantom train dream, make sure you pass through all the cars you can
+  so that you don't miss any of the treasure (the first car after the save
+  point car doesn't let you enter until after the cutscene of Cyan running from
+  a ghost finishes).
+
+- In the MagiTech armor dream, make sure you always use Bolt Beam as the
+  enemies here are weak againts Lightning attacks.
+
+- In the Doma Castle dream, there are three cutscenes you can view; two outside
+  by the moat (one towards the left and one towards the right), and one in
+  Cyan's family's quarters.
+
+- Wrexsoul is found in the throne room.  He absorbs Fire and Pearl and is weak
+  against Ice.  The most irritating thing about him is that he possesses your
+  party members, you have to kill them to get him to come out so you can hurt
+  him, and he has high Magic Defense, making anything other than defense
+  ignoring attacks not nearly as effective as usual.  If you don't have Shadow,
+  don't equip your characters for high MBlock or else they'll be nearly
+  impossible for you to kill off in order to get Wrexsoul to appear.
+
+    - This is where having Shadow is invaluable.  Throw ignores defense, can't
+      be blocked, and can be used against your own party members (unlike the
+      Drill or Chain Saw tools).  Wrexsoul seems to always possess your party
+      leader first, so make sure that's not Shadow, waste them with Shurikens
+      or some other cheap Throw fodder, and then when Wrexsoul appears lay into
+      him with Thrown Blizzard swords and Drill attacks (or Chain Saw if you're
+      willing to risk the occasional worthless instant death attack in exchange
+      for higher damage).
+
+- After defeating Wrexsoul, Cyan learns all of his SwdTechs.  Now that you have
+  access to the Quick spell, SwdTechs can be quite good.  Since after casting
+  Quick everyone else has to wait for Cyan to complete his next two turns, you
+  can wait as long as you like for those high level SwdTechs without getting
+  whaled on in the meantime.  Cyan's SwdTechs of note are:
+
+    - #6: Stunner
+      Stunner is a multi-target non-elemental attack with a chance to Stop
+      enemies.  The damage is magical.
+
+    - #7: Quadra Slice
+      Quadra Slice hits randomly selected enemies with a fairly powerful
+      defense-ignoring physical attack four times.
+
+    - #8: Cleave
+      Cleave is an instant death attack that affects all enemies vulnerable to
+      instant death and prevents counter attacks.
+
+- You can now stop by the throne room and pick up the Alexander Esper.
+
+
+
+-------------------
+  4.2.42. Maranda
+-------------------
+
+- If you bring Cyan to Maranda and talk to Lola and then examine the letter on
+  the desk, Cyan will switch it with another one.  You can then read the letter
+  (it's the same one from his desk on Mount Zozo), and Lola's dialogue will
+  change.
+
+
+
+---------------------------
+  4.2.43. Owzer's Mansion
+---------------------------
+
+Rages:
+------
+Nightshade - Special Move: Charm
+               Charm is a unique move, similar to Muddle in that the affected
+               target randomly attacks itself or its allies.  However, Charmed
+               targets show no visible indication of the effect, and can't be
+               snapped out of it via curative spells or physical attacks.  The
+               only way to end Charm is to kill the effected character or the
+               enemy that Charmed him/her.  A character (Gau) or enemy can only
+               Charm one target at a time; subsequent attempts to charm other
+               targets will fail until the original target is killed.  Charm
+               has a small chance of missing.  It is an extremely effective and
+               extremely cheap boss killing tactic; don't resort to this if you
+               still want to enjoy any kind of challenge in boss fights.
+           - Formations: Flower Picture x1
+
+
+- Owzer's Mansion is in the same location it was in the WoB: the north end of
+  the town of Jidoor.
+
+- Examine the flower picture at the entrance to encounter and defeat Nightshade.
+  If you have followed the guide thus far, then this encounter will now be the
+  only encounter in Veldt pack 37, guaranteeing that you will be able to easily
+  collect it.  Leave for the Veldt before continuing on in the mansion,
+  otherwise you'll encounter other formations from pack 37 and ruin this
+  advantage.
+
+
+
+---------------------
+  4.2.44. The Veldt
+---------------------
+
+Collect Rages:
+--------------
+Magic Urn  - Cure 3 - pack 45
+Nightshade - Charm  - pack 37
+
+
+- Don't forget to simultaneously work on learning magic while you are hunting.
+
+
+
+---------------------------
+  4.2.45. Owzer's Mansion
+---------------------------
+
+Espers:
+-------
+Starlet - Equipped character receives +2 Stamina on level up
+        - Casts a decent cure spell on all party members
+
+
+Steal:
+------
+Dahling                - Moogle Suit (rare)
+Wild Cat               - Tabby Suit (rare)
+SoulDancer             - Moogle Suit (rare)
+Vindr                  - Chocobo Suit (rare)
+Still Life (mini-boss) - FakeMustache (rare)
+
+
+- All of the Stealable Suits can be traded into Genji Armor eventually at the
+  Colosseum, so consider bringing Locke and/or Gogo for some Stealing.
+  Alternatively, you can return here for some Stealing anytime you want, even
+  after the boss is defeated.
+
+- If you examine the painting of Emperor Gestahl twice, you'll receive a hint
+  about where the Phoenix Cave is, but oops, I already told you...
+
+- Characters wearing the Moogle Suit will have the standard Moogle sprite set
+  in battle instead of their usual.
+
+- There's a Relic Ring hidden behind the three doors that open and close on
+  their own.
+
+- The left-most of the three self-opening-and-closing doors is the correct one.
+
+- Like the treasures found on the floor in the Cave of the Sealed Gate, the
+  treasures you get from the falling chests are actually worse than what the
+  game tells you it is giving you.
+
+- In the room with the save point, the door to the right is the correct one.
+
+- Before talking to the fat guy, equip all your characters with Thunder Shlds
+  for the battle with Chadarnook.  Chadarnook has two forms, a woman form and a
+  demon form.  The woman form absorbs Pearl and Water, and is weak against Fire,
+  while the demon form absorbs Lightning and is weak againts Pearl and Fire.
+  Both forms are susceptible to Slow.
+
+    - Don't waste time damaging the woman form as it is unkillable; the demon
+      form is what must be killed.
+
+    - While the woman form of Chadarnook uses Charm, which is indeed horrible,
+      it's not as bad as it seems because whenever Chadarnook changes forms the
+      Charm is broken.
+
+- After defeating Chadarnook, you will obtain the Starlet Esper.
+
+- Now that you have Relm back, remember that you can equip her with the
+  FakeMustache relic you obtained a while back to turn Sketch into Control.
+  Keep in mind that Control lets you keep the Controlled monster from taking
+  any action against you while you do other useful things such as attempting to
+  Steal from it repeatedly.
+
+
+
+---------------------------
+  4.2.46. Fanatic's Tower
+---------------------------
+
+- Bring Relm and stop by to pick up Strago.
+
+
+
+----------------------------
+  4.2.47. Collecting Lores
+----------------------------
+
+Lores:
+------
+Cactrot    - Blow Fish  - Encounter in the desert south of Maranda; just wait
+                          and he'll use Blow Fish shortly.
+                        - Blow Fish always does exactly 1000 damage.
+EarthGuard - Big Guard  - Encounter in the desert on the Solitary Island; use
+                          Relm to Sketch it.
+                        - If your version of the game is subject to the Sketch
+                          bug, make sure Relm's level is >= 23 (>= 16 if she
+                          also has the Beret equipped) to ensure Sketch will
+                          always hit EarthGuard and thus never trigger the bug.
+                        - Casts Shell and Safe on all party members.  Does NOT
+                          also cast Haste like its namesake in other Final
+                          Fantasies.
+Mad Oscar  - Sour Mouth - Encounter in Daryl's Tomb in the main room past the
+                          first room; use Relm to Control it and use Sour Mouth.
+                        - Inflicts Dark, Poison[S], Imp, Mute, Muddle, and
+                          Sleep on a single target.
+
+
+
+-----------------------------------
+  4.2.48. Thamasa and Ebot's Rock
+-----------------------------------
+
+Lores:
+------
+Hidon - GrandTrain - Hits all enemies with an unblockable, defense-ignoring
+                     magic attack.
+
+
+- Thamasa can be found on the island in the southeast corner of the map.
+
+- Bring Relm and Strago to Thamasa and witness the cutscene.  Then go north and
+  enter the dungeon at Ebot's Rock.  You have to bring Relm to see the cutscene
+  which makes the dungeon available, however you don't have to bring her into
+  the dungeon itself (but you do have to bring Strago).
+
+- In the dungeon you'll find an irksome chest that requires that you feed it
+  Coral before it will let you pass.  The dungeon consists of teleport switches
+  that randomly warp you to random rooms with random chests that contain random
+  amounts of Coral.  You must feed the chest 22 pieces of Coral AT ONE TIME for
+  it to let you pass, so don't return to talk to it again until you have all 22
+  pieces.
+
+- When you encounter Hidon after feeding the chest enough Coral, kill all the
+  Hidonites first and it'll use GrandTrain, Strago's most powerful Lore.  Hidon
+  absorbs Poison[E], is weak against Fire, Earth, and Pearl, and is susceptible
+  to Slow.
+
+- After you slay Hidon and watch the cutscene, you can repeatedly talk to
+  Gungho outside of Strago's house until he says that Hidon has reappeared at
+  Ebot's Rock, at which point... Hidon will have reappeared at Ebot's Rock.
+  You can go feed the stupid chest the required Coral and fight it again if you
+  want (this time you aren't required to bring Strago).  You can do this as
+  many times as you want, with talking to Gungho and getting the message about
+  Hidon's return always being the trigger for him to reappear.
+
+
+
+---------------------------------
+  4.2.49. Get Rich Quick Scheme
+---------------------------------
+
+- Equip Relm with the Cat Hood and a FakeMustache, and head back to the caves
+  of Mount Zozo.  When you encounter an Ursus, Control it, and then keep
+  hitting it with level 1 spells so that it counters with Steal and takes a
+  bunch of money (keep it healed to keep going as long as you like).  When you
+  finally decide to end its misery and win the battle, you'll get double your
+  money back from what was stolen thanks to the Cat Hood's double GP gain from
+  battles effect.
+
+- Probably one of the best things to do with your newfound riches is to buy
+  an abundance of the elemental swords from Albrook for Shadow to Throw.
+
+
+
+-----------------------------------
+  4.2.50. Collecting the Imp Gear
+-----------------------------------
+
+Drops:
+------
+Imp's Armor - Sprinter
+
+
+Steal:
+------
+Mantodea   - Imp Halberd (rare)
+Tumbleweed - Titanium (rare)
+Geckorex   - TortoiseShld (rare)
+
+
+- The imp gear has superior stats and grants Water absorbtion, however the
+  character wearing the gear must be under the Imp status, otherwise the gear's
+  offensive and defensive capabilities are reduced to pitiful levels.
+
+- The imp gear is a great way to turn an otherwise ho-hum character into a
+  great dragoon, provided you have the required set of DragoonBoots and Dragon
+  Horn relics available.  If you followed my advice and kept Shadow magic-free,
+  you can use the imp gear to turn him into a phenominal Colosseum character.
+  This doesn't work for characters that know any magic because in Colosseum
+  battles, they will still attempt to use it while under the Imp status, but
+  since Imp prevents the casting of any spell other than the "Imp" spell itself,
+  the spell just fails and the turn is wasted.
+
+- You can find Geckorex on the green grasslands on the continent where Maranda,
+  Zozo, and Jidoor reside, and you can find all the others on the green
+  grasslands on the continent just north of the Veldt, although Mantodea is
+  pretty rare here.  If you didn't get enough Imp Halberds the first time you
+  hunted for them, head back to the forest north of Jidoor to encounter some
+  more Mantodea there (see 4.2.27. Forest North of Jidoor).
+
+- If you really want to get serious about speeding up the Stealing process,
+  bring Locke, Gogo, Strago, and Relm.  Have Locke and Gogo equipped with Sneak
+  Rings (and Gogo with the Steal command, of course), have Relm equipped with
+  the FakeMustache so she can Control and therefore pacify the monster you are
+  Stealing from, and use Strago's Dischord Lore to lower the monster's level
+  thereby raising the chances of a successful Steal.
+
+
+
+-------------------------------------------
+  4.2.51. Learning the Last of the Spells
+-------------------------------------------
+
+- Now is a good time to finish teaching spells to whatever characters you want.
+  Refer back to 4.2.30. MXP Grinding for the best strategy.
+
+- If you haven't finished uncursing the Cursed Shld to obtain the Paladin Shld,
+  you should do so now.
+
+
+
+---------------------------
+  4.2.52. Fanatic's Tower
+---------------------------
+
+- Fanatic's Tower has enemies that only use magic attacks, and it also only
+  allows your party to use the Magic command (and Item), so bring along all
+  your best mages and choose your gear accordingly.  Sadly, the Lore command is
+  also unavailable, so Strago doesn't get an extra edge like you might expect.
+
+    - Even though he's probably not one of your strongest casters, you may want
+      to bring along Mog for the ever-useful Moogle Charm.  You can't cast Warp
+      in the Fanatic's Tower, and you have to climb all the way back down it
+      after you beat the boss...
+
+- Make sure at least one of your characters can cast Life 3, cast Float on your
+  entire party, and equip everyone with Wall Rings.  I also advise equipping
+  Flame Shld to everyone (or Paladin Shld if you have that now) so that you
+  need not fear Merton (whether it's used by you or an opponent).  It's also
+  best to make sure you have access to offensive spells that ignore the Reflect
+  status since some of the opponents have it by default.  These spells are:
+
+    - Meteor
+    - Merton
+    - Quake
+    - Ultima
+
+- Don't forget about the awesome Osmose spell.  Enemies here have a lot of MP.
+
+- MagiMaster is vulnerable to Bserk.  It should also be noted that he does not
+  start with Reflect by default, nor will he cast it on himself.  The most
+  important thing to know about MagiMaster is that he always casts Ultima when
+  dealt lethal damage, and this always kills you (unless you spent way more
+  time leveling than is normal).  So, make sure you cast Life 3 on everyone
+  right at the start of the battle, and you should be good to go (Life 3
+  ignores Reflect, so don't worry about your Wall Rings interfering).
+
+
+
+----------------------------------------------------------
+  4.2.53. The Economizer, Leveling Up, and Final Errands
+----------------------------------------------------------
+
+Steal:
+------
+Aquila     - Economizer (rare), Phoenix Down (common)
+           - Rare encounter in the non-lava areas of the Phoenix Cave (such as
+             the very first area).
+Brachosaur - Ribbon (rare)
+           - Rare encounter in Dinosaur Forest.
+
+
+- The Economizer is one of the most rare and most coveted relics in the game.
+  It causes all Magic spells, Lores, and Esper summons to cost a mere 1 MP.
+  There are two ways to acquire an Economizer: get it as a rare Steal from a
+  rare encounter with Aquila (who unfortunately has a common Steal), or get it
+  as a rare drop from a rare encounter with Brachosaur.
+  
+  I have discovered what I believe to be the best strategy for obtaining
+  Economizers, and it works for both the SNES and the PSX versions of the game.
+  It is as follows:
+  
+    - If you haven't already, encounter Aquila in the Phoenix Cave (try to
+      Steal from it too, but odds are good you'll just end up with the common
+      Phoenix Down).
+
+    - Go to the Veldt and use the trick described in the up-front info section
+      to get the encounter with Aquila (see 3.2.5. Veldt Mechanics).  Make
+      certain you save your game just before the encounter from pack 43 each
+      time until you run into Aquila.  Also, make certain you stick close to
+      the airship when you are repeatedly saving during the randomization
+      process; if you save on the Veldt so far away from it that you can't
+      reach it before you hit the pack 43 encounter, then you won't be able to
+      leave to randomize the encounter and get Aquila's formation.
+
+    - Try to Steal the Economizer.  If you get the Phoenix Down instead, kill
+      yourself (Merton is excellent for this task).  When the game auto-loads
+      from your last save, your next encounter on the Veldt will always be the
+      Aquila encounter.  Vanish/Dischord is of limited usefulness, as it only
+      increases the chance of a successful Steal in general and does NOT
+      increase the chance of getting the rare Steal over the common.  Unless
+      you are too low level to quickly Steal successfully, don't bother.
+
+  I believe this to be the best method because it allows you to, with a bit of
+  work up-front, turn the rare encounter with Aquila into an always encounter.
+  So instead of looking at a rare encounter with a rare Steal, or a rare
+  encounter with a rare drop as your only methods, you are just dealing with a
+  rare Steal that can be repeatedly attempted without too much down time.  That
+  said, it still can take over an hour to get the first Aquila Veldt encounter,
+  so you're still looking at a potentially significant time investment.  I got
+  lucky a couple of times, but I was able to acquire 4 Economizers in about
+  5-6 hours total using this method (this includes the time taken to initially
+  encounter Aquila in the Phoenix cave).  I would be surprised if any other
+  method comes close to this without a lot of luck.
+
+- If you want to do some level grinding, the Dinosaur Forest located north of
+  the Veldt is the best place to do this.  The only three encounters here are
+  with one Tyranosaur, two Tyranosaurs (always a pincer attack), and rarely,
+  one Brachosaur.  Equip each of your characters with an Exp. Egg for maximum
+  effect (don't forget that the XP reported at the end of battle is the un-
+  doubled amount).
+  
+  Both monsters are weak against Ice.  If you encounter Brachosaur, don't
+  forget about the Quick spell; it's a lifesaver.  If you're looking to Steal
+  some Ribbons from it, bring along Strago and Relm so that Strago can use
+  Vanish/Dischord on it to lower its level, making it easier for Relm to
+  incapacitate it with Control and Locke/Gogo to Steal successfully.
+
+- If you wish, you can make a final trip to the Colosseum.  If you've used Mog
+  in battle and therefore he has learned some Dances, Shadow is your best bet
+  provided you followed my advice when it comes to not teaching him spells.
+  Two great things you may not have bet for yet are more Genji Armors via
+  betting the various "Suit" armors Stealable from monsters in Owzer's Mansion,
+  and more Genji Helms via betting the Regal Crown and the Coronet (by this
+  point you really shouldn't need Control anymore, so giving up your Coronet is
+  no big deal).
+
+- If you've done even moderate MXP and XP grinding, you should be able to
+  afford plenty of the elemental swords from Albrook for Shadow to Throw.  It's
+  also nice to stop by an Item shop and max out on Tinctures for Kefka's Tower,
+  just for the convenience of instantly accessible MP recovery outside of
+  battle.
+
+
+
+-------------------------
+  4.2.54. Kefka's Tower
+-------------------------
+
+- Many guides will give you much more in-depth strategies for the final dungeon,
+  but I really don't feel this is necessary.  By now you should be able to wipe
+  the floor with every enemy in the place.
+
+- Party #2 can optionally fight Atma in the jail cell room.  Atma absorbs Air,
+  Pearl, Earth, Water, and Poison[E], and is susceptible to Slow.  Atma can
+  cast Quake, so Float is not a bad idea.
+
+- After you drop the weights and trip the three switches simultaneously to open
+  the center door, go down with the center party in order to trip a new switch
+  to open the way for the other two parties before continuing upwards.  From
+  this point onward, I will refer to the center party as Party #1, the left
+  party as Party #2, and the right party as Party #3.
+
+- Party #1 will face Guardian.  Guardian is weak againts Water and Lightning,
+  and is susceptible to Slow.
+
+- The next time Party 1# gets to an outdoor area after defeating Guardian,
+  there is a Ribbon hidden at the bottom just below and to the right of where
+  you enter the area.
+
+- Party #1 will next face the first of the goddess statues, Poltrgeist.
+  Poltrgeist absorbs Fire and Air, is weak againts Poison[E], and is
+  susceptible to Stop.
+
+- Party #2 will next face the second goddess, Doom.  Doom absorbs Ice and
+  Poison[E], is weak against Pearl, and is susceptible to Slow.  If she gets
+  the chance to "shake" her "aura", then she'll gain the Reflect status, which
+  you can remove with Dispel.
+
+- Party #3 will face the third goddess, "Goddess".  Goddess absorbs Lightning
+  and Pearl.  Make sure you save at the save point that appears after she is
+  defeated as this is your last chance before the final battle.
+
+
+
+----------------------------
+  4.2.55. The Final Battle
+----------------------------
+
+- Tripping the final set of three switches will take you to the pre-final
+  battle cutscene, after which you will get to choose your overall party order,
+  but will NOT get to adjust your equipment, so make certain you give your best
+  gear and Espers to your top character choices for the final battle before you
+  trip all three switches.
+  
+- The final battle happens in four stages, and if any of your characters are
+  dead at the end of a stage, they will be replaced by the next characters in
+  line going by the order you put them all in beforehand.  Note that when the
+  battle transitions between stages, the buffs from the Golem and Fenrir
+  summons will be removed, however you won't be able to summon them again as
+  though you had begun a new battle.
+
+- It's best to have most of your top characters equipped with a Ribbon since
+  you will be up against a lot of nasty negative status inducing attacks.  Also
+  apply Float beforehand since you might get hit with Quake.
+
+- Stage 1:
+
+    - Short Arm is weak againts Water and susceptible to Mute, Bserk, and Slow.
+
+    - Long Arm is weak againts Air and is susceptible to Petrification and
+      Instant Death.
+
+    - Face is weak against Fire.
+
+    - Take advantage of the relative easiness of this stage to apply useful
+      buffs that will hopefully last you through the next two stages: Haste2,
+      Safe, Shell, Regen, and Life 3.  Save the Golem or Fenrir summons for
+      Stage 3 or 4.
+
+- Stage 2:
+
+    - Tiger absorbs Earth, is weak against Ice, and susceptible to Poison[S].
+
+    - Tools is weak against Lightning and susceptible to Instant Death and Stop.
+
+    - Magic is weak againts Earth and susceptible to Mute.  Note that the Mute
+      status will not prevent its counter-attack spells upon its death.
+
+    - Hit is weak againts Poison[E] and susceptible to Bserk and Stop.
+
+- Stage 3:
+
+    - Girl absorbs all elemental attacks and has no susceptibilities.  She just
+      exists to keep Sleep alive (which she does if you kill Sleep first), so
+      take her out first.
+
+        - Girl has the Ragnarok as a common steal, which you can equip during
+          the battle to get better MBlock if you've got somebody using a weapon
+          for MBlock less than 30.
+
+    - Sleep has no weaknesses or susceptibilities, but it also does not absorb
+      any elements either.
+
+- Stage 4:
+
+    - Kefka is immune to Poison[E] and has no susceptibilities.
+
+    - Kefka has a lot of nasty counter-attacks, but doesn't really get much
+      chance to use them if you own him fast with Gem Box-induced X-Magic, and
+      the Quick and Ultima spells.
+
+
+
+                                 ~ THE END ~
+
+
+
+************************
+*  5. Colosseum Guide  *
+************************
+
+- ALWAYS save your game before a Colosseum battle so you can load if you lose
+  the fight, and consequently, your item.
+
+- Starting the battle restores the chosen character's HP and MP, but does not
+  heal negative status effects such as Poison[S].
+
+- "Use Dragoon Mog" implies that he should be equiped with DragoonBoots, Dragon
+  Horn, Pearl Lance, and Snow Muffler unless otherwise stated (or unless it's
+  for the battles to obtain your first Pearl Lance or Snow Muffler).  This goes
+  without saying if you read the Colosseum strategy section in the intro, but
+  it is also understood that Mog should have learned NO MAGIC OR DANCES
+  WHATSOEVER.
+
+- The guide will direct you to visit the Colosseum two times, and then after
+  that you are of course free to visit it whenever you wish.  Asterisks next to
+  bets indicate which visit the bet is recommended for like so:
+  
+    *   = First Colosseum visit
+    **  = Second (Main) visit
+    *** = Some other visit
+
+- This is not an exhaustive list of bets, but rather represents the bets I
+  personally feel are worthwhile.
+  
+_______________________________________________________________________________
+
+*   Falchion     -> Flame Shld
+**  BehemothSuit -> Snow Muffler
+
+Opponent: Outsider - 8050 HP
+
+- Outsider is vulnerable to instant death attacks.
+- Use Setzer wielding two Trump/Doom Darts via Genji Glove and a Black Belt for
+  the counter attacks.  This should optimize your chances of the instant death
+  effect from the weapons triggering.
+- Alternatively, if you have the Pearl Lance, using Dragoon Mog also frequently
+  works fine.  Outsider is weak to the Pearl element, so one good Jump ought to
+  finish him off.  Most if not all of Outsider's attacks will hurt you just as
+  much if you're in the back row, so put Mog up front so his Fight attacks will
+  do better damage.
+- Snow Muffler is an absurdly good armor for Gau and Mog that allows them to
+  reach max Defense of 255 quite easily at relatively low levels.
+_______________________________________________________________________________
+
+**  Flame Shld -> Ice Shld
+
+Opponent: IronHitman - 2000 HP
+
+- Use just about anyone; it's easy.
+_______________________________________________________________________________
+
+**  Murasame -> Aura
+**  Sniper   -> Bone Club
+
+Opponent: Borras - 4771 HP
+
+- Use Dragoon Mog.
+- Aura is simply a better weapon for Cyan than Murasame, but eventually leads
+  to a Pearl Lance via the next two bets.
+_______________________________________________________________________________
+
+**  Aura    -> Strato
+*** Red Cap -> Coronet
+
+Opponent: Rhyos - 7191 HP
+
+- Use Dragoon Mog with a Flame Shld.
+- It's debatable as to whether or not the Genji Helmet is better than the Red
+  Cap; if you think it is, then you can eventually trade your Red Caps into
+  them starting with this bet.
+_______________________________________________________________________________
+
+**  Strato -> Pearl Lance
+
+Opponent: Aquila - 6013 HP
+
+- Use Dragoon Mog.
+_______________________________________________________________________________
+
+**  Bone Club -> Red Jacket
+
+Opponent: Test Rider - 3100 HP
+
+- Use Dragoon Mog with an Ice Shld.
+_______________________________________________________________________________
+
+**  Charm Bangle -> Dragon Horn
+
+Opponent: Retainer - 7050 HP
+
+- Retainer uses Tradeoff when slain, which will instantly kill you if it hits,
+  so it's best to have some MBlock for a chance to survive it.
+- Use Dragoon Mog.
+_______________________________________________________________________________
+
+**  Czarina Gown -> Minerva
+
+Opponent: Sky Base - 6000 HP
+
+- Sky Base frequently casts Doom, but is also susceptible to it.
+- Use anybody with a Wall Ring.
+_______________________________________________________________________________
+
+**  Elixir -> Rename Card
+
+Opponent: Cactrot - 3 HP
+
+- Cactrot has super-high Defense, so use somebody with defense-ignoring weapons
+  (Setzer with Dice, Locke with ValiantKnife).
+- Rename Card lets you rename a character; whoopty doo.  However...
+_______________________________________________________________________________
+
+**  Rename Card -> Marvel Shoes
+
+Opponent: Doom Drgn - 18008 HP
+
+- Use Dragoon Mog with a Flame Shld.
+- Doom Drgn uses Fallen One (attack that reduces your HP to 1), so it's best
+  to have Mog in the back row with 255 Defense.
+- Marvel Shoes grant Haste, Regen, Safe, and Shell.
+_______________________________________________________________________________
+
+**  Marvel Shoes -> Tintinabar
+
+Opponent: Tyranosaur - 12770 HP
+
+- Use Dragoon Mog.
+_______________________________________________________________________________
+
+**  Tintinabar -> Exp. Egg
+
+Opponent: Dark Force - 8940 HP
+
+- Use Dragoon Mog.
+_______________________________________________________________________________
+
+**  Striker -> nothing (sorta)
+
+Opponent: Shadow
+
+- No matter the outcome of the fight, you recruit Shadow permanently as a
+  result rather than gaining/losing an item.
+_______________________________________________________________________________
+
+**  Gauntlet -> Thunder Shld
+
+Opponent: Vectagoyle - 7500 HP
+
+- Use Dragoon Mog with a Thunder Shld (you should have one if you're following
+  the order of the guide for the WoR).
+_______________________________________________________________________________
+
+**  Genji Glove  -> Thunder Shld
+**  Pod Bracelet -> Hero Ring
+
+Opponent: Hemophyte - 6800 HP
+
+- Use Dragoon Mog.
+_______________________________________________________________________________
+
+**  Ragnarok -> Illumina
+
+Opponent: Didalos - 12280 HP
+
+- Use Dragoon Mog.
+- Illumina is the best weapon in the game.  It does the same damage from the
+  back row, performs MP-consuming critical hits when used for a regular Fight
+  attack, and has a chance to cast Pearl on hit, among many other more readily
+  observable good qualities.
+_______________________________________________________________________________
+
+**  Imp Halberd -> Cat Hood
+
+Opponent: Allosaurus - 3000 HP
+
+- Use Dragoon Mog.
+- Cat Hood doubles GP drops.
+_______________________________________________________________________________
+
+**  Cat Hood -> Merit Award
+
+Opponent: Hoover - 12018 HP
+
+- Use Dragoon Mog with a Thunder Shld and a Cherub Down instead of the Dragon
+  Horn.
+- Merit Award + Gau = Awesome (See 3.3.2. Gau and the Merit Award)
+_______________________________________________________________________________
+
+**  Nutkin Suit -> Genji Armor
+**  Regal Crown -> Genji Helmet
+
+Opponent: Opinicus - 3210 HP
+
+- Use Dragoon Mog with Gaia Gear and an Ice Shld.
+_______________________________________________________________________________
+
+*** Moogle Suit -> Nutkin Suit
+
+Opponent: Madam - 8150 HP
+
+- Use Dragoon Shadow with the Stunner equipped, as Madam is susceptible to Stop.
+  If you are having trouble winning, you may want to consider dropping the
+  Dragon Horn for a Wall Ring to deal with her powerful spells, such as Flare.
+_______________________________________________________________________________
+
+*** Chocobo Suit -> Moogle Suit
+
+Opponent: Veteran - 10000 HP
+
+- Use Dragoon Shadow, again with the Stunner for Stop.  Veteran uses a lot of
+  instant death attacks, so if you are having trouble with that you might try
+  swapping out the Dragon Horn for the Memento Ring (or the "Safty Ring", as
+  the PSX version so eloquently describes it...)
+_______________________________________________________________________________
+
+*** Tabby Suit -> Chocobo Suit
+
+Opponent: Vectaur - 2800 HP
+
+- Use Dragoon Shadow.
+_______________________________________________________________________________
+
+*** Heal Rod -> Magus Rod
+
+Opponent: Pug - 8000 HP
+
+- Pug is pretty nasty; he counters all damage with a special physical attack
+  and a Step Mine attack.
+- Use Red Cap and Muscle Belt for enough HP to survive Step Mine.  If it's not
+  possible for you to kill him in one attack, forget about it; using Offering
+  along with the few weapons whose damage is not reduced by it to achieve this
+  is highly recommended.
+- Magus Rod has 30% MBlock and a bonus to Magic Power.
+_______________________________________________________________________________
+
+*** Gold Hairpin -> Dragon Horn
+*** Coronet      -> Regal Crown
+
+
+Opponent: Evil Oscar - 7000 HP
+
+- If you follow the guide, you won't need to resort to this to get a couple of
+  Dragon Horns relatively quickly, however I personally never end up using the
+  Gold Hairpin as much as I think I will, so this is a good trade to consider.
+- Evil Oscar shouldn't be too tough, just make sure you have a Ribbon equipped
+  to deal with his Bad Breath attack.  He's weak againts Fire.
+
+
+
+************************
+*  6. Quick Reference  *
+************************
+
+Contents:
+---------
+
+6.1. Blitzes
+6.2. Esper Stat Bonuses
+6.3. Rages
+6.4. Veldt Packs
+   
+
+----------------
+  6.1. Blitzes
+----------------
+
+IMPORTANT: Make sure that the shorter the command set you decide to use, the
+           faster you enter it.  For example, you have to enter L, D, D, R
+           faster than you do L, L, D, D, R in order for Fire Dance to work.
+
+ Pummel   - L, R, L                       AuraBolt   - D, D, L
+  
+ Suplex   - X, Y, D, U                    Fire Dance - L, L, D, D, R
+                                                     - L, D, D, R
+ 
+ Mantra   - RT, LT, RT, LT, X, Y          Air Blade  - U, U, R, R, D, D, L
+                                                     - U, U, R, D, D, L
+ Spiraler - RT, LT, X, Y, R, L                       - U, R, R, D, D, L
+ 
+ Bum Rush - L, L, U, U, R, R, D, D, L
+
+
+---------------------------
+  6.2. Esper Stat Bonuses
+---------------------------
+
+Note that not all Espers give level-up stat bonuses, so not all are listed here.
+
+Magic Power:                  Vigor:                      MP:
+------------                  ------                      ---
++2: Zoneseek, Tritoch         +2: Bismark, Raiden         +50%: Crusader
++1: Stray, Maduin             +1: Ifrit                   +30%: Fenrir
+                                                          +10%: Phantom
+
+HP:                           Speed:                      Stamina:
+---                           ------                      --------
++50%: Bahamut                 +1: Odin                    +2: Golem, Starlet
++30%: Terrato                                             +1: Ramuh
++10%: Siren, Shoat
+
+
+--------------
+  6.3. Rages
+--------------
+
+           |           | Inherent  |                      |         |
+  Monster  |   Skill   | Statuses  |  Status Immunities   | Absorbs | Weak To
+-----------|-----------|-----------|----------------------|---------|----------
+WoB:       |           |           |                      |         |           
+ Rhodox    | Snare     |           |                      |         |           
+           |           |           |                      |         |           
+ Stray Cat | Catscratch|           |                      |         |           
+           |           |           |                      |         |           
+ Anguiform | Aqua Rake | Dark      | Imp                  | Water   | Lightning
+           |           |           |                      |         |           
+ Chimera   | Aqua Rake |           | All BUT: Haste,Safe, |         |           
+           |           |           | Shell,Float          |         |           
+           |           |           |                      |         |           
+ Aspik     | Giga Volt | Dark,Float| Imp,Mute,Muddle,     | Water   | Fire     
+           |           |           | Sleep                |         |           
+           |           |           |                      |         |           
+ ChickenLip| Quake     |           | Poison,Imp,Petrify,  | Ice     |           
+           |           |           | Death,Condemned,Mute,|         |           
+           |           |           | Sleep                |         |           
+-----------|-----------|-----------|----------------------|---------|----------
+WoR:       |           |           |                      |         |           
+ Nightshade| Charm     |           | All BUT: Slow,Haste  | Water   | Fire     
+           |           |           | Stop,Safe,Shell,Float|         |           
+           |           |           |                      |         |           
+ Magic Urn | Cure 3    | Dies when | All BUT: Haste,Safe, | All     |           
+           |           | MP hits 0 | Shell,Float          | Elements|           
+           |           |           |                      |         |           
+
+
+--------------------
+  6.4. Veldt Packs
+--------------------
+
+Note that some packs are always empty, but including them is still important
+for those using the SNES save/load method of controlling them since the empty
+packs will be part of the +13 jump.
+
+Also note that the encounter with SrBehemoth in pack 54 does not become
+available until after you encounter SrBehemoth in pack 57.
+_______________________________________________________________________________
+
+Pack 1:                              Pack 2:
+- Lobo                               - Leafer x2, Dark Wind x2
+- Lobo x2                            - Sand Ray, Areneid x3
+- Guard x2                           - Sand Ray x2
+- Bleary x2, Crawly                  - Areneid x3
+- Lobo x2, Marshal                   - Sand Ray, Areneid x2
+- Hornet x2, Bleary x3               - Hornet x2
+- Leafer                             - Were-Rat x3
+- Leafer x2, Dark Wind               - Hornet, Crawly x2
+_______________________________________________________________________________
+
+Pack 3:                              Pack 4:
+- Tusker x2                          - Rhodox x4
+- Vomammoth, Lobo                    - Soldier x2, M-TekArmor
+- Crawly x3                          - Repo Man, Vaporite
+- Rhinotaur                          - M-TekArmor
+- Rhinotaur, Rhodox x2               - Trilium, Tusker, Cirpius x2
+- Rhodox x2, GreaseMonk              - Cirpius x3
+- Rhinotaur, GreaseMonk, Rhodox x2   - Trilium x2
+- GreaseMonk x2                      - Tusker, Cirpius x3
+_______________________________________________________________________________
+
+Pack 5:                              Pack 6:
+- Brawler x2                         - Lobo, Guard x2
+- Brawler, Trilium, Vaporite x2      - Were-Rat, Repo Man
+- M-TekArmor x2                      - Were-Rat x2
+- Pterodon x2                        - Doberman x2
+- Zombone x2                         - Actaneon x3
+- Nautiloid, Exocite, Pterodon    
+- Nautiloid, Exocite              
+- Pterodon, Exocite x2            
+_______________________________________________________________________________
+
+Pack 7:                              Pack 8:
+- Stray Cat x3                       - Rhobite x3
+- CrassHoppr x2, Stray Cat x2        - Beakor, Stray Cat, CrassHoppr x2
+- CrassHoppr x3                      - Templar x2
+- Rhobite x5                         - Telstar, Soldier x4
+- Beakor                             - Doberman x3
+- Beakor x2, Stray Cat
+- Beakor, Rhobite x2
+_______________________________________________________________________________
+
+Pack 9:                              Pack 10:
+- HeavyArmor                         - Bomb x2, Hazer x2
+- Ghost                              - Apparite x2, Lich x2
+- Ghost x3                           - Whisper x4
+- Actaneon x3, Aspik x2              - Over-Mind x2
+- Ghost, Poplium x2                  - Bomb x3
+- Ghost x2, Poplium x3               - Bomb
+- Whisper x2, Hazer                  - Over-Mind, StillGoing x2
+- Vaporite x2
+_______________________________________________________________________________
+
+Pack 11:                             Pack 12:
+- Whisper, StillGoing, Hazer x2      - HeavyArmor, Trooper x2
+- Whisper, Hazer x3                  - Fidor, Trooper
+- Anguiform                          - Whisper
+- Anguiform x2                       - Trooper x4
+- Vomammoth x2, Guard x2             - Bounty Man, Trooper x2
+- StillGoing x3                      - FossilFang
+- Anguiform, Actaneon, Aspik         - Red Fang x2
+- Rider                              - Over Grunk, Vulture, Iron Fist
+_______________________________________________________________________________
+
+Pack 13:                             Pack 14:
+- Iron Fist x2, Mind Candy x2        - Gabbldegak x4
+- Red Fang x2, Vulture               - SlamDancer
+- Over Grunk x2, Mind Candy x3       - SlamDancer, Gabbldegak x3
+- Vulture x2                         - Harvester
+- Vulture, Iron Fist                 - SlamDancer, Harvester x2
+- Mind Candy x4                      - Harvester, Gabbldegak x2
+- HadesGigas                         - HadesGigas, Harvester
+- Crawler                            - Mag Roader (purple)
+_______________________________________________________________________________
+
+Pack 15:                                     Pack 16:
+- Vermin, Sewer Rat x2                       - General, Pipsqueak x2
+- Sewer Rat x3, Vermin x2                    - Pipsqueak x4
+- Crawler x4                                 - Chaser, Trapper x3
+- Garm x2, Commando x2                       - Chaser, Pipsqueak x3
+- Garm x2, Commando                          - Gobbler
+- Mag Roader (purple), Mag Roader (red)      - Commander x3
+- Trapper x3
+- General x2
+_______________________________________________________________________________
+
+Pack 17:             Pack 18:                   Pack 19:
+- Nastidon x2        - Bomb x6                  - Ralph, Wyvern x2
+- Nohrabbit x3       - Io                       - Ralph, Wyvern, ChickenLip x2
+- Bomb               - Maliga x3                - WeedFeeder x3
+                     - FossilFang x2            - Ralph, Joker
+                     - FossilFang, Bug x3       - Joker x3
+                     - Bug x3                   - ChickenLip x5
+                     - Bug x6                   - Zombone
+                     - Ralph x2                 - Zombone, Ing x2
+_______________________________________________________________________________
+
+Pack 20:                      Pack 21:                 Pack 22:
+- Ing x3                      - Baskervor              - Mandrake, Insecare x2
+- Apparite x2                 - Chimera                - Abolisher x2
+- Coelecite x3                - Cephaler, Baskervor    - Gigantos
+- Lich, Apparite, Coelecite   - Cephaler x3            - Sky Armor x2, Spit Fire
+- Lich x3                     - Adamanchyt, Slurm x2
+- Sp Forces x3                - Adamanchyt x2
+- Balloon x3                  - Slurm x5
+- Balloon x6                  - Mandrake x3
+_______________________________________________________________________________
+
+Pack 23:                             Pack 24:
+- Sky Armor, Spit Fire               - Brainpan x3
+- Behemoth                           - Dragon
+- Apokryphos, Misfit x2              - Behemoth, Misfit x2
+- Apokryphos                         - Behemoth x2
+- Ninja x2                           - Ninja x2, Wirey Drgn
+- Wirey Drgn x3                      - Grenade
+- Apokryphos x3                      - Chimera, Cephaler x2
+- Brainpan x2, Misfit, Apokryphos    - Baskervor x2
+_______________________________________________________________________________
+
+Pack 25:                             Pack 26:
+- Peepers x2                         - Gilomantis x2, Mesosaur
+- Peepers x3                         - Chitonid, Gigan Toad x2
+- EarthGuard, Peepers x2             - Lunaris, Osprey
+- Black Drgn                         - Lunaris x2
+- Didalos, Veteran                   - Osprey, Chitonid, Gigan Toad
+- Mesosaur x2                        - Madam, Veteran x2
+- Mesosaur x4                        - Veteran x3
+- Gilomantis, Mesosaur               - HermitCrab x2, Pm Stalker
+_______________________________________________________________________________
+
+Pack 27:                   Pack 28:                    Pack 29:
+- Scorpion x3              - Bloompire x2              - Latimeria
+- Intangir                 - Delta Bug x4              - Latimeria, Nohrabbit x3
+- Pm Stalker x4            - Bloompire x2, Delta Bug   - Doom Drgn x2
+- Vectagoyle x2            - Buffalax, Lizard          - Land Worm
+- Buffalax                 - Maliga x2, Nohrabbit x2   - Humpty x3
+- Buffalax, Delta Bug x2   - Cactrot                   - Cruller, Humpty x2
+- Bloompire x2, Lizard     - Sand Horse x2             - Humpty x4
+                           - Sand Horse, Maliga x2     - NeckHunter x2
+_______________________________________________________________________________
+
+Pack 30:                               Pack 31:
+- NeckHunter, Cruller, Humpty x2       - Deep Eye x6
+- Dante                                - Deep Eye x2, Muus x2
+- Drop x3                              - Muus x3
+- Pugs x3                              - Muus
+- Harpiai                              - Orog x2
+- Hoover                               - Orog, PowerDemon x2
+- Harpiai, Deep Eye x2                 - Osteosaur
+- Bogy x2                              - PowerDemon
+_______________________________________________________________________________
+
+Pack 32:                  Pack 33:                    Pack 34:
+- PowerDemon, Exoray x2   - Kiwok, Poppers x3         - Borras, Ursus, Scrapper
+- Exoray x3               - Ceritops x3               - Ursus
+- Mad Oscar, Exoray       - Anemone x2, Tomb Thumb    - Luridan x6
+- Mad Oscar               - Anemone x4                - Ursus, Punisher
+- Pug                     - Ceritops, Tomb Thumb x2   - ToeCutter
+- Poppers x4              - Luridan x3                - ToeCutter x2
+- Kiwok, Ceritops         - Punisher x2, Scrapper     - Rhyos
+                          - Borras                    - Vectaur x4
+_______________________________________________________________________________
+
+Pack 35:                          Pack 36:
+- Brontaur, Evil Oscar            - Mag Roader (yellow) x2, Mag Roader (brown)
+- Red Wolf x3                     - Mag Roader (yellow), Mag Roader (brown) x2
+- Test Rider                      - Brontaur x2
+- Nastidon, Red Wolf x2           - SoulDancer x2, Crusher x2
+- Wizard x3                       - Vindr x2, Wild Cat, Crusher x2
+- Wizard x2, Psychot x3           - Vindr x2
+- Red Wolf x2, Psychot x2         - SoulDancer, Wild Cat x4
+- Psychot x6
+_______________________________________________________________________________
+
+Pack 37:                             Pack 38:
+- Dahling x2                         - Slatter, Warlock, Eland
+- Nightshade x3                      - Slatter x2
+- Still Life                         - Warlock, Cluck x2, Eland x2
+- Opinicus x2                        - GtBehemoth, Vectaur x2
+- Displayer                          - Doom Drgn
+- Opinicus, Hipocampus, Eland        - Goblin x2
+- Hipocampus x4                      - Goblin, Figaliz x2
+- Hipocampus, Cluck x3               - Boxed Set x2, Figaliz x2
+_______________________________________________________________________________
+
+Pack 39:                             Pack 40:
+- Boxed Set                          - Barb-e, Critic
+- Lethal Wpn                         - PlutoArmor, Sky Cap
+- Enuo x2                            - Allosaurus, Parasite x3
+- Enuo, Goblin, Figaliz              - Critic, Pan Dora x3
+- Boxed Set x4                       - Allosaurus
+- Rain Man x2                        - Barb-e, Samurai, Suriander
+- Samurai, Rain Man x2               - Suriander, Pan Dora, Parasite x2
+- PlutoArmor x2                      - Crawler x3
+_______________________________________________________________________________
+
+Pack 41:                               Pack 42:
+- Tyranosaur x2                        - Sprinter x2, Spek Tor x2
+- Tyranosaur                           - GtBehemoth, Evil Oscar, Vectaur
+- Brachosaur                           - Evil Oscar x3
+- Mantodea, Sprinter, Spek Tor x2      - Harpy
+- Reach Frog x4                        - Harpy, Prussian
+- Mantodea x2                          - Prussian, GloomShell
+- Geckorex x2, Reach Frog              - GloomShell x3
+- TumbleWeed x4
+_______________________________________________________________________________
+
+Pack 43:                                   Pack 44:
+- Phase x2                                 - Ogor x2
+- Trixter x3                               - Covert, Ogor
+- Phase, Parasoul, Necromancr x2           - Wart Puck x2
+- Trixter x2, Necromancr                   - Karkass x2
+- Sea Flower x5                            - Tap Dancer, Covert x2
+- Uroburos, Sea Flower x2                  - Tap Dancer, Woolly
+- Chaos Drgn, Uroburos, Sea Flower x2
+- Aquila, Chaos Drgn x2
+_______________________________________________________________________________
+
+Pack 45:                   Pack 46:                Pack 47:
+- Woolly x2, Karkass x2    - Rhinox x2             - Vector Pup x2, Commander
+- Wart Puck, Ogor          - Gobbler x2, Rhinox    - Vector Pup x2
+- Magic Urn x2                                     - Trilobiter, Primordite x2
+- Flan x6                 
+- Flan x4
+_______________________________________________________________________________
+
+Pack 48:                               Pack 49:       
+- Gold Bear, Primordite                Empty          
+- Trilobiter x3                                   
+- Primordite x2                        Pack 50:
+- Dark Side x2                         - Innoc, Fortis
+- Dark Side, Spectre, Rinn x3          - Fortis x2
+- 1st Class, Wild Rat                  - Dueller x2, Sky Base
+- 1st Class x3                         - Scullion
+- Wild Rat x3, 1st Class x2
+_______________________________________________________________________________
+
+Pack 51:                         Pack 52:                        Pack 53:
+- Innoc x3                       - Templar x2, Soldier x2        - Commando x4
+- Junk x3                        - Balloon x4                    - Commando
+- ProtoArmor, Pipsqueak x2       - Soldier x2
+- Pipsqueak x5                   - Sky Base, IronHitman x4
+- Mag Roader (purple) x2         - IronHitman x3
+- Mag Roader (red) x4            - Dueller, Fortis
+_______________________________________________________________________________
+
+Pack 54:                     Pack 56:                 Pack 60:        Pack 64:
+- SrBehemoth (undead)        Empty                    Empty           Empty
+- Dark Force x2
+- Retainer x2, Dark Force    Pack 57:                 Pack 61:
+- Hemophyte, Retainer        - SrBehemoth (undead)    - White Drgn        
+- Outsider x2, Madam
+- Mover x3                   Pack 58:                 Pack 62:
+- Steroidite                 Empty                    Empty
+- Didalos x2
+                             Pack 59:                 Pack 63:
+Pack 55:                     Empty                    Empty
+Empty
+
+
+
+***********************************
+*  7. Copyright and Contact Info  *
+***********************************
+
+This guide, written in 2011, is copyrighted by Khaos (Khaos09 on GameFAQs), all
+rights reserved.
+
+Questions about the guide, corrections, suggestions for improvement, or
+requests for permission to publicly use or distribute it in part or in whole
+can be directed via email to khaos dot ff6 at gmail dot com.
+
+Version: 1.2.1

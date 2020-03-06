@@ -1,0 +1,14 @@
+
+ ~~~ CHANGE THE INDEX.HTML REDIRECT WHEN YOU CHANGE GUIDE VERSIONS ~~~
+
+Pending Revisions
+-----------------
+- Check on the cursed shld correction from email.
+
+
+HTML Version
+------------
+- Add a link back to the GameFAQs version
+- Credit and link to the fancy image person
+- Maybe link to other guides directly.
+- Make the other small tables in the reference section float similar to the veldt packs
