@@ -5,7 +5,7 @@
         var defaultColor = "#222266";
         var rotating = false;
         var cycle = 1;
-        var rotateInterval = 100;
+        var rotateInterval = 50;
         var color1R = 0x0;
         var color1G = 0x0;
         var color1B = 0x0;
@@ -21,6 +21,7 @@
         var currentR = color1R;
         var currentG = color1G;
         var currentB = color1B;
+        var preview = '';
 
         function setColor( colorString ) {
             document.getElementsByTagName("BODY")[0].style.backgroundColor = colorString;
@@ -174,27 +175,55 @@
 
         // TODO: Store joke IDs and "last joke viewed on" date in local storage to only permit one joke a day,
         // but to also automatically request another one if a repeat is received
-        function getJoke() {
-            $.ajax({
-                // see https://icanhazdadjoke.com/api for documentation
-                url : "https://icanhazdadjoke.com/",
-                dataType : "json",
-                headers : {
-                    Accept : "application/json",
-                    "User-Agent" : "khaos-ff6 (https://github.com/khaos-ff6/khaos-ff6.github.io)"
-                },
-                success: function( result ) {
-                    if ( result.status == 200 ) {
-                        // result.id has the joke ID
-                        $( "#joke" ).text( result.joke );
-                        if ( !rotating ) toggleRotate();
+        function getJoke( getPreview ) {
+            if ( getPreview ) {
+                $.ajax({
+                    // see https://icanhazdadjoke.com/api for documentation
+                    url : "https://icanhazdadjoke.com/",
+                    dataType : "json",
+                    headers : {
+                        Accept : "application/json",
+                        "User-Agent" : "khaos-ff6 (https://github.com/khaos-ff6/khaos-ff6.github.io)"
+                    },
+                    success: function( result ) {
+                        if ( result.status == 200 ) {
+                            // result.id has the joke ID
+                            preview = result.joke;
+                            alert( preview );
+                        }
+                        else {
+                            alert( "Dad Joke API Error; Response: " + result.status );
+                        }
                     }
-                    else {
-                        $( "#joke" ).text( "Dad Joke API Error; Response: " + result.status );
-                        if ( rotating ) toggleRotate();
-                    }
+                })
+            }
+            else {
+                if ( preview != '' ) {
+                    $( "#joke" ).text( preview );
+                    if ( !rotating ) toggleRotate();
+                    preview = '';
                 }
-            })
+                else {
+                    $.ajax({
+                        url : "https://icanhazdadjoke.com/",
+                        dataType : "json",
+                        headers : {
+                            Accept : "application/json",
+                            "User-Agent" : "khaos-ff6 (https://github.com/khaos-ff6/khaos-ff6.github.io)"
+                        },
+                        success: function( result ) {
+                            if ( result.status == 200 ) {
+                                $( "#joke" ).text( result.joke );
+                                if ( !rotating ) toggleRotate();
+                            }
+                            else {
+                                $( "#joke" ).text( "Dad Joke API Error; Response: " + result.status );
+                                if ( rotating ) toggleRotate();
+                            }
+                        }
+                    })
+                }
+            }
         };
         </script>
         
@@ -212,7 +241,7 @@
                 max-width: 800px;
                 margin-left: auto;
                 margin-right: auto;
-                margin-top: 200px;
+                margin-top: 350px;
                 text-align: center;
             }
 
@@ -263,16 +292,16 @@
     </head>
     <body onload="colorPreview( 1 ); colorPreview( 2 );">
         <div class="content">
-            <div id="title">Dad Joke <span onclick="easterEgg();">of</span> the Day</div>
+            <div id="title">Dad <span onclick="getJoke( true );">Joke</span> of the <span onclick="easterEgg();">Day</span></div>
             
-            <button onclick="getJoke();">Commence Hilarity!</button>
+            <button onclick="getJoke( false );">Commence Hilarity!</button>
 
             <div id="joke"></div>
 
             <div id="easterEgg" class="hidden">
-                <label>Rotate Interval:</label><input id="interval" type="text" value="100" />
+                <label>Rotate Interval:</label><input id="interval" type="text" value="50" />
                 <label>Color 1:</label><input id="color1" type="text" value="#222266" onkeyup="colorPreview( 1 );" /><div id="colorbox1" class="colorbox"></div>
-                <label>Color 2:</label><input id="color2" type="text" value="#882222" onkeyup="colorPreview( 2 );" /><div id="colorbox2" class="colorbox"></div>
+                <label>Color 2:</label><input id="color2" type="text" value="#552233" onkeyup="colorPreview( 2 );" /><div id="colorbox2" class="colorbox"></div>
             </div>
         </div>
     </body>
