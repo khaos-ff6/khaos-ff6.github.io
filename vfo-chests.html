@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>VFO Chest Tracker</title>
+
+    <script type="text/javascript">
+        var pageState;
+
+        function PageState( chestsIn ) {
+            this.chests = chestsIn;
+
+            this.initChests = function() {
+                this.chests = new Array( 115 ).fill( false );
+            }
+
+            if ( chestsIn === undefined ) {
+                this.initChests();
+            }
+
+            this.initPage = function() {
+                // for ( var i = 0; i < this.chests.length; i++ ) {
+                var i = 0;
+                    var newCheckbox = document.createElement( 'input' );
+                    newCheckbox.type = 'checkbox';
+                    newCheckbox.id = 'c'+i;
+
+                    if ( this.chests[i] ) {
+                        newCheckbox.checked = true;
+                    }
+                    else {
+                        newCheckbox.checked = false;
+                    }
+
+                    newCheckbox.addEventListener(
+                        'change',
+                        function( evnt ) {
+                            checkboxIndex = this.id.substring( 1 );  // might need to use evnt.currentTarget.id instead
+
+                            if ( this.checked ) {  // might need to use evnt.currentTarget.checked instead
+                                pageState.chests[checkboxIndex] = true;
+                            }
+                            else {
+                                pageState.chests[checkboxIndex] = false;
+                            }
+
+                            alert( JSON.stringify( pageState ) );
+                        },
+                        true
+                    );
+                    document.body.appendChild( newCheckbox );
+                // }
+            }
+
+            this.syncToDom = function() {
+
+            }
+        }
+
+
+        function initializePage( evnt ) {
+            pageState = JSON.parse( localStorage.getItem( 'pageState' ) );
+
+            if ( pageState ) {
+                alert( 'pageState was found in localStorage' );
+                pageState = new PageState( pageState.chests );
+            }
+            else {
+                alert( 'pageState was NOT found in localStorage' );
+                pageState = new PageState();
+            }
+
+            pageState.initPage();
+        }
+
+
+        /*function savePageState() {
+            localStorage.setItem( 'pageState', JSON.stringify( pageState ) );
+        }
+
+
+        window.addEventListener(
+            'unload',
+            function( evnt ) {
+                savePageState();
+            }
+        );*/
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            background-image: url( images/full-map.jpg );
+            background-repeat: no-repeat;
+            min-width: 1875px;
+            min-height: 3683px;
+        }
+
+        input {
+            position: absolute;
+        }
+
+        #c0 {
+            top: 89px;
+            left: 320px;
+        }
+    </style>
+</head>
+<body onload="initializePage();"></body>
+</html>
