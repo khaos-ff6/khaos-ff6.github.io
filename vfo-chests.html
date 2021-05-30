@@ -110,7 +110,7 @@
             background-image: url( images/full-map.jpg );
             background-repeat: no-repeat;
             min-width: 1875px;
-            min-height: 3683px;
+            min-height: 3860px;
         }
 
         input {
@@ -118,14 +118,14 @@
         }
 
         #reset {
-            margin-top: 20px;
-            margin-left: 20px;
+            margin-top: 40px;
+            margin-left: 30px;
             padding-top: 4px;
             padding-bottom: 4px;
             width: 100px;
             background-color: white;
             cursor: pointer;
-            border: solid 1px white;
+            border: groove 2px gray;
             border-radius: 4px;
             text-align: center;
             font-family: sans-serif;
@@ -133,17 +133,29 @@
             font-weight: bold;
         }
 
+        #key {
+            position: absolute;
+            top: 15px;
+            left: 320px;
+            border: groove 2px gray;
+            background-image: url( images/key.png );
+            background-repeat: no-repeat;
+            min-width: 238px;
+            min-height: 176px;
+        }
+
         #c0 {
-            top: 89px;
+            top: 266px;
             left: 320px;
         }
         #c1 {
-            top: 55px;
+            top: 232px;
             left: 787px;
         }
     </style>
 </head>
 <body onload="initializePage();">
     <div id="reset" onclick="resetPage();">Reset</div>
+    <div id="key"></div>
 </body>
 </html>
