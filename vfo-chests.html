@@ -30,6 +30,7 @@
                     var newCheckbox = document.createElement( 'input' );
                     newCheckbox.type = 'checkbox';
                     newCheckbox.id = 'c'+i;
+                    newCheckbox.className = 'styledCheckbox';
 
                     if ( this.chests[i] ) {
                         newCheckbox.checked = true;
@@ -105,6 +106,26 @@
     </script>
 
     <style>
+        .styledCheckbox {
+            appearance: none;
+            border: 2px solid white;
+	        padding: 12px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .styledCheckbox:checked {
+            background-color: rgba( 200, 200, 200, 0.25 );
+        }
+        .styledCheckbox:checked:after {
+            content: '\2714';
+            font-size: 28px;
+            position: absolute;
+            top: -8px;
+            left: 2px;
+            color: white;
+        }
+
+
         body {
             background-color: black;
             background-image: url( images/full-map.jpg );
@@ -145,12 +166,12 @@
         }
 
         #c0 {
-            top: 266px;
-            left: 320px;
+            left: 294px;
+            top: 259px;
         }
         #c1 {
-            top: 232px;
-            left: 787px;
+            left: 762px;
+            top: 225px;
         }
     </style>
 </head>
