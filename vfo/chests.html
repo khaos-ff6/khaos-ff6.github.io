@@ -133,15 +133,24 @@
             background-repeat: no-repeat;
             min-width: 1875px;
             min-height: 3860px;
+            font-family: Copperplate,Copperplate Gothic Light,fantasy;
         }
 
         input {
             position: absolute;
         }
 
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        li {
+            margin-top: 10px;
+        }
+
         #reset {
-            margin-top: 40px;
-            margin-left: 30px;
+            margin-top: 50px;
+            margin-left: 60px;
             padding-top: 4px;
             padding-bottom: 4px;
             width: 100px;
@@ -150,7 +159,6 @@
             border: groove 2px gray;
             border-radius: 4px;
             text-align: center;
-            font-family: sans-serif;
             font-size: 1.2em;
             font-weight: bold;
         }
@@ -158,12 +166,20 @@
         #key {
             position: absolute;
             top: 15px;
-            left: 320px;
+            left: 250px;
             border: groove 2px gray;
             background-image: url( images/key.png );
             background-repeat: no-repeat;
             min-width: 238px;
             min-height: 176px;
+        }
+
+        #instructions {
+            position: absolute;
+            top: 40px;
+            left: 540px;
+            color: white;
+            font-size: 1.0em;
         }
 
         #c0 {
@@ -179,5 +195,12 @@
 <body onload="initializePage();">
     <div id="reset" onclick="resetPage();">Reset</div>
     <div id="key"></div>
+    <div id="instructions">
+        <ul>
+            <li>Click/tap on the chest's icon to mark it as collected.</li>
+            <li>Click/tap on the Reset button to uncheck all chests.</li>
+            <li>Progress is saved even if you close or reload the page.</li>
+        </ul>
+    </div>
 </body>
 </html>
