@@ -35,15 +35,22 @@ your physical, mental, emotional, or spiritual well-being.
         }
 
 
+        var numCheckboxes = 217;
+        
         function PageState( chestsIn ) {
             this.chests = chestsIn;
 
             this.initChests = function() {
-                this.chests = new Array( 216 ).fill( false );
+                this.chests = new Array( numCheckboxes ).fill( false );
             }
 
             if ( chestsIn === undefined ) {
                 this.initChests();
+            }
+            else if ( chestsIn.length < numCheckboxes ) {
+                while( this.chests.length < numCheckboxes ) {
+                    this.chests.push( false );
+                }
             }
 
             this.initPage = function() {
@@ -1141,6 +1148,10 @@ your physical, mental, emotional, or spiritual well-being.
         #c215 {
             left: 1587px;
             top: 2752px;
+        }
+        #c216 {
+            left: 378px;
+            top: 935px;
         }
     </style>
 </head>
