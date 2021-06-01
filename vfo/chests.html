@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <html>
+
+<!--
+
+This file and the code contained within is copyrighted 2021 by Kris Willmert (a.k.a.
+khaosFF6 on Reddit and Discord).
+
+If you wish to publicly host this tool on your own site, please contact me at khaos
+dot ff6 at gmail dot com for permission.
+
+If you wish to use some or all of the code to create your own content, you may do so
+provided you give me credit for my work (and preferably link to this tool, although
+that is not a requirement).
+
+YOU USE THIS TOOL AT YOUR OWN RISK.  The state of which chests are marked collected
+and which are not is kept entirely in your browser's "localStorage", and is subject
+to all of the limitations of that technology.  By using this tool, you agree to
+hold me free of any and all responsibility for any loss of the information the tool
+maintains in your browser's local storage, and any effects this loss may have on
+your physical, mental, emotional, or spiritual well-being.
+
+-->
+
 <head>
     <title>VFO Chest Tracker</title>
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -7,6 +29,11 @@
 
     <script type="text/javascript">
         var pageState;
+
+        function savePageState() {
+            localStorage.setItem( 'pageState', JSON.stringify( pageState ) );
+        }
+
 
         function PageState( chestsIn ) {
             this.chests = chestsIn;
@@ -44,6 +71,8 @@
                             else {
                                 pageState.chests[checkboxIndex] = false;
                             }
+
+                            savePageState();
                         },
                         true
                     );
@@ -53,15 +82,29 @@
         }
 
 
+        function userAgree() {
+            localStorage.setItem( 'userAgreed', JSON.stringify( true ) );
+            $('#overlay')[0].display = 'none';
+        }
+
+
         function resetPage() {
             if ( confirm( 'Are you sure you want to uncheck ALL chest checkboxes?' ) ) {
                 $( 'input:checkbox' ).prop( 'checked', false );
                 pageState.initChests();
+                savePageState();
             }
         }
 
 
         function initializePage( evnt ) {
+            var userAgreed = JSON.parse( localStorage.getItem( 'userAgreed' ) );
+            
+            if ( userAgreed ) {
+                $('#overlay')[0].display = 'none';
+            }
+
+
             pageState = JSON.parse( localStorage.getItem( 'pageState' ) );
 
             if ( pageState ) {
@@ -72,11 +115,6 @@
             }
 
             pageState.initPage();
-        }
-
-
-        function savePageState() {
-            localStorage.setItem( 'pageState', JSON.stringify( pageState ) );
         }
 
 
@@ -117,6 +155,7 @@
             min-width: 1875px;
             min-height: 3860px;
             font-family: Copperplate,Copperplate Gothic Light,fantasy;
+            z-index: 1;
         }
 
         input {
@@ -163,6 +202,40 @@
         }
         #instructions ul {
             min-width: 750px;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba( 100, 100, 100, 0.75 );
+            z-index: 10;
+            font-family: sans-serif;
+            color: white;
+        }
+        #disclaimer {
+            position: relative;
+            background-color: rgba( 0, 0, 32, 0.75 );
+            border: groove 2px gray;
+            border-radius: 8px;
+            width: 90%;
+            height: 90%;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        #agree {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: black;
         }
 
         /* Find the coordinates of the middle of the icon, and subtract 17 from both values to get the left/top (x,y) values to use */
@@ -1041,6 +1114,15 @@
             <li>Click/tap on the Reset button to uncheck all chests.</li>
             <li>Progress is saved even if you close or reload the page.</li>
         </ul>
+    </div>
+    <div id="overlay">
+        <div id="disclaimer">
+            <p>Welcome to the VFO Chest Tracker by khaosFF6!</p>
+            <p>This page will help you keep track of which chests you have and haven't collected in the current difficulty level you are playing through.  The tool provides a full map of the entire game overworld, with checkboxes for each chest.  Which boxes are checked and which are not is saved in your browser's local storage, so reloading or exiting and re-opening the page will not cause you to lose your progress.  There is a Reset button at the top left to use when you rebirth.</p>
+            <p>I hope you enjoy using this tool and find it useful, however it <span style="font-style: italic;">is</span> just a hobby tool I developed in my spare time.  That means I make no guarantees as to the function of the tool, I will not provide any type of tech support for the tool, <span style="font-style: italic;">and by using the tool, you agree to absolve me of any and all responsibility for any possible or actual loss of the data that the tool maintains in your local storage, as well as any effects such a loss might have on your physical, mental, emotional, psychological, or spiritual well-being.</span></p>
+            <p>If you can accept that, then click "I Agree" below and enjoy :-)</p>
+            <button id="agree" onclick="userAgree();">I Agree</button>
+        </div>
     </div>
 </body>
 </html>
