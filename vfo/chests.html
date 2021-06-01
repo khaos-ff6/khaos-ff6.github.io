@@ -8,13 +8,6 @@
     <script type="text/javascript">
         var pageState;
 
-        //
-        //
-        //  NEEDED ONLY DURING DEV; REMOVE WHEN GOING LIVE
-        //
-        //
-        chestsLength = 216;
-        
         function PageState( chestsIn ) {
             this.chests = chestsIn;
 
@@ -72,18 +65,7 @@
             pageState = JSON.parse( localStorage.getItem( 'pageState' ) );
 
             if ( pageState ) {
-                //
-                //
-                // NEEDED ONLY DURING DEV; REPLACE WITH COMMENTED CODE ON GO-LIVE
-                //
-                //
-                //// pageState = new PageState( pageState.chests );
-                if ( chestsLength != pageState.chests.length ) {
-                    pageState = new PageState();
-                }
-                else {
-                    pageState = new PageState( pageState.chests );
-                }
+                pageState = new PageState( pageState.chests );
             }
             else {
                 pageState = new PageState();
@@ -115,7 +97,8 @@
             display: inline-block;
         }
         .styledCheckbox:checked {
-            background-color: rgba( 200, 200, 200, 0.25 );
+            border: 2px solid #999999;
+            background-color: rgba( 200, 200, 200, 0.3 );
         }
         .styledCheckbox:checked:after {
             content: '\2714';
@@ -123,7 +106,7 @@
             position: absolute;
             top: -8px;
             left: 2px;
-            color: white;
+            color: #aaaaaa;
         }
 
 
