@@ -84,15 +84,29 @@ your physical, mental, emotional, or spiritual well-being.
 
         function userAgree() {
             localStorage.setItem( 'userAgreed', JSON.stringify( true ) );
-            $('#overlay')[0].display = 'none';
+            document.getElementById( 'overlay' ).style.display = 'none';
         }
 
 
         function resetPage() {
             if ( confirm( 'Are you sure you want to uncheck ALL chest checkboxes?' ) ) {
-                $( 'input:checkbox' ).prop( 'checked', false );
-                pageState.initChests();
-                savePageState();
+                reset();
+            }
+        }
+
+
+        function reset() {
+            $( 'input:checkbox' ).prop( 'checked', false );
+            pageState.initChests();
+            savePageState();
+        }
+
+
+        function hardReset() {
+            if( confirm( 'Perform a hard reset? (Clears all localstorage and resets to defaults)' ) ) {
+                localStorage.removeItem('userAgreed');
+                localStorage.removeItem('pageState');
+                reset();
             }
         }
 
@@ -100,8 +114,8 @@ your physical, mental, emotional, or spiritual well-being.
         function initializePage( evnt ) {
             var userAgreed = JSON.parse( localStorage.getItem( 'userAgreed' ) );
             
-            if ( userAgreed ) {
-                $('#overlay')[0].display = 'none';
+            if ( !userAgreed ) {
+                document.getElementById( 'overlay' ).style.display = 'block';
             }
 
 
@@ -181,6 +195,17 @@ your physical, mental, emotional, or spiritual well-being.
             font-weight: bold;
         }
 
+        #hardReset {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 60px;
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+            z-index: 11;
+        }
+
         #key {
             position: absolute;
             top: 15px;
@@ -205,6 +230,7 @@ your physical, mental, emotional, or spiritual well-being.
         }
 
         #overlay {
+            display: none;
             position: fixed;
             top: 0px;
             left: 0px;
@@ -1124,5 +1150,6 @@ your physical, mental, emotional, or spiritual well-being.
             <button id="agree" onclick="userAgree();">I Agree</button>
         </div>
     </div>
+    <div id="hardReset" onclick="hardReset();"></div>
 </body>
 </html>
