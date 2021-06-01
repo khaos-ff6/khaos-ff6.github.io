@@ -245,7 +245,6 @@ your physical, mental, emotional, or spiritual well-being.
             color: white;
         }
         #disclaimer {
-            position: relative;
             background-color: rgba( 0, 0, 32, 0.75 );
             border: groove 2px gray;
             border-radius: 8px;
@@ -255,16 +254,27 @@ your physical, mental, emotional, or spiritual well-being.
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
-            font-size: 1.5em;
+            font-size: 2.7vh;
             text-align: center;
+            overflow-y: scroll;
         }
         #agree {
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: 40px;
-            font-size: 1.5em;
+            font-size: 2.7vh;
             color: black;
+        }
+
+        .disable-scrollbars::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; /* Chrome/Safari/Webkit */
+        }
+        
+        .disable-scrollbars {
+          scrollbar-width: none; /* Firefox */
+          -ms-overflow-style: none;  /* IE 10+ */
         }
 
         /* Find the coordinates of the middle of the icon, and subtract 17 from both values to get the left/top (x,y) values to use */
@@ -1145,7 +1155,7 @@ your physical, mental, emotional, or spiritual well-being.
         </ul>
     </div>
     <div id="overlay">
-        <div id="disclaimer">
+        <div id="disclaimer" class="disable-scrollbars">
             <p>Welcome to the VFO Chest Tracker by khaosFF6!</p>
             <p>This page will help you keep track of which chests you have and haven't collected in the current difficulty level you are playing through.  The tool provides a full map of the entire game overworld, with checkboxes for each chest.  Which boxes are checked and which are not is saved in your browser's local storage, so reloading or exiting and re-opening the page will not cause you to lose your progress.  There is a Reset button at the top left to use when you rebirth.</p>
             <p>I hope you enjoy using this tool and find it useful, however it <span style="font-style: italic;">is</span> just a hobby tool I developed in my spare time.  That means I make no guarantees as to the function of the tool, I will not provide any type of tech support for the tool, <span style="font-style: italic;">and by using the tool, you agree to absolve me of any and all responsibility for any possible or actual loss of the data that the tool maintains in your local storage, as well as any effects such a loss might have on your physical, mental, emotional, psychological, or spiritual well-being.</span></p>
