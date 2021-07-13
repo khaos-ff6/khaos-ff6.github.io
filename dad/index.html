@@ -33,7 +33,12 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
         var currentR = color1R;
         var currentG = color1G;
         var currentB = color1B;
-        var preview = '';
+        var preview = { id : '', joke : '' };
+        
+        var jokeLog = JSON.parse( localStorage.getItem( 'jokeLog' ) );
+        if ( !jokeLog ) {
+            jokeLog = {};
+        }
 
         function setColor( colorString ) {
             document.getElementsByTagName("BODY")[0].style.backgroundColor = colorString;
@@ -185,23 +190,22 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             }
         }
 
-        // TODO: Store joke IDs and "last joke viewed on" date in local storage to only permit one joke a day,
-        // but to also automatically request another one if a repeat is received
-        function getJoke( getPreview ) {
+        // TODO: need to save the joke log to localstorage and re-request a joke when a duplicate is received
+        // localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
+        function getJoke( getPreview = false ) {
             if ( getPreview ) {
                 $.ajax({
                     // see https://icanhazdadjoke.com/api for documentation
                     url : "https://icanhazdadjoke.com/",
                     dataType : "json",
                     headers : {
-                        Accept : "application/json",
-                        "User-Agent" : "khaos-ff6 (https://github.com/khaos-ff6/khaos-ff6.github.io)"
+                        Accept : "application/json"
                     },
                     success: function( result ) {
                         if ( result.status == 200 ) {
-                            // result.id has the joke ID
-                            preview = result.joke;
-                            alert( preview );
+                            preview.id = result.id;
+                            preview.joke = result.joke;
+                            alert( preview.joke );
                         }
                         else {
                             alert( "Dad Joke API Error; Response: " + result.status );
@@ -210,23 +214,28 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                 })
             }
             else {
-                if ( preview != '' ) {
-                    $( "#joke" ).text( preview );
+                if ( preview.joke != '' ) {
+                    $( "#joke" ).text( preview.joke );
                     if ( !rotating ) toggleRotate();
-                    preview = '';
+                    readText( preview.joke, playLaugh );
+                    jokeLog[ preview.id ] = true;
+                    preview.id = '';
+                    preview.joke = '';
                 }
                 else {
+                    $( "#joke" ).text( 'loading...' );
                     $.ajax({
                         url : "https://icanhazdadjoke.com/",
                         dataType : "json",
                         headers : {
-                            Accept : "application/json",
-                            "User-Agent" : "khaos-ff6 (https://github.com/khaos-ff6/khaos-ff6.github.io)"
+                            Accept : "application/json"
                         },
                         success: function( result ) {
                             if ( result.status == 200 ) {
                                 $( "#joke" ).text( result.joke );
                                 if ( !rotating ) toggleRotate();
+                                readText( result.joke, playLaugh );
+                                jokeLog[ result.id ] = true;
                             }
                             else {
                                 $( "#joke" ).text( "Dad Joke API Error; Response: " + result.status );
@@ -242,15 +251,29 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             return Math.floor( Math.random() * ( ( max - min ) + 1 ) + min )
         }
 
+        function readText( text, callback ) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = text;
+            msg.rate = 0.9;
+            if ( callback ) {
+                msg.onend = function( event ) { callback(); };
+            }
+            window.speechSynthesis.speak( msg );
+        }
+
         function playLaugh() {
-            var audioId = 'a' + randomIntInclusive( 1, 3 );
+            var audioId = 'a' + randomIntInclusive( 1, 2 );
             document.getElementById( audioId ).play();
         }
 
         function buttonClick() {
-            getJoke( false );
-            setTimeout( function() { playLaugh(); }, 3500 );
+            readText( "Commence hilarity!", getJoke );
         }
+
+        function viewLog() {
+            alert( JSON.stringify( jokeLog ) );
+        }
+
         </script>
         
         <title>Daily Dad Joke</title>
@@ -314,13 +337,23 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             .hidden {
                 display: none;
             }
+
+            #viewLog {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 150px;
+                height: 150px;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+            }
         </style>
     </head>
     <body onload="colorPreview( 1 ); colorPreview( 2 );">
         <div class="content">
             <div id="title">Dad <span onclick="getJoke( true );">Joke</span> of the <span onclick="easterEgg();">Day</span></div>
             
-            <button onclick="buttonClick()">Commence Hilarity!</button>
+            <button onclick="buttonClick();">Commence Hilarity!</button>
 
             <div id="joke"></div>
 
@@ -331,13 +364,11 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             </div>
         </div>
         <audio id="a1">
-            <source src="audio/laugh.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="a2">
             <source src="audio/laughter-only.mp3" type="audio/mpeg">
         </audio>
-        <audio id="a3">
+        <audio id="a2">
             <source src="audio/laughter-and-clapter.mp3" type="audio/mpeg">
         </audio>
+        <div id="viewLog" onclick="viewLog();"></div>
     </body>
 </html>
