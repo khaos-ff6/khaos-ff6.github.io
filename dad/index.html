@@ -34,6 +34,8 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
         var currentG = color1G;
         var currentB = color1B;
         var preview = { id : '', joke : '' };
+        var voices = [];
+        var voiceLoadAttempts = 0;
         
         var jokeLog = JSON.parse( localStorage.getItem( 'jokeLog' ) );
         if ( !jokeLog ) {
@@ -251,12 +253,27 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             return Math.floor( Math.random() * ( ( max - min ) + 1 ) + min )
         }
 
-        function readText( text, callback ) {
+        // I could not get the Chrome voices to load successfully in an onload event for whatever reason, and the loading of them
+        // is really buggy; you have to call the getVoices(); function twice, and it can't be in rapid succession (via for loop) or
+        // it still doesn't work
+        function loadVoices() {
+            voices = window.speechSynthesis.getVoices();
+
+            if ( voices.length < 1 && voiceLoadAttempts < 5 ) {
+                voiceLoadAttempts++;
+                setTimeout( loadVoices, 1000 );
+            }
+        }
+
+        function readText( text, callback, voiceIndex = -1 ) {
             var msg = new SpeechSynthesisUtterance();
             msg.text = text;
             msg.rate = 0.9;
             if ( callback ) {
                 msg.onend = function( event ) { callback(); };
+            }
+            if ( voiceIndex >= 0 && voices.length ) {
+                msg.voice = voices[ voiceIndex ];
             }
             window.speechSynthesis.speak( msg );
         }
@@ -267,7 +284,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
         }
 
         function buttonClick() {
-            readText( "Commence hilarity!", getJoke );
+            readText( "Commence hilarity!", getJoke, 3 );
         }
 
         function viewLog() {
@@ -371,4 +388,8 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
         </audio>
         <div id="viewLog" onclick="viewLog();"></div>
     </body>
+
+    <script type="text/javascript">
+        loadVoices();
+    </script>
 </html>
