@@ -192,7 +192,27 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             }
         }
 
+        function requestJoke( successCallback ) {
+            $.ajax({
+                // see https://icanhazdadjoke.com/api for documentation
+                url : "https://icanhazdadjoke.com/",
+                dataType : "json",
+                headers : {
+                    Accept : "application/json"
+                },
+                success: function( result ) {
+                    if ( result.status == 200 ) {
+                        successCallback();
+                    }
+                    else {
+                        alert( "Dad Joke API Error; Response: " + result.status );
+                    }
+                }
+            });
+        }
+
         // TODO: need to save the joke log to localstorage and re-request a joke when a duplicate is received
+        //    - finish implementing requestJoke above
         // localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
         function getJoke( getPreview = false ) {
             if ( getPreview ) {
@@ -219,7 +239,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                 if ( preview.joke != '' ) {
                     $( "#joke" ).text( preview.joke );
                     if ( !rotating ) toggleRotate();
-                    readText( preview.joke, playLaugh );
+                    readText( preview.joke, playLaugh, 5 );
                     jokeLog[ preview.id ] = true;
                     preview.id = '';
                     preview.joke = '';
@@ -236,7 +256,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                             if ( result.status == 200 ) {
                                 $( "#joke" ).text( result.joke );
                                 if ( !rotating ) toggleRotate();
-                                readText( result.joke, playLaugh );
+                                readText( result.joke, playLaugh, 5 );
                                 jokeLog[ result.id ] = true;
                             }
                             else {
@@ -284,7 +304,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
         }
 
         function buttonClick() {
-            readText( "Commence hilarity!", getJoke, 3 );
+            readText( "Commence hilarity!", getJoke, 6 );
         }
 
         function viewLog() {
