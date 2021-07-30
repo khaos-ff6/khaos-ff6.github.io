@@ -202,69 +202,50 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                 },
                 success: function( result ) {
                     if ( result.status == 200 ) {
-                        successCallback();
+                        // If we already got this joke, request another
+                        if ( jokeLog[ result.id ] == true ) {
+                            console.log( 'Duplicate joke encountered; requesting another' );
+                            requestJoke( successCallback );
+                        }
+                        else {
+                            successCallback( result );
+                        }
                     }
                     else {
                         alert( "Dad Joke API Error; Response: " + result.status );
+                        if ( rotating ) toggleRotate();
                     }
                 }
             });
         }
 
-        // TODO: need to save the joke log to localstorage and re-request a joke when a duplicate is received
-        //    - finish implementing requestJoke above
-        // localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
         function getJoke( getPreview = false ) {
             if ( getPreview ) {
-                $.ajax({
-                    // see https://icanhazdadjoke.com/api for documentation
-                    url : "https://icanhazdadjoke.com/",
-                    dataType : "json",
-                    headers : {
-                        Accept : "application/json"
-                    },
-                    success: function( result ) {
-                        if ( result.status == 200 ) {
-                            preview.id = result.id;
-                            preview.joke = result.joke;
-                            alert( preview.joke );
-                        }
-                        else {
-                            alert( "Dad Joke API Error; Response: " + result.status );
-                        }
-                    }
-                })
+                requestJoke( function( result ) {
+                    preview.id = result.id;
+                    preview.joke = result.joke;
+                    alert( preview.joke );
+                    jokeLog[ preview.id ] = true;
+                    localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
+                });
             }
             else {
                 if ( preview.joke != '' ) {
                     $( "#joke" ).text( preview.joke );
                     if ( !rotating ) toggleRotate();
                     readText( preview.joke, playLaugh, 5 );
-                    jokeLog[ preview.id ] = true;
                     preview.id = '';
                     preview.joke = '';
                 }
                 else {
                     $( "#joke" ).text( 'loading...' );
-                    $.ajax({
-                        url : "https://icanhazdadjoke.com/",
-                        dataType : "json",
-                        headers : {
-                            Accept : "application/json"
-                        },
-                        success: function( result ) {
-                            if ( result.status == 200 ) {
-                                $( "#joke" ).text( result.joke );
-                                if ( !rotating ) toggleRotate();
-                                readText( result.joke, playLaugh, 5 );
-                                jokeLog[ result.id ] = true;
-                            }
-                            else {
-                                $( "#joke" ).text( "Dad Joke API Error; Response: " + result.status );
-                                if ( rotating ) toggleRotate();
-                            }
-                        }
-                    })
+                    requestJoke( function ( result ) {
+                        $( "#joke" ).text( result.joke );
+                        if ( !rotating ) toggleRotate();
+                        readText( result.joke, playLaugh, 5 );
+                        jokeLog[ result.id ] = true;
+                        localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
+                    });
                 }
             }
         };
@@ -307,8 +288,15 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             readText( "Commence hilarity!", getJoke, 6 );
         }
 
-        function viewLog() {
-            alert( JSON.stringify( jokeLog ) );
+        function resetLog() {
+            jokeLogJSON = JSON.stringify( jokeLog );
+            
+            if ( jokeLogJSON != '{}' ) {
+                if ( confirm( 'Reset joke log?' ) ) {
+                    jokeLog = {};
+                    localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
+                }
+            }
         }
 
         </script>
@@ -375,7 +363,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                 display: none;
             }
 
-            #viewLog {
+            #resetLog {
                 position: fixed;
                 top: 0px;
                 left: 0px;
@@ -406,7 +394,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
         <audio id="a2">
             <source src="audio/laughter-and-clapter.mp3" type="audio/mpeg">
         </audio>
-        <div id="viewLog" onclick="viewLog();"></div>
+        <div id="resetLog" onclick="resetLog();"></div>
     </body>
 
     <script type="text/javascript">
