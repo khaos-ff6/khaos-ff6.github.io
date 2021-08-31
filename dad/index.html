@@ -124,12 +124,11 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             var audioId = 'a' + randomIntInclusive( 1, 2 );
             document.getElementById( audioId ).play();
             if ( audioId == 'a1' ) {
-                setTimeout( function() { silence1(); crowdBegone(); }, 14000 );
+                setTimeout( crowdBegone, 14000 );
             }
             if ( audioId == 'a2' ) {
-                setTimeout( function() { silence1(); crowdBegone(); }, 10000 );
+                setTimeout( crowdBegone, 10000 );
             }
-            speak1();
             crowdAppear();
         }
 
