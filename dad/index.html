@@ -14,182 +14,15 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript">
-        var defaultColor = "#222266";
-        var rotating = false;
-        var cycle = 1;
-        var rotateInterval = 50;
-        var color1R = 0x0;
-        var color1G = 0x0;
-        var color1B = 0x0;
-        var color2R = 0x0;
-        var color2G = 0x0;
-        var color2B = 0x0;
-        var diffR = 0x0;
-        var diffG = 0x0;
-        var diffB = 0x0;
-        var addR = 0x0;
-        var addG = 0x0;
-        var addB = 0x0;
-        var currentR = color1R;
-        var currentG = color1G;
-        var currentB = color1B;
         var preview = { id : '', joke : '' };
         var voices = [];
         var voiceLoadAttempts = 0;
+        var img1;
+        var img2;
         
         var jokeLog = JSON.parse( localStorage.getItem( 'jokeLog' ) );
         if ( !jokeLog ) {
             jokeLog = {};
-        }
-
-        function setColor( colorString ) {
-            document.getElementsByTagName("BODY")[0].style.backgroundColor = colorString;
-        }
-
-        function rotateColors() {
-            if ( rotating ) {
-                currentR += addR;
-                currentG += addG;
-                currentB += addB;
-
-                if ( cycle == 1 ) {
-                    if ( Math.abs( color2R - currentR ) <= Math.abs( addR / 2 )
-                        && Math.abs( color2G - currentG ) <= Math.abs( addG / 2 )
-                        && Math.abs( color2B - currentB ) <= Math.abs( addB / 2 ) ) {
-                            
-                        currentR = color2R;
-                        currentG = color2G;
-                        currentB = color2B;
-                        addR *= -1;
-                        addG *= -1;
-                        addB *= -1;
-                        cycle = 2;
-                    }
-                }
-                else {
-                    if ( Math.abs( color1R - currentR ) <= Math.abs( addR / 2 )
-                        && Math.abs( color1G - currentG ) <= Math.abs( addG / 2 )
-                        && Math.abs( color1B - currentB ) <= Math.abs( addB / 2 ) ) {
-
-                        currentR = color1R;
-                        currentG = color1G;
-                        currentB = color1B;
-                        addR *= -1;
-                        addG *= -1;
-                        addB *= -1;
-                        cycle = 1;
-                    }
-                }
-
-                setColor( getCurrentColor() );
-                setTimeout( rotateColors, rotateInterval );
-            }
-        }
-
-        function toggleRotate() {
-            if ( rotating ) {
-                rotating = false;
-                setColor( defaultColor );
-            }
-            else {
-                rotateInterval = document.getElementById( "interval" ).value;
-                getColorsFromInput();
-                rotating = true;
-                cycle = 1;
-                diffR = ( color1R - color2R ) * -1;
-                diffG = ( color1G - color2G ) * -1;
-                diffB = ( color1B - color2B ) * -1;
-                addR = diffR / 20;
-                addG = diffG / 20;
-                addB = diffB / 20;
-                currentR = color1R;
-                currentG = color1G;
-                currentB = color1B;
-                setColor( getCurrentColor() );
-                setTimeout( rotateColors, rotateInterval );
-            }
-        }
-
-        function getCurrentColor() {
-            return '#' + hexToStringRep( currentR ) + hexToStringRep( currentG ) + hexToStringRep( currentB );
-        }
-
-        function getColorsFromInput() {
-            var color1 = document.getElementById( "color1" ).value;
-            var color2 = document.getElementById( "color2" ).value;
-
-            if ( color1.substring( 0, 1 ) == "#" ) color1 = color1.substring( 1 );
-            if ( color2.substring( 0, 1 ) == "#" ) color2 = color2.substring( 1 );
-
-            if ( color1.length == 3 ) {
-                color1R = parseInt( "0x" + color1.substring( 0, 1 ) + "0" );
-                color1G = parseInt( "0x" + color1.substring( 1, 2 ) + "0" );
-                color1B = parseInt( "0x" + color1.substring( 2 ) + "0" );
-            }
-            else {
-                color1R = parseInt( "0x" + color1.substring( 0, 2 ) );
-                color1G = parseInt( "0x" + color1.substring( 2, 4 ) );
-                color1B = parseInt( "0x" + color1.substring( 4 ) );
-            }
-
-            if ( color2.length == 3 ) {
-                color2R = parseInt( "0x" + color2.substring( 0, 1 ) + "0" );
-                color2G = parseInt( "0x" + color2.substring( 1, 2 ) + "0" );
-                color2B = parseInt( "0x" + color2.substring( 2 ) + "0" );
-            }
-            else {
-                color2R = parseInt( "0x" + color2.substring( 0, 2 ) );
-                color2G = parseInt( "0x" + color2.substring( 2, 4 ) );
-                color2B = parseInt( "0x" + color2.substring( 4 ) );
-            }
-        }
-
-        function hexToStringRep( hex ) {
-            var leftChar = hexCharIntStringToHexString( Math.trunc( hex / 16 ).toString() );
-            var rightChar = hexCharIntStringToHexString( Math.trunc( hex - ( parseInt( "0x" + leftChar ) * 16 ) ).toString() );
-            return leftChar + rightChar;
-        }
-
-        function hexCharIntStringToHexString( intString ) {
-            switch ( intString ) {
-                case "10":
-                    return "a";
-                case "11":
-                    return "b";
-                case "12":
-                    return "c";
-                case "13":
-                    return "d";
-                case "14":
-                    return "e";
-                case "15":
-                    return "f";
-                default:
-                    return intString;
-            }
-        }
-
-        function easterEgg() {
-            document.getElementById( "easterEgg" ).classList.toggle( "hidden" );
-        }
-
-        function colorPreview( inputNum ) {
-            if ( inputNum == 1 ) {
-                var color1 = document.getElementById( "color1" ).value;
-                if ( color1.substring( 0, 1 ) != "#" ) color1 = "#" + color1;
-                if ( color1.match( /\#([0-9a-f]{3}|[0-9a-f]{6})$/i ) == null ) {
-                    color1 = "#000000";
-                }
-                document.getElementById( "colorbox1" ).style.backgroundColor = color1;
-            }
-            else if ( inputNum == 2 ) {
-                var color2 = document.getElementById( "color2" ).value;
-                if ( color2.substring( 0, 1 ) != "#" ) color2 = "#" + color2;
-                if ( color2.match( /\#([0-9a-f]{3}|[0-9a-f]{6})$/i ) == null ) {
-                    color2 = "#000000";
-                }
-                document.getElementById( "colorbox2" ).style.backgroundColor = color2;
-            }
         }
 
         function requestJoke( successCallback ) {
@@ -213,7 +46,6 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                     }
                     else {
                         alert( "Dad Joke API Error; Response: " + result.status );
-                        if ( rotating ) toggleRotate();
                     }
                 }
             });
@@ -232,8 +64,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             else {
                 if ( preview.joke != '' ) {
                     $( "#joke" ).text( preview.joke );
-                    if ( !rotating ) toggleRotate();
-                    readText( preview.joke, playLaugh, 5 );
+                    readText( 1, preview.joke, playLaugh, 5 );
                     preview.id = '';
                     preview.joke = '';
                 }
@@ -241,8 +72,7 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                     $( "#joke" ).text( 'loading...' );
                     requestJoke( function ( result ) {
                         $( "#joke" ).text( result.joke );
-                        if ( !rotating ) toggleRotate();
-                        readText( result.joke, playLaugh, 5 );
+                        readText( 1, result.joke, playLaugh, 5 );
                         jokeLog[ result.id ] = true;
                         localStorage.setItem( 'jokeLog', JSON.stringify( jokeLog ) );
                     });
@@ -266,26 +96,79 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
             }
         }
 
-        function readText( text, callback, voiceIndex = -1 ) {
+        function readText( reader, text, callback, voiceIndex = -1 ) {
             var msg = new SpeechSynthesisUtterance();
             msg.text = text;
             msg.rate = 0.9;
             if ( callback ) {
-                msg.onend = function( event ) { callback(); };
+                if ( reader == 0 ) {
+                    msg.onend = function( event ) { silence1(); callback(); };
+                }
+                if ( reader == 1 ) {
+                    msg.onend = function( event ) { silence2(); callback(); };
+                }
             }
             if ( voiceIndex >= 0 && voices.length ) {
                 msg.voice = voices[ voiceIndex ];
             }
             window.speechSynthesis.speak( msg );
+            if ( reader == 0 ) {
+                setTimeout( speak1, 200 );
+            }
+            if ( reader == 1 ) {
+                setTimeout( speak2, 200 );
+            }
         }
 
         function playLaugh() {
             var audioId = 'a' + randomIntInclusive( 1, 2 );
             document.getElementById( audioId ).play();
+            if ( audioId == 'a1' ) {
+                setTimeout( function() { silence1(); crowdBegone(); }, 14000 );
+            }
+            if ( audioId == 'a2' ) {
+                setTimeout( function() { silence1(); crowdBegone(); }, 10000 );
+            }
+            speak1();
+            crowdAppear();
         }
 
         function buttonClick() {
-            readText( "Commence hilarity!", getJoke, 6 );
+            if ( img1 === undefined ) {
+                initJokers();
+            }
+            readText( 0, "Commence hilarity!", getJoke, 6 );
+        }
+
+        function initJokers() {
+            img1 = document.getElementById( 'img1' );
+            img2 = document.getElementById( 'img2' );
+            silence1();
+            silence2();
+        }
+
+        function speak1() {
+            img1.style.backgroundImage = "url('images/talky-man.gif')";
+        }
+
+        function speak2() {
+            img2.style.backgroundImage = "url('images/talky-woman.gif')";
+        }
+
+        function silence1() {
+            img1.style.backgroundImage = "url('images/man.gif')";
+        }
+
+        function silence2() {
+            img2.style.backgroundImage = "url('images/woman.gif')";
+        }
+
+        function crowdAppear() {
+            $('.crowdMan, .crowdWoman').toggle( true );
+        }
+
+        function crowdBegone() {
+            $('.crowdMan, .crowdWoman').toggle( false );
         }
 
         function resetLog() {
@@ -305,8 +188,8 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
 
         <style>
             body {
-                background-color: #222266;
-                color: #ffffff;
+                background-color: #ffffff;
+                color: #000000;
                 font-size: 16px;
                 font-family: sans-serif;
             }
@@ -335,30 +218,6 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                 font-size: 32px;
             }
 
-            #easterEgg {
-                margin-top: 40px;
-                margin-left: 250px;
-            }
-
-            label {
-                float: left;
-                clear: left;
-                margin-right: 8px;
-                margin-bottom: 18px;
-            }
-
-            input {
-                float: left;
-            }
-
-            .colorbox {
-                float: left;
-                margin-left: 20px;
-                height: 30px;
-                width: 30px;
-                border: 1px solid #ffffff;
-            }
-
             .hidden {
                 display: none;
             }
@@ -372,21 +231,120 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
                 margin: 0px 0px 0px 0px;
                 padding: 0px 0px 0px 0px;
             }
+
+            #img1 {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                width: 415px;
+                height: 545px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #img2 {
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                width: 320px;
+                height: 590px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .crowdWoman {
+                position: fixed;
+                width: 80px;
+                height: 148px;
+                margin: 0px;
+                padding: 0px;
+                background-image: url('images/talky-woman-small.gif');
+                display: none;
+            }
+
+            .crowdMan {
+                position: fixed;
+                width: 104px;
+                height: 137px;
+                margin: 0px;
+                padding: 0px;
+                background-image: url('images/talky-man-small.gif');
+                display: none;
+            }
+
+            #c1 {
+                top: 20px;
+                left: 20px;
+            }
+            #c2 {
+                top: 190px;
+                left: 60px;
+            }
+            #c3 {
+                top: 110px;
+                left: 130px;
+            }
+            #c4 {
+                top: 170px;
+                left: 220px;
+            }
+            #c5 {
+                top: 10px;
+                left: 200px;
+            }
+            #c6 {
+                top: 40px;
+                left: 310px;
+            }
+            #c7 {
+                top: 90px;
+                left: 410px;
+            }
+            #c8 {
+                top: 200px;
+                left: 330px;
+            }
+            #c9 {
+                top: 300px;
+                left: 440px;
+            }
+            #c10 {
+                top: 5px;
+                left: 520px;
+            }
+            #c11 {
+                top: 190px;
+                left: 540px;
+            }
+            #c12 {
+                top: 75px;
+                left: 630px;
+            }
         </style>
     </head>
-    <body onload="colorPreview( 1 ); colorPreview( 2 );">
+    <body>
         <div class="content">
-            <div id="title">Dad <span onclick="getJoke( true );">Joke</span> of the <span onclick="easterEgg();">Day</span></div>
+            <div id="title">Dad <span onclick="getJoke( true );">Joke</span> of the Day</div>
             
             <button onclick="buttonClick();">Commence Hilarity!</button>
 
             <div id="joke"></div>
 
-            <div id="easterEgg" class="hidden">
-                <label>Rotate Interval:</label><input id="interval" type="text" value="50" />
-                <label>Color 1:</label><input id="color1" type="text" value="#222266" onkeyup="colorPreview( 1 );" /><div id="colorbox1" class="colorbox"></div>
-                <label>Color 2:</label><input id="color2" type="text" value="#552233" onkeyup="colorPreview( 2 );" /><div id="colorbox2" class="colorbox"></div>
-            </div>
+            <div id="img1"></div>
+            <div id="img2"></div>
+
+            <div id="c1" class="crowdMan"></div>
+            <div id="c2" class="crowdWoman"></div>
+            <div id="c3" class="crowdWoman"></div>
+            <div id="c4" class="crowdMan"></div>
+            <div id="c5" class="crowdMan"></div>
+            <div id="c6" class="crowdWoman"></div>
+            <div id="c7" class="crowdMan"></div>
+            <div id="c8" class="crowdWoman"></div>
+            <div id="c9" class="crowdMan"></div>
+            <div id="c10" class="crowdWoman"></div>
+            <div id="c11" class="crowdMan"></div>
+            <div id="c12" class="crowdWoman"></div>
         </div>
         <audio id="a1">
             <source src="audio/laughter-only.mp3" type="audio/mpeg">
@@ -399,5 +357,8 @@ Converted to .mp3 format using https://www.freeconvert.com/wav-to-mp3
 
     <script type="text/javascript">
         loadVoices();
+        /////////////
+        //initJokers();
+        //crowdAppear();
     </script>
 </html>
