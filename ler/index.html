@@ -49,12 +49,12 @@ v1.0
         * https://stackoverflow.com/questions/21947730/chrome-speech-synthesis-with-longer-texts
         */
         
-        var speechUtteranceChunker = function (utt, settings, callback) {
+        var speechUtteranceChunker = function (text, settings, callback) {
             settings = settings || {};
             var newUtt;
-            var txt = (settings && settings.offset !== undefined ? utt.text.substring(settings.offset) : utt.text);
-            if (utt.voice && utt.voice.voiceURI === 'native') { // Not part of the spec
-                newUtt = utt;
+            var txt = (settings && settings.offset !== undefined ? text.substring(settings.offset) : text);
+            if (settings.useVoice && settings.useVoice.voiceURI === 'native') { // Not part of the spec
+                newUtt = new SpeechSynthesisUtterance();
                 newUtt.text = txt;
                 newUtt.addEventListener('end', function () {
                     if (speechUtteranceChunker.cancel) {
@@ -67,7 +67,7 @@ v1.0
             }
             else {
                 var chunkLength = (settings && settings.chunkLength) || 160;
-                var pattRegex = new RegExp('^[\\s\\S]{' + Math.floor(chunkLength / 2) + ',' + chunkLength + '}[.!?,]{1}|^[\\s\\S]{1,' + chunkLength + '}$|^[\\s\\S]{1,' + chunkLength + '} ');
+                var pattRegex = new RegExp('^((?![.!?\\n])[\\s\\S]){1,' + chunkLength + '}[.!?\\n\\s]+|^[\\s\\S]{' + Math.floor(chunkLength / 2) + ',' + chunkLength + '}[.!?,]+|^[\\s\\S]{1,' + chunkLength + '}$|^[\\s\\S]{1,' + chunkLength + '} ');
                 var chunkArr = txt.match(pattRegex);
         
                 if (chunkArr[0] === undefined || chunkArr[0].length <= 2) {
@@ -79,12 +79,16 @@ v1.0
                 }
                 var chunk = chunkArr[0];
                 newUtt = new SpeechSynthesisUtterance(chunk);
-                var x;
-                for (x in utt) {
-                    if (utt.hasOwnProperty(x) && x !== 'text') {
-                        newUtt[x] = utt[x];
-                    }
-                }
+                
+                //// This seems to not work, at least in Chrome; have to set properties manually ////
+                // var x;
+                // for (x in utt) {
+                //     if (utt.hasOwnProperty(x) && x !== 'text') {
+                //         newUtt[x] = utt[x];
+                //     }
+                // }
+                /////////////////////////////////////////////////////////////////////////////////////
+
                 newUtt.addEventListener('end', function () {
                     if (speechUtteranceChunker.cancel) {
                         speechUtteranceChunker.cancel = false;
@@ -98,15 +102,21 @@ v1.0
                     settings.offset += chunk.length;
                     ////////////////////////////////////////////////////////////////////////////
 
-                    speechUtteranceChunker(utt, settings, callback);
+                    speechUtteranceChunker(text, settings, callback);
                 });
+            }
 
-                //// Added by me to get voice selection to not break ////
-                if ( settings && settings.useVoice ) {
+            //// Set utterance properties manually ////
+            if ( settings ) {
+                if ( settings.useVoice ) {
                     newUtt.voice = settings.useVoice;
                 }
-                /////////////////////////////////////////////////////////
+
+                if ( settings.rate ) {
+                    newUtt.rate = settings.rate;
+                }
             }
+            ///////////////////////////////////////////
         
             if (settings.modifier) {
                 settings.modifier(newUtt);
@@ -121,13 +131,8 @@ v1.0
 
 
         function readText( text, callback, voice ) {
-            var msg = new SpeechSynthesisUtterance();
-            msg.text = text;
-            msg.rate = 0.9;
-            if ( callback ) {
-                msg.onend = function( event ) { callback(); };
-            }
-            speechUtteranceChunker( msg, { useVoice: voice }, callback );
+            console.log( { FullText: text } );
+            speechUtteranceChunker( text, { useVoice: voice, rate: 0.9 }, callback );
 
         }
 
@@ -147,6 +152,11 @@ v1.0
                 color: #ffffff;
                 font-size: 16px;
                 font-family: sans-serif;
+            }
+
+            textarea {
+                background-color: #000000;
+                color: #bbbbbb;
             }
 
             .content {
