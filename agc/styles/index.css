@@ -42,7 +42,25 @@ a:hover {
 .button {
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 1vw;
+    width: 5vw;
+    height: 5vw;
     cursor: pointer;
+}
+
+.buttonLong {
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.buttonLongIcon {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
 }
 
 .buttonUp {
@@ -64,7 +82,7 @@ a:hover {
     text-align: center;
     padding-top: 0.5vw;
     position: absolute;
-    top: 5vw;
+    top: 12vw;
     left: 1.5vw;
     user-select: none;
 }
@@ -79,61 +97,57 @@ a:hover {
     width: 3vw;
     height: 3vw;
     position: absolute;
-    top: 11vw;
+    top: 18vw;
     left: 19vw;
 }
 
 .chargeMana {
     background-color: #00ffaa;
-    border-radius: 15px;
-    width: 5vw;
-    height: 5vw;
     position: absolute;
-    top: 5vw;
+    top: 12vw;
     left: 18vw;
 }
 
 .drainMana {
     background-color: #00ffaa;
-    border-radius: 15px;
-    width: 5vw;
-    height: 5vw;
     position: absolute;
-    top: 15vw;
+    top: 22vw;
     left: 18vw;
 }
 
 
 .chargeAether {
-    background-image: url("../images/angle-double-left.svg");
     background-color: #00ffff;
-    border-radius: 15px;
-    width: 5vw;
+    width: 15vw;
     height: 5vw;
+    font-size: 3vw;
+    color: #000000;
+    text-align: right;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    user-select: none;
     position: absolute;
-    top: 10vw;
-    left: 25.5vw;
+    top: 5vw;
+    left: 1.5vw;
+}
+
+.chargeAetherIcon {
+    background-image: url("../images/angle-double-down.svg");
 }
 
 
 .upAether {
     background-color: #00aaff;
-    border-radius: 15px;
-    width: 5vw;
-    height: 5vw;
     position: absolute;
     top: 5vw;
-    left: 34vw;
+    left: 33.5vw;
 }
 
 .downAether {
     background-color: #00aaff;
-    border-radius: 15px;
-    width: 5vw;
-    height: 5vw;
     position: absolute;
-    top: 15vw;
-    left: 34vw;
+    top: 5vw;
+    left: 18vw;
 }
 
 .aether {
@@ -143,8 +157,8 @@ a:hover {
     font-size: 4vw;
     text-align: center;
     position: absolute;
-    top: 9.5vw;
-    left: 35.5vw;
+    top: 4.5vw;
+    left: 27.5vw;
     user-select: none;
 }
 
@@ -158,29 +172,23 @@ a:hover {
     width: 3vw;
     height: 3vw;
     position: absolute;
-    top: 11vw;
-    left: 32.5vw;
+    top: 6vw;
+    left: 24vw;
 }
 
 
 .upDamage {
     background-color: #cb5164;
-    border-radius: 15px;
-    width: 5vw;
-    height: 5vw;
     position: absolute;
-    top: 5vw;
-    left: 43.5vw;
+    top: 12vw;
+    left: 26vw;
 }
 
 .downDamage {
     background-color: #cb5164;
-    border-radius: 15px;
-    width: 5vw;
-    height: 5vw;
     position: absolute;
-    top: 15vw;
-    left: 43.5vw;
+    top: 22vw;
+    left: 26vw;
 }
 
 .damage {
@@ -190,8 +198,8 @@ a:hover {
     font-size: 4vw;
     text-align: center;
     position: absolute;
-    top: 9.5vw;
-    left: 45vw;
+    top: 16.5vw;
+    left: 27.5vw;
     user-select: none;
 }
 
@@ -205,6 +213,25 @@ a:hover {
     width: 3vw;
     height: 3vw;
     position: absolute;
-    top: 11vw;
-    left: 42vw;
+    top: 18vw;
+    left: 24.5vw;
+}
+
+.resolve {
+    background-color: #cb5164;
+    width: 5vw;
+    height: 15vw;
+    font-size: 3vw;
+    color: #000000;
+    writing-mode: vertical-rl;
+    text-align: right;
+    padding-bottom: 0.5vw;
+    position: absolute;
+    top: 12vw;
+    left: 33.5vw;
+}
+
+.resolveIcon {
+    background-image: url("../images/compress.svg");
+    background-size: 3vw;
 }
