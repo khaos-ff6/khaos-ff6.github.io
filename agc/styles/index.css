@@ -5,6 +5,7 @@ body {
     background-size: cover;
     height: 100vh;
     color: #ffffff;
+    user-select: none;
 }
 
 #body {
@@ -50,11 +51,13 @@ a:hover {
     width: 5vw;
     height: 5vw;
     cursor: pointer;
+    user-select: none;
 }
 
 .buttonLong {
     border-radius: 1vw;
     cursor: pointer;
+    user-select: none;
 }
 
 .buttonLongIcon {
@@ -141,7 +144,6 @@ a:hover {
     text-align: right;
     padding-right: 0.5vw;
     padding-left: 0.5vw;
-    user-select: none;
     position: absolute;
     top: 5.5vw;
     left: 6vw;
@@ -245,7 +247,6 @@ a:hover {
     position: absolute;
     top: 12.5vw;
     left: 38vw;
-    user-select: none;
 }
 
 .resolveIcon {
@@ -265,7 +266,6 @@ a:hover {
     position: absolute;
     top: 30.5vw;
     left: 39vw;
-    user-select: none;
 }
 
 .newGameIcon {
