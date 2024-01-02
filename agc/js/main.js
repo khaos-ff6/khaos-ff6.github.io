@@ -274,24 +274,26 @@ function deletePageState() {
 
 
 function startNewGame() {
-    p1Mana = 80;
-    p1Aether = 0;
-    p1Damage = 0;
-    p2Mana = 80;
-    p2Aether = 0;
-    p2Damage = 0;
+    if ( confirm( "Start a new game?" ) ) {
+        p1Mana = 80;
+        p1Aether = 0;
+        p1Damage = 0;
+        p2Mana = 80;
+        p2Aether = 0;
+        p2Damage = 0;
 
-    manaP1.innerText = p1Mana;
-    aetherP1.innerText = p1Aether;
-    damageP1.innerText = p1Damage;
-    manaP2.innerText = p2Mana;
-    aetherP2.innerText = p2Aether;
-    damageP2.innerText = p2Damage;
+        manaP1.innerText = p1Mana;
+        aetherP1.innerText = p1Aether;
+        damageP1.innerText = p1Damage;
+        manaP2.innerText = p2Mana;
+        aetherP2.innerText = p2Aether;
+        damageP2.innerText = p2Damage;
 
-    checkIfDead( 1 );
-    checkIfDead( 2 );
+        checkIfDead( 1 );
+        checkIfDead( 2 );
 
-    deletePageState();
+        deletePageState();
+    }
 }
 
 
