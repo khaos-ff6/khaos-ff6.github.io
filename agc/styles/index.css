@@ -8,8 +8,12 @@ body {
 }
 
 #body {
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 20, 0.75);
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 a {
@@ -28,14 +32,14 @@ a:hover {
 }
 
 #player1 {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
 }
 
 #player2 {
-    position: fixed;
-    top: 0px;
+    position: absolute;
+    top: 0vw;
     left: 50vw;
 }
 
@@ -72,6 +76,18 @@ a:hover {
 }
 
 
+.name {
+    color: #ffffff;
+    font-size: 3vw;
+    text-align: center;
+    width: 48vw;
+    position: absolute;
+    top: 0.5vw;
+    left: 0vw;
+    user-select: none;
+}
+
+
 .mana {
     background-color: #00ffaa;
     color: #000000;
@@ -82,8 +98,8 @@ a:hover {
     text-align: center;
     padding-top: 0.5vw;
     position: absolute;
-    top: 12vw;
-    left: 1.5vw;
+    top: 12.5vw;
+    left: 6vw;
     user-select: none;
 }
 
@@ -97,22 +113,22 @@ a:hover {
     width: 3vw;
     height: 3vw;
     position: absolute;
-    top: 18vw;
-    left: 19vw;
+    top: 18.5vw;
+    left: 23.5vw;
 }
 
 .chargeMana {
     background-color: #00ffaa;
     position: absolute;
-    top: 12vw;
-    left: 18vw;
+    top: 12.5vw;
+    left: 22.5vw;
 }
 
 .drainMana {
     background-color: #00ffaa;
     position: absolute;
-    top: 22vw;
-    left: 18vw;
+    top: 22.5vw;
+    left: 22.5vw;
 }
 
 
@@ -127,8 +143,8 @@ a:hover {
     padding-left: 0.5vw;
     user-select: none;
     position: absolute;
-    top: 5vw;
-    left: 1.5vw;
+    top: 5.5vw;
+    left: 6vw;
 }
 
 .chargeAetherIcon {
@@ -139,15 +155,15 @@ a:hover {
 .upAether {
     background-color: #00aaff;
     position: absolute;
-    top: 5vw;
-    left: 33.5vw;
+    top: 5.5vw;
+    left: 38vw;
 }
 
 .downAether {
     background-color: #00aaff;
     position: absolute;
-    top: 5vw;
-    left: 18vw;
+    top: 5.5vw;
+    left: 22.5vw;
 }
 
 .aether {
@@ -157,8 +173,8 @@ a:hover {
     font-size: 4vw;
     text-align: center;
     position: absolute;
-    top: 4.5vw;
-    left: 27.5vw;
+    top: 5vw;
+    left: 32vw;
     user-select: none;
 }
 
@@ -172,23 +188,23 @@ a:hover {
     width: 3vw;
     height: 3vw;
     position: absolute;
-    top: 6vw;
-    left: 24vw;
+    top: 6.5vw;
+    left: 28.5vw;
 }
 
 
 .upDamage {
     background-color: #cb5164;
     position: absolute;
-    top: 12vw;
-    left: 26vw;
+    top: 12.5vw;
+    left: 30.5vw;
 }
 
 .downDamage {
     background-color: #cb5164;
     position: absolute;
-    top: 22vw;
-    left: 26vw;
+    top: 22.5vw;
+    left: 30.5vw;
 }
 
 .damage {
@@ -198,8 +214,8 @@ a:hover {
     font-size: 4vw;
     text-align: center;
     position: absolute;
-    top: 16.5vw;
-    left: 27.5vw;
+    top: 17vw;
+    left: 32vw;
     user-select: none;
 }
 
@@ -213,8 +229,8 @@ a:hover {
     width: 3vw;
     height: 3vw;
     position: absolute;
-    top: 18vw;
-    left: 24.5vw;
+    top: 18.5vw;
+    left: 29vw;
 }
 
 .resolve {
@@ -227,11 +243,32 @@ a:hover {
     text-align: right;
     padding-bottom: 0.5vw;
     position: absolute;
-    top: 12vw;
-    left: 33.5vw;
+    top: 12.5vw;
+    left: 38vw;
+    user-select: none;
 }
 
 .resolveIcon {
     background-image: url("../images/compress.svg");
+    background-size: 2.5vw;
+}
+
+
+.newGame {
+    background-color: #999999;
+    width: 20vw;
+    height: 5vw;
+    font-size: 3vw;
+    color: #000000;
+    text-align: right;
+    padding-right: 0.5vw;
+    position: absolute;
+    top: 30.5vw;
+    left: 39vw;
+    user-select: none;
+}
+
+.newGameIcon {
+    background-image: url("../images/undo-alt.svg");
     background-size: 3vw;
 }
