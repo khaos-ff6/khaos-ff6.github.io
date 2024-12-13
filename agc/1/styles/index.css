@@ -1,0 +1,260 @@
+body {
+    background-color: #333333;
+    background-image: url("../images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    user-select: none;
+}
+
+#body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 20, 0.75);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+a {
+    color: #33ddbb;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+.player {
+    height: 100vh;
+    width: 100vw;
+    /* border: thin solid #ff0000; */
+}
+
+#player1 {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+
+.button {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1.5vw;
+    width: 8.5vw;
+    height: 8.5vw;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonLong {
+    border-radius: 1.5vw;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonLongIcon {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8.5vw;
+    height: 7.5vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+
+.buttonUp {
+    background-image: url("../images/angle-up.svg");
+}
+
+.buttonDown {
+    background-image: url("../images/angle-down.svg");
+}
+
+
+.mana {
+    background-color: #00ffaa;
+    color: #000000;
+    border-radius: 15px;
+    width: 25vw;
+    height: 25vw;
+    font-size: 12vw;
+    text-align: center;
+    padding-top: 2vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 17.5vw;
+    user-select: none;
+}
+
+.manaIcon {
+    background-color: #00ffaa;
+    background-image: url("../images/infinity.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4vw;
+    border-radius: 3vw;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 12vw;
+    left: 7.25vw;
+}
+
+.chargeMana {
+    background-color: #00ffaa;
+    position: absolute;
+    top: 2.5vw;
+    left: 6vw;
+}
+
+.drainMana {
+    background-color: #00ffaa;
+    position: absolute;
+    top: 19vw;
+    left: 6vw;
+}
+
+
+.chargeAether {
+    background-color: #00ffff;
+    width: 8.5vw;
+    height: 36.5vw;
+    font-size: 4.75vw;
+    writing-mode: vertical-rl;
+    color: #000000;
+    text-align: right;
+    padding-bottom: 8vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 46vw;
+}
+
+.chargeAetherIcon {
+    background-image: url("../images/angle-double-left.svg");
+    background-size: 5.5vw;
+    top: 2.5vw;
+}
+
+
+.upAether {
+    background-color: #00aaff;
+    position: absolute;
+    top: 2.5vw;
+    left: 57.5vw;
+}
+
+.downAether {
+    background-color: #00aaff;
+    position: absolute;
+    top: 30.5vw;
+    left: 57.5vw;
+}
+
+.aether {
+    color: #00aaff;
+    width: 11vw;
+    height: 11vw;
+    font-size: 7.5vw;
+    text-align: center;
+    position: absolute;
+    top: 19vw;
+    left: 56.25vw;
+    user-select: none;
+}
+
+.aetherIcon {
+    background-color: #00aaff;
+    background-image: url("../images/ankh.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.5vw;
+    border-radius: 3vw;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 13.5vw;
+    left: 58.75vw;
+}
+
+
+.upDamage {
+    background-color: #cb5164;
+    position: absolute;
+    top: 2.5vw;
+    left: 69vw;
+}
+
+.downDamage {
+    background-color: #cb5164;
+    position: absolute;
+    top: 30.5vw;
+    left: 69vw;
+}
+
+.damage {
+    color: #cb5164;
+    width: 11vw;
+    height: 11vw;
+    font-size: 7.5vw;
+    text-align: center;
+    position: absolute;
+    top: 19vw;
+    left: 67.75vw;
+    user-select: none;
+}
+
+.damageIcon {
+    background-color: #cb5164;
+    background-image: url("../images/compress.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3.75vw;
+    border-radius: 3vw;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 13.5vw;
+    left: 70.25vw;
+}
+
+.resolve {
+    background-color: #cb5164;
+    width: 8.5vw;
+    height: 36.5vw;
+    font-size: 4.75vw;
+    color: #000000;
+    writing-mode: vertical-rl;
+    text-align: right;
+    padding-bottom: 7vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 81vw;
+}
+
+.resolveIcon {
+    background-image: url("../images/compress.svg");
+    background-size: 4vw;
+    top: 2.5vw;
+}
+
+
+.newGame {
+    background-color: #999999;
+    width: 36.5vw;
+    height: 8.5vw;
+    font-size: 5vw;
+    color: #000000;
+    text-align: right;
+    padding-right: 3vw;
+    position: absolute;
+    top: 30.5vw;
+    left: 6vw;
+}
+
+.newGameIcon {
+    background-image: url("../images/undo-alt.svg");
+    background-size: 5.5vw;
+    top: 0.5vw;
+}
